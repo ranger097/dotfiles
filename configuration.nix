@@ -212,7 +212,25 @@ programs.steam.enable = true;
    andromeda-gtk-theme
    adapta-gtk-theme
    home-manager
-   swww   
+   swww
+   pywal
+   stow
+   ryubing
+   gcc
+   cmake
+   gdb
+   clang
+   sfml
+   raylib
+   godot
+   qt6.full
+   qt6.qtwayland
+   wallust
+   matugen
+   pywal16
+   pywalfox-native
+   obs-studio
+   alacritty
   ]; 
   
    users.users.ranger = {

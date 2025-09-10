@@ -12,12 +12,12 @@ config.background = {
 {
 
 source = {
-File = '/home/ranger/Downloads/Black.png'
+File = '/home/ranger/Downloads/Wallpapers/black.jpg'
 },
 width = 'Cover',
 height = 'Cover',
 
-opacity = 1.0
+opacity = 0.7
 
 },
 
