@@ -229,8 +229,7 @@ programs.steam.enable = true;
    matugen
    pywal16
    pywalfox-native
-   obs-studio
-   alacritty
+   hyprshot
   ]; 
   
    users.users.ranger = {
