@@ -9,17 +9,7 @@ local config = wezterm.config_builder()
 
 config.background = {
 
-{
 
-source = {
-File = '/home/ranger/Downloads/Wallpapers/black.jpg'
-},
-width = 'Cover',
-height = 'Cover',
-
-opacity = 0.7
-
-},
 
 }
 
@@ -29,8 +19,8 @@ config.window_padding = {
 
 left = 70,
 right =  70,
-top = 10,
-bottom = 10
+top = 70,
+bottom = 70
 
 
 }
