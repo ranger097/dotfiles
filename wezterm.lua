@@ -1,26 +1,28 @@
 -- Pull in the wezterm API
 local wezterm = require 'wezterm'
-
 -- This will hold the configuration.
 local config = wezterm.config_builder()
-
--- This is where you actually apply your config choices.
-
-
-config.background = {
-
-
+config.colors = {
+foreground = '#d1dde0',
+background = '#06080F',
+cursor_bg = '#3C6085',
+cursor_fg = '#62728A',
+cursor_border = '#6B91A0',
+selection_fg = '#78A6C7',
+selection_bg = '#949AAA',
+scrollbar_thumb = '#A7B7C6',
 
 }
+
 
 config.hide_tab_bar_if_only_one_tab = true
 
 config.window_padding = {
 
-left = 70,
-right =  70,
-top = 70,
-bottom = 70
+left = 50,
+right =  50,
+top = 50,
+bottom = 50
 
 
 }
@@ -34,7 +36,8 @@ config.initial_rows = 28
 config.font_size = 14
 config.font = wezterm.font("SpaceMono Nerd Font Mono", {weight = "Regular",style = "Normal"})
 
-config.color_scheme = 'rebecca'     
+
 
 -- Finally, return the configuration to wezterm:
 return config
+

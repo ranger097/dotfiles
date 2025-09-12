@@ -4,7 +4,7 @@
 configuration {
     display-drun: "";
 	prompt: "";
-	
+	font: "Maple Mono";
 }
 
 
@@ -14,43 +14,37 @@ window {
     anchor:   center;
     transparency: "real";
     padding: 0px;
-    border:  2px;
-    border-radius: 0px;
+    border:  3px;
+    border-radius: 25px;
     color: @selected-active-background;
-    background-color: @transparent;
+    background-color: rgba(0,0,0,0.11);
     spacing: 0;
     //children:  [listview];
 	children: [inputbar, listview];
     orientation: horizontal;
 	//orientation: vertical;
-	background-image: url("/home/ranger/Downloads/Wallpapers/rofi.jpg");
-	width:800px;
-	height:295px;
-    border-color: @urgent-background;
-}
-
+   //background-image: url("/home/ranger/wallpaper-script/Wallpapers/Dan_Da_Dan_1.png"); 
+   height : 300px;
+   width: 930px;
+   border-color: black;
+   }
 
 inputbar {
     color: @selected-active-background;
     background-color: @selected-active-background;
-    border: 0px;
-    border-radius:  0px 0px 0px 0px;
-    border-color: @selected-active-background;
-    font: "Source Code Pro 18";
-	background-image: url("/home/ranger/Downloads/Wallpapers/rofi.jpg");
-	//margin:100px;
-	padding: 10px 0px 0px 0px;
-	padding:230px;
-}
-entry,prompt,case-indicator {
-    text-font: inherit;
-    text-color:inherit;
+    border: 0px 3px 0px 0px;
+    border-radius:  10px 0px 0px 10px;
+    border-color: black;
+    font: "Maple Mono";
+ background-image: url("/home/ranger/wallpaper-script/Wallpapers/Solo_leveling_1.png",width);
+ padding:300px;
+margin: 0px 10px 0px 0px;
 }
 prompt {
     margin:     0px 0em 0em 0em ;
 	padding:0px;
 	text-color: @selected-active-background;
-	background-color: rgba(0,0,0,0);
+	background-color: @background;
 	
 }
 
@@ -73,7 +67,7 @@ entry {
 	
 }
 listview {
-    padding: 2px;
+    padding: 5px;
     border-radius: 0px 0px 0px 0px;
     border-color: black;
     border: 0px;
@@ -82,14 +76,14 @@ listview {
     lines:6;
 	scrollbar: false;
     width: 100px;
-	margin:14px;
+	margin:17px 2px 0px -10px;
 }
 element {
     padding: 10px 10px 10px 20px;
     //vertical-align: 100.5;
    border: 0px;
-    border-radius: 20px;
-    background-color: rgba(0,0,0,1);
+    border-radius: 10px;
+    background-color: @urgent-background;
     text-color: @selected-urgent-background;
     font:inherit;
     margin: 5px;
@@ -98,16 +92,21 @@ element {
 }
 element-text {
     background-color: rgba(0,0,0,0);
-    text-color:  @selected-urgent-background;
+    text-color:  @urgent-background;
     
 }
 
 element selected.normal {
-    background-color: black;
-	border-radius: 20px;
-	text-color: @foreground;
-    border-color: @urgent-background;
+    background-color: @urgent-background;
+	border-radius: 10px;
+	text-color: @background;
+    border-color: black;
 }
+
+element-text selected {
+    text-color: @background;
+}
+
 element normal active {
     foreground: @lightblue;
 }

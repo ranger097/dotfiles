@@ -230,6 +230,7 @@ programs.steam.enable = true;
    pywal16
    pywalfox-native
    hyprshot
+   palemoon-bin
   ]; 
   
    users.users.ranger = {
