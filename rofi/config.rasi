@@ -36,7 +36,7 @@ inputbar {
     border-radius:  10px 0px 0px 10px;
     border-color: black;
     font: "Maple Mono";
- background-image: url("/home/ranger/wallpaper-script/Wallpapers/JJK_3.jpeg",width);
+ background-image: url("/home/ranger/wallpaper-script/Wallpapers/Solo_leveling_1.png",width);
  padding:300px;
 margin: 0px 10px 0px 0px;
 }

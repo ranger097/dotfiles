@@ -1,13 +1,13 @@
 format = """
-[](#a3aed2)\
-[ ](fg:#ff0000)\
-[ranger ](fg:#ffffff)\
-[on](fg:#a3aed2)\
+[](#62728A)\
+[ ](#6B91A0)\
+[ranger ](fg:#62728A)\
+[on](fg:#6B91A0)\
 $directory\
-[](fg:#769ff0)\
+[](fg:#62728A)\
 $git_branch\
 $git_status\
-[](fg:#394260)\
+[](fg:#62728A)\
 $nodejs\
 $rust\
 $golang\
@@ -20,7 +20,7 @@ $php\
 
 
 [directory]
-style = "fg:#e3e5e5"
+style = "fg:#62728A"
 format = "[ $path]($style)"
 truncation_length = 3
 truncation_symbol = ""
