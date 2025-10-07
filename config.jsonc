@@ -1,4 +1,3 @@
-                                                                                                                                                                                                                                                                                                                                /etc/xdg/waybar/config.jsonc
 // -*- mode: jsonc -*-
 {
     // "layer": "top", // Waybar at top layer
@@ -11,7 +10,7 @@
         "custom/spacer",
         "custom/logos",
         "niri/workspaces",
-        "custom/cava"
+	"custom/cava"
     ],
     "modules-center": [
         "mpris"
@@ -242,11 +241,6 @@
         "exec": "/etc/xdg/waybar/cava.sh"
     }
 }
-
-
-
-
-
 
 
 
