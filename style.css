@@ -163,6 +163,7 @@ background-color: #000000;
 color: #ebdbb2;
 padding: 5px 7px;
 border-radius: 4px;
+border: 1px solid rgba(235,219,178,0.7);
 }
 
 
@@ -172,7 +173,6 @@ border-radius: 4px;
 padding: 5px 7px;
     color: #eebd35;
     border-radius: 4px;
-        border: 1px solid #000000;
    color: #ebdbb2;
    background-color: #000000;
 }
@@ -181,9 +181,8 @@ padding: 5px 7px;
 
 #cpu {
 padding: 5px 10px;
-    color: #ffffff;
     border-radius: 4px;
-   text-shadow: -2px 2px 5px black;
+  
    border: 1px solid #000000;
 }
 
@@ -192,9 +191,7 @@ padding: 5px 10px;
 
 #memory {
 padding: 5px 10px;
-    color: #ffffff;
     border-radius: 4px;
-text-shadow: -2px 2px 5px black;
 border: 1px solid #000000;
 }
 
@@ -287,7 +284,8 @@ background: linear-gradient(90deg, #ebdbb2);
 #clock {
    
     color: #ebdbb2;
-background-color: #1d2021;
+background: linear-gradient(90deg,#000000);
+border: 1px solid rgba(235,219,178,0.7);
 
 }
 
@@ -346,7 +344,7 @@ label:focus {
 
 #cpu {
     
-    background: #1d2021;
+    background: linear-gradient(90deg,#1d2021);
     color: #ebdbb2;
     
 
@@ -354,7 +352,7 @@ label:focus {
 
 #memory {
   
-    background: #1d2021;
+    background: linear-gradient(90deg,#505050);
     color: #ebdbb2;
 
 }
@@ -379,7 +377,6 @@ label:focus {
     background: linear-gradient(90deg,#b16286,#8f3f71);
     background: #000000;
     color: #ebdbb2;
-    border: 0px solid black;
 text-shadow: -2px 2px 5px black;
 }
 
@@ -530,4 +527,3 @@ border: 1px solid #000000;
     background-color: transparent;
 
 }
- 
