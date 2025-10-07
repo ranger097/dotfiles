@@ -1,3 +1,4 @@
+                                                                                                                                                                                                                                                                                                                                /etc/xdg/waybar/config.jsonc
 // -*- mode: jsonc -*-
 {
     // "layer": "top", // Waybar at top layer
@@ -10,8 +11,7 @@
         "custom/spacer",
         "custom/logos",
         "niri/workspaces",
-        "cpu",
-        "memory"
+        "custom/cava"
     ],
     "modules-center": [
         "mpris"
@@ -19,6 +19,8 @@
     ],
     "modules-right": [
         "pulseaudio",
+        "cpu",
+        "memory",
         "battery",
         "clock",
         "custom/spacer"
@@ -231,7 +233,26 @@
 
 "custom/logos": {
 "format": "  ranger "
+},
 
 
+"custom/cava": {
+        "format": "{}",
+
+        "exec": "/etc/xdg/waybar/cava.sh"
+    }
 }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
