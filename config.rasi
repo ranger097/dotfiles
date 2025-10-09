@@ -2,8 +2,8 @@
 
 
 configuration {
-    modes: [drun, games, filebrowser, calc, emoji, combi];
-    combi-modes:  [window, run, drun, ssh, keys, filebrowser, games, emoji];
+    modes: [drun, games, filebrowser, calc];
+    combi-modes:  [window, drun, ssh, keys, filebrowser, games];
     display-drun: "󰓝";
     display-games: "";
     display-emoji: "󰱯";
@@ -27,27 +27,28 @@ window {
     border-radius: 5px;
     color: @selected-active-background;
     background-color: rgba(0, 0, 0, 0);
-    spacing: 10px;
+    spacing: 0px;
     //children:  [listview];
-	children: [inputbar, listview, mode-switcher];
-    //orientation: horizontal;
+	children: [mode-switcher,mainbox];
+    orientation: horizontal;
 	//orientation: vertical;
-   background-image: url("/home/ranger/Downloads/wallpaper-theme-converter4.png", height); 
+   background-image: url("/home/ranger/Downloads/wallpaper-theme-converter2222.png", height); 
    height : 350px;
-   width: 600px;
+   width: 620px;
    border-color: black;
    }
 
 inputbar {
-    color: black;
-    background-color:  rgba(0, 0, 0, 0);
-    border: 0px;
-    border-radius:  10px 10px 0px 10px;
-    margin: -35px 0px 0px 0px;
+    color: #000000ff;
+    background-color:  #000000ff;
+    border: 1px;
+    border-radius:  5px;
+    margin: 20px 110px -10px 15px;
     font: "Maple Mono";
- padding:13px 20px 0px 20px;
-
+    padding: 5px -50px 5px -18px ;
+    border-color: #000000;
 }
+
 prompt {
     margin:  0px;
 	padding:0px;
@@ -69,35 +70,46 @@ textbox {
 }
 
 entry {
-	placeholder: "";
+	placeholder: " Search here";
 	background-color: rgba(0,0,0,0);
 	text-size: 20px;
+    color: #000000ff;
 	
 }
 listview {
-    padding: 5px 5px 0px 5px;
     border-radius: 0px 0px 0px 0px;
     border-color: black;
     border: 0px;
-    background-color: rgba(216, 0, 0, 0);
+    background-color: rgba(255, 0, 0, 0);
     dynamic: false;
-    //lines:6;
+    lines:4;
 	scrollbar: false;
-	margin:-5px 5px -5px 5px;
+	margin: 10px  0px 0px 0px;
+    padding: 10px 10px 0px 10px;
+    
 }
+
+mainbox {
+children: [inputbar,listview];
+background-color: rgba(0, 38, 255, 0);
+padding: 10px 10px 10px 240px;
+margin: 0px -100px -7px  0px;
+}
+
+
 element {
     padding: 2px;
    border: 0px;
-    border-radius: 7px;
+    border-radius: 5px;
     text-color: #ebdbb2;
     font:inherit;
-    margin: 5px;
+    margin: 9px 100px 7px 7px;
     border-color: black;
-    
+   
 }
 element-text {
     background-color: rgba(0, 0, 0, 0);
-    text-color:  #000000ff;
+    text-color:  #ebdbb2;
     padding: 4px;
     border-radius: 7px;
     margin: 0px;
@@ -110,10 +122,10 @@ element selected {
 }
 
 element selected.normal {
-    background-color: #1d2021ff;
-	border-radius: 7px;
+    background-color: #cc2a25;
+	border-radius: 5px;
 	text-color: #ebdbb2;
-    border-color: black;
+    border-color: rgba(0,0,0,0);
 }
 
 element-text.selected {
@@ -122,33 +134,12 @@ element-text.selected {
     padding: 4px;
 }
 
-element normal active {
-    foreground: @lightblue;
-}
-element normal urgent {
-    foreground: @lightred;
-}
-element alternate normal {
-    background-color: rgba(0,0,0,0);
-}
-element alternate active {
-    background-color: rgba(0,0,0,0);
-    foreground: @lightblue;
-}
-element alternate urgent {
-    background-color: rgba(0,0,0,0);
-    foreground: @lightred;
-}
-element selected active {
-    background-color: rgba(0,0,0,0);
-    foreground: @dark;
-}
-element selected urgent {
-    background-color: rgba(0,0,0,0);
-    foreground: @dark;
-}
-element.normal.normal {
-background-color: rgba(0,0,0,0);
+
+element.normal.normal , element alternate normal  {
+background-color: #000000ff;
+border: 1px;
+
+
 }
 
 
@@ -161,23 +152,23 @@ dummy0,  dummy1 {
 }
 
 button {
-    font: "FontAwesome 22";
-    padding: 10px 10px 10px 10px;
+    font: "FontAwesome 20";
+    padding: 15px;
     border: 1px;
     border-radius: 7px;
-    background-color: #1d2021ff;
-    border-color: #000000;
+    background-color: #000000ff;
+    border-color: rgba(0,0,0,0);
     color: #ebdbb2;
-    margin: 0px 7px 7px 7px;
+    margin: 20px;
     
 }
 button selected normal {
-     font: "FontAwesome 22";
-    padding: 9px;
-    border: 0px;
+     font: "FontAwesome 20";
+    padding: 15px;
+    border: 1px;
     border-radius: 7px;
-    background-color: #000000ff;
-    border-color: #ebdbb2a4;
+    background-color: #cc2a25;
+    border-color: rgba(0,0,0,0);
     color: #ebdbb2;
 }
 error-message {
@@ -187,9 +178,14 @@ error-message {
     border: 2px;
     padding: 1em;
 }
+
 mode-switcher {
-    orientation: horizontal;
-    background-color: rgba(0,0,0,0);
-    margin: 0px 7px 7px 7px;
+    orientation: vertical;
+    background-color: rgba(55, 0, 255, 0);
+    spacing: 20px;
+    padding: 10px 20px 50px 20px;
+    margin: 0px 50px 0px -15px;
+    
 }
 
+ 
