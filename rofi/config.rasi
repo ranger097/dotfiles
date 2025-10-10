@@ -1,51 +1,44 @@
-@import "~/.cache/wal/colors-rofi-dark.rasi"
-
-
-configuration {
-    display-drun: "";
-	prompt: "";
-	font: "Maple Mono";
+* {
+   font: "JetBrains Mono 10";
+   
 }
-
-
 
 window {
     location: center;
     anchor:   center;
     transparency: "real";
     padding: 0px;
-    border:  3px;
-    border-radius: 25px;
+    border:  2px;
+    border-radius: 5px;
     color: @selected-active-background;
-    background-color: rgba(0,0,0,0.11);
-    spacing: 0;
+    background-color: rgba(0, 0, 0, 0);
+    spacing: 0px;
     //children:  [listview];
-	children: [inputbar, listview];
+	children: [mode-switcher,mainbox];
     orientation: horizontal;
 	//orientation: vertical;
-   //background-image: url("/home/ranger/wallpaper-script/Wallpapers/Dan_Da_Dan_1.png"); 
-   height : 300px;
-   width: 930px;
-   border-color: black;
+   background-image: url("/home/ranger/Downloads/dnd.png", width); 
+   height : 350px;
+   width: 700px;
+   border-color: #ebdbb2;
+   font: "Maple Mono";
    }
 
 inputbar {
-    color: @selected-active-background;
-    background-color: @selected-active-background;
-    border: 0px 3px 0px 0px;
-    border-radius:  10px 0px 0px 10px;
-    border-color: black;
+    color: #000000ff;
+    background-color:  rgba(0,0,0,0);
     font: "Maple Mono";
- background-image: url("/home/ranger/wallpaper-script/Wallpapers/Solo_leveling_1.png",width);
- padding:300px;
-margin: 0px 10px 0px 0px;
+    border-color: #ebdbb2;
+    orientation: vertical;
+    margin: -100px 0px 100px 0px;
 }
+
 prompt {
-    margin:     0px 0em 0em 0em ;
+    margin:  0px;
 	padding:0px;
-	text-color: @selected-active-background;
-	background-color: @background;
-	
+	text-color: #ebdbb2;
+	background-color: rgba(0, 0, 0, 0);
+	border-color: #ebdbb2;
 }
 
 textbox-prompt-colon {
@@ -61,77 +54,81 @@ textbox {
 }
 
 entry {
-	placeholder: "";
+	placeholder: "Search here";
 	background-color: rgba(0,0,0,0);
 	text-size: 20px;
-	
+    color: #ebdbb2;
+	border-color: #ebdbb2;
+border: 1px;
 }
 listview {
-    padding: 5px;
     border-radius: 0px 0px 0px 0px;
     border-color: black;
     border: 0px;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(255, 0, 0, 0);
     dynamic: false;
-    lines:6;
+    lines:4;
 	scrollbar: false;
-    width: 100px;
-	margin:17px 2px 0px -10px;
+	margin: 10px  90px 0px 100px;
+    padding: 10px 10px 0px 10px;
+    
 }
+
+mainbox {
+children: [inputbar,listview];
+background-color: rgba(0, 38, 255, 0);
+padding: 10px 0px 10px 200px;
+margin: -110px -40px -10px  100px;
+}
+
+
 element {
-    padding: 10px 10px 10px 20px;
-    //vertical-align: 100.5;
-   border: 0px;
-    border-radius: 10px;
-    background-color: @urgent-background;
-    text-color: @selected-urgent-background;
+    padding: 9px 0px 9px 0px;
+    border-radius: 5px;
+    text-color: #ebdbb2;
     font:inherit;
-    margin: 5px;
-    border-color: black;
+    margin: 0px -10px 20px 7px;
+    border-color: rgba(0,0,0,0);
+   font: "Maple Mono";
+}
+
+element-text {
+    background-color: rgba(0, 0, 0, 0);
+    text-color:  #838383ff;
+    padding: 4px;
+    border-radius: 7px;
+    margin: 0px;
     
 }
-element-text {
-    background-color: rgba(0,0,0,0);
-    text-color:  @urgent-background;
+
+element selected {
     
+    border: 1px solid;
 }
 
 element selected.normal {
-    background-color: @urgent-background;
-	border-radius: 10px;
-	text-color: @background;
-    border-color: black;
+    background-color: #cc2a25ff;
+    background-color: rgba(0,0,0,0);
+	border-radius: 5px;
+	text-color: #000000;
+    border-color: rgba(0,0,0,0);
 }
 
-element-text selected {
-    text-color: @background;
+element-text.selected {
+    text-color: #ebdbb2;
+    
+    padding: 4px;
 }
 
-element normal active {
-    foreground: @lightblue;
-}
-element normal urgent {
-    foreground: @lightred;
-}
-element alternate normal {
-}
-element alternate active {
-    foreground: @lightblue;
-}
-element alternate urgent {
-    foreground: @lightred;
-}
-element selected active {
-    background-color: @lightblue;
-    foreground: @dark;
-}
-element selected urgent {
-    background-color: @lightred;
-    foreground: @dark;
-}
-element normal normal {
+
+element.normal.normal , element alternate normal  {
+background-color: rgba(0,0,0,0);
+border: 1px;
+
 
 }
+
+
 vertb {
     expand: false;
     children: [ dummy0, mode-switcher, dummy1  ];
@@ -139,27 +136,28 @@ vertb {
 dummy0,  dummy1 {
     expand: true;
 }
-mode-switcher {
-    expand: false;
-    orientation: vertical;
-    spacing: 0px;
-    border: 0px 0px 0px 0px;
-}
+
 button {
-    font: "FontAwesome 22";
-    padding: 6px;
-    border: 2px 0px 2px 2px;
-    border-radius: 4px 0px 0px 4px;
-    background-color: @selected-active-background;
-    border-color: @foreground;
-    color: @foreground;
-    horizontal-align: 0.5;
+    font: "FontAwesome 20";
+    padding: 0px;
+    border: 1px;
+    border-radius: 7px;
+    background-color: rgba(0,0,0,0);
+    border-color: rgba(0,0,0,0);
+    color: #ebdbb281;
+    margin: 0px;
+    
 }
+
 button selected normal {
-    color: @selected-active-background;
-    border: 2px 0px 2px 2px;
-    background-color: @selected-active-background;
-    border-color: @foreground;
+     font: "FontAwesome 20";
+    padding: 0px;
+    border: 1px;
+    border-radius: 7px;
+    background-color: rgba(0,0,0,0);
+    border-color: rgba(0,0,0,0);
+    color:  #ebdbb2;
+    margin: 0px;
 }
 error-message {
     expand: true;
@@ -167,4 +165,17 @@ error-message {
     border-color: @selected-active-background;
     border: 2px;
     padding: 1em;
+}
+
+mode-switcher {
+    orientation: vertical;
+    background-color: rgba(0, 0, 0, 0);
+    spacing: 0px;
+    padding: 0px 0px 50px 5px;
+    margin: 40px 0px -10px 40px;
+}
+
+ #header-count {
+    enabled: false;
+    color: rgba(0,0,0,0);
 }
