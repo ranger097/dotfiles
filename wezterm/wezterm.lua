@@ -16,6 +16,9 @@ scrollbar_thumb = '#A7B7C6',
 }
 
 
+
+wezterm.mux.spawn_window { width = 60, height = 30 }
+
 config.hide_tab_bar_if_only_one_tab = true
 
 config.window_padding = {
@@ -29,15 +32,9 @@ bottom = 50
 }
 
 
--- For example, changing the initial geometry for new windows:
-config.initial_cols = 120
-config.initial_rows = 28
-
 -- or, changing the font size and color scheme.
 config.font_size = 14
 --config.font = wezterm.font("SpaceMono Nerd Font Mono", {weight = "Regular",style = "Normal"})
-
-
 
 -- Finally, return the configuration to wezterm:
 return config

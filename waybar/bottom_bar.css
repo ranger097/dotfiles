@@ -1,0 +1,125 @@
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: Maple Mono NF CN;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+window#waybar {
+    background-color: rgba(0,0,0,0);
+    border-top: 0px solid rgba(0,0,0,0);
+    color: #ffffff;
+    transition-property: background-color;
+    transition-duration: .5s;
+
+}
+
+
+
+#custom-minecraft {
+margin-bottom: 15px;
+border-radius: 0px 15px 15px 0px;
+padding: 6px 81px 6px 14px;
+border-top: 1px solid #000000;
+border-left: 0px solid #7B7A78;
+border-right: 1px solid #000000;
+border-bottom: 1px solid #000000;
+background-position: center;
+background-repeat: no-repeat;
+background-size: contain;
+font-size: 21px;
+background-color: rgba(29,19,36,0.8);
+color:#CAAE48;
+color:#7B7A78;
+transition: all 0.2s ease-in-out;
+}
+
+
+#custom-firefox {
+margin-bottom: 15px;
+border-radius: 15px 0px 0px 15px;
+padding: 6px 6px 6px 81px;
+border-top: 1px solid #000000;
+border-left: 1px solid #000000;
+border-bottom: 1px solid #000000;
+background-position: center;
+background-repeat: no-repeat;
+background-size: contain;
+font-size: 21px;
+background-color: rgba(29,19,36,0.8);
+color:#CAAE48;
+color:#7B7A78;
+transition: all 0.2s ease-in-out;
+}
+
+#custom-code,
+#custom-yt-music,
+#custom-youtube,
+#custom-ryujinx,
+#custom-discord,
+#custom-steam,
+#custom-dolphin,
+#custom-gimp,
+#custom-kdenlive,
+#custom-inkscape,
+#custom-ghostty,
+#custom-unity,
+#custom-blender,
+#custom-libreoffice,
+#custom-obs,
+#custom-shortwave,
+#custom-obsidian,
+#custom-godot,
+#custom-ardour,
+#custom-btdbattles,
+#custom-settings,
+#custom-finals,
+#custom-persona {
+margin-bottom: 15px;
+border-radius: 0px 0px 0px 0px;
+padding: 6px 10px 6px 10px;
+border-top: 1px solid #000000;
+border-left: 0px solid #7B7A78;
+border-bottom: 1px solid #000000;
+background-position: center;
+background-repeat: no-repeat;
+background-size: contain;
+font-size: 21px;
+background-color: rgba(29,19,36,0.8);
+color:#CAAE48;
+color:#7B7A78;
+transition: all 0.2s ease-in-out;
+}
+
+
+#custom-minecraft:hover,
+#custom-firefox:hover,
+#custom-code:hover,
+#custom-yt-music:hover,
+#custom-youtube:hover,
+#custom-ryujinx:hover,
+#custom-discord:hover,
+#custom-steam:hover,
+#custom-dolphin:hover,
+#custom-gimp:hover,
+#custom-kdenlive:hover,
+#custom-inkscape:hover,
+#custom-ghostty:hover,
+#custom-unity:hover,
+#custom-blender:hover,
+#custom-libreoffice:hover,
+#custom-obs:hover,
+#custom-shortwave:hover,
+#custom-obsidian:hover,
+#custom-godot:hover,
+#custom-ardour:hover,
+#custom-btdbattles:hover,
+#custom-settings:hover,
+#custom-finals:hover,
+#custom-persona:hover {
+color:#CAAE48;
+transition: all 0.2s ease-in-out;
+}
+
+
+

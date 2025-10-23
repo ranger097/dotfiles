@@ -1,13 +1,13 @@
 format = """
-[](#62728A)\
-[ ](#6B91A0)\
-[ranger ](fg:#62728A)\
-[on](fg:#6B91A0)\
+[](#CAAE48)\
+[𝖗𝖆𝖓𝖌𝖊𝖗](#CAAE48)\
+[ ](fg:#CAAE48)\
+[on](fg:#CAAE48)\
 $directory\
-[](fg:#62728A)\
+[](fg:#CAAE48)\
 $git_branch\
 $git_status\
-[](fg:#62728A)\
+[](fg:#CAAE48)\
 $nodejs\
 $rust\
 $golang\
@@ -20,7 +20,7 @@ $php\
 
 
 [directory]
-style = "fg:#62728A"
+style = "fg:#CAAE48"
 format = "[ $path]($style)"
 truncation_length = 3
 truncation_symbol = ""
@@ -31,15 +31,15 @@ truncation_symbol = ""
 "Music" = " "
 "Pictures" = " "
 "Home" = ""
-"~" = ""
+"~" = " "
 
 [git_branch]
 symbol = ""
-style = "fg:#394260"
+style = "fg:#CAAE48"
 format = '[[ $symbol $branch ](fg:#769ff0)]($style)'
 
 [git_status]
-style = "fg:#394260"
+style = "fg:#CAAE48"
 format = '[[($all_status$ahead_behind)](fg:#769ff0)]($style)'
 
 
@@ -71,13 +71,13 @@ style = "fg:#ffffff"
 
 
 [time]
-disabled = false
+disabled = true
 time_format = "%R" # Hour:Minute Format
 style = "bg:#1d2230"
-format = '[[ $time](fg:#a0a9cb)]($style)'
+format = '[[ $time](fg:#CAAE48)]($style)'
 
 
 
 
 [character]
-format = '->'
+format = ''

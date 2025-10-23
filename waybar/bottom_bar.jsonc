@@ -1,0 +1,212 @@
+// -*- mode: jsonc -*-
+{
+    // "layer": "bottom", // Waybar at top layer
+    "position": "bottom", // Waybar position (top|bottom|left|right)
+    "height": 40, // Waybar height (to be removed for auto height)
+    // "width": 1280, // Waybar width
+    "spacing": 0, // Gaps between modules (4px)
+    // Choose the order of the modules
+    "modules-left": [
+    ],
+    "modules-center": [
+	"custom/firefox",
+	"custom/code",
+	"custom/ghostty",
+	"custom/yt-music",
+	"custom/youtube",
+	"custom/ryujinx",
+	"custom/godot",
+	"custom/discord",
+	"custom/steam",
+	"custom/dolphin",
+	"custom/gimp",
+	"custom/kdenlive",
+	"custom/inkscape",
+	"custom/unity",
+	"custom/blender",
+	"custom/libreoffice",
+	"custom/obsidian",
+	"custom/obs",
+	"custom/shortwave",
+	"custom/ardour",
+	"custom/btdbattles",
+	"custom/settings",
+	"custom/finals",
+	"custom/persona",
+	"custom/minecraft"
+	
+    ],
+    "modules-right": [
+    ],
+
+"custom/firefox": {
+"format": " 󱠇 ",
+"on-click": "firefox",
+"tooltip": "firefox"
+
+},
+
+"custom/code": {
+"format": "  ",
+"on-click": "code",
+"tooltip": "vscode"
+},
+
+"custom/yt-music": {
+"format": "  ",
+"on-click": "youtube-music",
+"tooltip": "vscode"
+},
+
+"custom/youtube": {
+"format": "  ",
+"on-click": "dolphin"
+
+},
+
+"custom/ryujinx": {
+"format": " 󰟡 ",
+"on-click": "ryujinx",
+"tooltip": "nintendo"
+
+},
+
+"custom/discord": {
+"format": "  ",
+"on-click": "discord",
+"tooltip": "discord"
+
+},
+
+"custom/nautilus": {
+"format": "  ",
+"on-click": "nautilus",
+"tooltip": "nautilus"
+
+},
+
+"custom/steam": {
+"format": "  ",
+"on-click": "steam",
+"tooltip": "steam"
+
+},
+
+"custom/gimp": {
+"format": "  ",
+"on-click": "gimp",
+"tooltip": "gimp"
+
+},
+
+"custom/kdenlive": {
+"format": "  ",
+"on-click": "kdenlive",
+"tooltip": "kdenlive"
+
+},
+
+"custom/inkscape": {
+"format": "  ",
+"on-click": "inkscape",
+"tooltip": "inkscape"
+
+},
+
+
+"custom/unity": {
+"format": "  ",
+"on-click": "unity",
+"tooltip": "unity"
+
+},
+
+"custom/blender": {
+"format": "  ",
+"on-click": "blender",
+"tooltip": "blender"
+
+},
+
+"custom/libreoffice": {
+"format": "  ",
+"on-click": "libreoffice",
+"tooltip": "office"
+
+},
+
+"custom/obsidian": {
+"format": " 󰇈 ",
+"on-click": "obsidian",
+"tooltip": "obsidian"
+
+},
+
+"custom/obs": {
+"format": " 󰻿 ",
+"on-click": "obs",
+"tooltip": "obs"
+
+},
+
+"custom/shortwave": {
+"format": " 󰐻 ",
+"on-click": "shortwave",
+"tooltip": "shortwave"
+},
+
+"custom/minecraft": {
+"format": " 󰍳 ",
+"on-click": "minecraft-launcher",
+"tooltip": "minecraft"
+
+},
+
+"custom/ghostty": {
+"format": " 󰊠 ",
+"on-click": "ghostty",
+"tooltip": "ghostty"
+
+},
+
+"custom/godot": {
+"format": "  ",
+"on-click": "godot",
+"tooltip": "godot"
+
+},
+
+"custom/persona": {
+"format": "  ",
+"on-click": "steam steam://run/2161700",
+"tooltip": "persona 3 reloaded"
+
+},
+
+"custom/finals": {
+"format": " 󰸵 ",
+"on-click": "steam steam://run/2073850",
+"tooltip": "The Finals"
+
+},
+
+"custom/settings": {
+"format": " 󰈈 ",
+"on-click": "dolphin"
+
+},
+
+"custom/btdbattles": {
+"format": " 󰝴 ",
+"on-click": "steam steam://run/1276390",
+"tooltip": "battles"
+
+},
+
+"custom/ardour": {
+"format": " 󰽪 ",
+"on-click": "ardour"
+
+}
+
+}
