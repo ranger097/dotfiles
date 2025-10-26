@@ -3,8 +3,10 @@
     // "layer": "bottom", // Waybar at top layer
     "position": "bottom", // Waybar position (top|bottom|left|right)
     "height": 40, // Waybar height (to be removed for auto height)
-    // "width": 1280, // Waybar width
-    "spacing": 0, // Gaps between modules (4px)
+    "width": 990, // Waybar width
+    "spacing": 4, // Gaps between modules (4px)
+     "margin-bottom": 8,
+     	
     // Choose the order of the modules
     "modules-left": [
     ],
@@ -40,74 +42,74 @@
     ],
 
 "custom/firefox": {
-"format": " 󱠇 ",
+"format": "󱠇",
 "on-click": "firefox",
 "tooltip": "firefox"
 
 },
 
 "custom/code": {
-"format": "  ",
+"format": "",
 "on-click": "code",
 "tooltip": "vscode"
 },
 
 "custom/yt-music": {
-"format": "  ",
+"format": "",
 "on-click": "youtube-music",
 "tooltip": "vscode"
 },
 
 "custom/youtube": {
-"format": "  ",
+"format": "",
 "on-click": "dolphin"
 
 },
 
 "custom/ryujinx": {
-"format": " 󰟡 ",
+"format": "󰟡",
 "on-click": "ryujinx",
 "tooltip": "nintendo"
 
 },
 
 "custom/discord": {
-"format": "  ",
+"format": "",
 "on-click": "discord",
 "tooltip": "discord"
 
 },
 
 "custom/nautilus": {
-"format": "  ",
+"format": "",
 "on-click": "nautilus",
 "tooltip": "nautilus"
 
 },
 
 "custom/steam": {
-"format": "  ",
+"format": "",
 "on-click": "steam",
 "tooltip": "steam"
 
 },
 
 "custom/gimp": {
-"format": "  ",
+"format": "",
 "on-click": "gimp",
 "tooltip": "gimp"
 
 },
 
 "custom/kdenlive": {
-"format": "  ",
+"format": "",
 "on-click": "kdenlive",
 "tooltip": "kdenlive"
 
 },
 
 "custom/inkscape": {
-"format": "  ",
+"format": "",
 "on-click": "inkscape",
 "tooltip": "inkscape"
 
@@ -115,96 +117,96 @@
 
 
 "custom/unity": {
-"format": "  ",
+"format": "",
 "on-click": "unity",
 "tooltip": "unity"
 
 },
 
 "custom/blender": {
-"format": "  ",
+"format": "",
 "on-click": "blender",
 "tooltip": "blender"
 
 },
 
 "custom/libreoffice": {
-"format": "  ",
+"format": "",
 "on-click": "libreoffice",
 "tooltip": "office"
 
 },
 
 "custom/obsidian": {
-"format": " 󰇈 ",
+"format": "󰇈",
 "on-click": "obsidian",
 "tooltip": "obsidian"
 
 },
 
 "custom/obs": {
-"format": " 󰻿 ",
+"format": "󰻿",
 "on-click": "obs",
 "tooltip": "obs"
 
 },
 
 "custom/shortwave": {
-"format": " 󰐻 ",
+"format": "󰐻",
 "on-click": "shortwave",
 "tooltip": "shortwave"
 },
 
 "custom/minecraft": {
-"format": " 󰍳 ",
+"format": "󰍳",
 "on-click": "minecraft-launcher",
 "tooltip": "minecraft"
 
 },
 
 "custom/ghostty": {
-"format": " 󰊠 ",
+"format": "󰊠",
 "on-click": "ghostty",
 "tooltip": "ghostty"
 
 },
 
 "custom/godot": {
-"format": "  ",
+"format": "",
 "on-click": "godot",
 "tooltip": "godot"
 
 },
 
 "custom/persona": {
-"format": "  ",
+"format": "",
 "on-click": "steam steam://run/2161700",
 "tooltip": "persona 3 reloaded"
 
 },
 
 "custom/finals": {
-"format": " 󰸵 ",
+"format": "󰸵",
 "on-click": "steam steam://run/2073850",
 "tooltip": "The Finals"
 
 },
 
 "custom/settings": {
-"format": " 󰈈 ",
+"format": "󰈈",
 "on-click": "dolphin"
 
 },
 
 "custom/btdbattles": {
-"format": " 󰝴 ",
+"format": "󰝴",
 "on-click": "steam steam://run/1276390",
 "tooltip": "battles"
 
 },
 
 "custom/ardour": {
-"format": " 󰽪 ",
+"format": "󰽪",
 "on-click": "ardour"
 
 }

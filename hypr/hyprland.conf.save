@@ -37,7 +37,7 @@ monitor=,preferred,auto,auto
 
 # Set programs that you use
 $terminal = ghostty
-$fileManager = nautilus
+$fileManager = nautilis
 $menu = rofi -show drun
 
 
@@ -48,18 +48,21 @@ $menu = rofi -show drun
 # Autostart necessary processes (like notifications daemons, status bars, etc.)
 # Or execute your favorite apps at launch like this:
 
-exec-once = swww-daemon
-exec-once = waybar -c /etc/xdg/waybar/bottom_bar.jsonc -s /etc/xdg/waybar/bottom_bar.css
-exec-once = waybar -c /etc/xdg/waybar/config.jsonc -s /etc/xdg/waybar/style.css
-exec-once = python /home/ranger/waybar-theme-switcher/scripts/wallpaper-switcher.py
+
+
+exec-once = waybar
+exec-once = crystal-dock
+#exec = env WAYLAND_DISPLAY=wayland-1 hyprpanel
+#exec-once = python /home/ranger/startup-script/main.py
+exec-once = swww-daemon && swww img /home/ranger/Downloads/939177.jpg
 #############################
 ### ENVIRONMENT VARIABLES ###
 #############################
 
 # See https://wiki.hyprland.org/Configuring/Environment-variables/
 
-env = Pokemon, 40
-env = Pokemon_SIZE, 40 
+env = XCURSOR_SIZE,24
+env = HYPRCURSOR_SIZE,24
 
 env = WLR_NO_HARDWARE_CURSORS,1
 env = XCURSOR_THEME,breeze
@@ -88,9 +91,9 @@ env = XCURSOR_THEME,breeze
 
 # https://wiki.hyprland.org/Configuring/Variables/#general
 general {
-    gaps_in = 10
-    gaps_out = 15,20,15,20
-    border_size = 1
+    gaps_in = 6
+    gaps_out = 12,10,2,10
+    border_size = 2
 
 
     # https://wiki.hyprland.org/Configuring/Variables/#variable-types for info about colors
@@ -98,12 +101,12 @@ general {
   # col.inactive_border = $color4 $color11 $color8 $color1 0deg
   # col.active_border = rgba(242,71,162,1) rgba(124,108,216,1) 0deg
   # col.inactive_border = rgba(242,71,162,1) rgba(124,108,216,1) 0deg
-    col.active_border = rgba(0,0,0,1)
-    col.inactive_border = rgba(0,0,0,1)
+    col.active_border = rgba(0,0,0,1) 0deg
+    col.inactive_border = rgba(0,0,0,1) 0deg
     #animation
-    #animations {
-    #animation = borderangle, 1, 100, default, loop
-    #}
+    animations {
+    animation = borderangle, 1, 100, default, loop
+    }
 
 
 
@@ -123,8 +126,8 @@ general {
 
 # https://wiki.hyprland.org/Configuring/Variables/#decoration
 decoration {
-    rounding = 15
-    rounding_power = 2
+    rounding = 5
+    rounding_power = 3
 
     # Change transparency of focused and unfocused windows
     active_opacity = 1.0
@@ -132,23 +135,23 @@ decoration {
 
     shadow {
         enabled = false
-        range = 10
+        range = 15
         render_power = 1
-        color = rgba(0,0,0,0.4)
-        offset = -2, 2
+        color = rgba(000000ff)
+        offset = -7, 8
 	sharp = false
-        scale = 1
+        scale = 0.97
     }
 
     # https://wiki.hyprland.org/Configuring/Variables/#blur
     blur {
         enabled = true
         size = 4
-        passes = 3
-        contrast = 1.1
-        vibrancy = 1
-        brightness = 4
-        noise = 0.05
+        passes = 2
+        contrast = 2.0
+        vibrancy = 0.0
+        brightness = 0.8
+        noise = 0.0
     }
 }
 
@@ -259,20 +262,13 @@ bind = $mainMod, M, exit,
 bind = $mainMod, E, exec, $fileManager
 bind = $mainMod, V, togglefloating,
 bind = $mainMod, A, exec, $menu
+bind = $mainMod, P, exec, steam
 bind = $mainMod, J, togglesplit, # dwindle
 bind = $mainMod, B, exec, firefox
-bind = $mainMod, D, exec, $fileManager
+bind = $mainMod, D, exec, nautilus
 bind = $mainMod, T, exec, youtube-music
 bind = $mainMod, C, exec, code
 bind = $mainMod, F, exec, firefox
-bind = $mainMod, Y, exec, Vacuumtube
-bind = SUPER, O, exec, waybar -c /etc/xdg/waybar/config.jsonc -s /etc/xdg/waybar/style.css
-bind = SUPER, Z, exec, waybar -c /etc/xdg/waybar/bottom_bar.jsonc -s /etc/xdg/waybar/bottom_bar.css
-bind = SUPER, X, exec, pkill waybar && waybar -c /etc/xdg/waybar/config.jsonc -s /etc/xdg/waybar/style.css
-bind = SUPER, P, exec, pkill waybar
-
-
-
 
 # Move focus with mainMod + arrow keys
 bind = $mainMod, left, movefocus, l
@@ -345,19 +341,19 @@ windowrule = suppressevent maximize, class:.*
 
 # Fix some dragging issues with XWayland
 windowrule = nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0
-windowrule = opacity 0.8, class:com.mitchellh.ghostty
-windowrule = opacity 0.8, class:Code
-windowrule = opacity 0.8, class:com.github.th_ch.youtube_music
-windowrule = opacity 0.8, class:firefox
-windowrule = opacity 0.8, class:discord
+windowrule = opacity 0.7, class:com.mitchellh.ghostty
+windowrule = opacity 0.7, class:Code
+windowrule = opacity 0.7, class:com.github.th_ch.youtube_music
+windowrule = opacity 1, class:firefox
+windowrule = opacity 1.0, class:discord
 windowrule = opacity 1.0 override, fullscreen:1, class:.*
-windowrule = opacity 1, class:gjs
-windowrule = opacity 0.8, class:org.gnome.Nautilus
-windowrule = opacity 0.8, class:nwg-look
+windowrule = opacity 0.8, class:gjs
+windowrule = opacity 1, class:org.gnome.Nautilus
+windowrule = opacity 1, class:nwg-look
 windowrule = opacity 1.0, class:Vivaldi-stable
 windowrule = noshadow, floating:1
-windowrule = opacity 0.5 , class:^(Rofi)$
-windowrule = opacity 0.8, class:libreoffice-writer
+
+
 
 #Monitors / Display
 monitor=eDP-1, 1920x1080,0x0,1
@@ -368,5 +364,3 @@ layerrule = ignorealpha 0.1 , bar-0
 layerrule = blur, rofi
 layerrule = blur, class:gjs
 layerrule = ignorealpha 0.1 , rofi
-layerrule = blur , waybar
-layerrule = ignorealpha 0.79 , waybar

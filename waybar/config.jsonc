@@ -1,8 +1,9 @@
+
 // -*- mode: jsonc -*-
 {
     // "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 40, // Waybar height (to be removed for auto height)
+    "height": 15, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     "spacing": 0, // Gaps between modules (4px)
     // Choose the order of the modules
@@ -26,7 +27,6 @@
 	"custom/bluetooth",
 	"custom/bluetoothlabel",
         "battery",
-	"custom/clockicon",
         "clock",
 	"custom/spacer"
     ],
@@ -229,7 +229,7 @@
  "mpris": {
         "format": "{artist} - {title}",
         "format-paused": "{artist} - {title}",
-	"max-length": 70,
+	"max-length": 100,
         "player-icons": {
                 "default": "▶",
                 "mpv": "🎵"
@@ -245,8 +245,8 @@
 },
 
 "custom/logos": {
-"format":  "   ",
-"on-click": "python /home/ranger/waybar-theme-switcher/scripts/wallpaper-switcher.py"
+"format":  " ranger097 ",
+"on-click": "python /home/ranger/Github/waybar-theme-switcher/scripts/wallpaper-switcher.py"
 },
 
 
