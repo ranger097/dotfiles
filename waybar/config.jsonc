@@ -11,10 +11,9 @@
 	"custom/spacer",
 	"custom/logos",
 	"hyprland/workspaces",
-	"custom/cpuicon",
-        "cpu",
-        "custom/ramicon",
-        "memory"
+	"hyprland/window",
+	"custom/hyprpicker",
+        "custom/hyprshot",
     ],
     "modules-center": [
 	"mpris"
@@ -31,32 +30,51 @@
 	"custom/spacer"
     ],
     // Modules configuration
-    "hyprland/workspaces": {
-    "format": "{windows}",
-	"format-window-separator": " ",
-	"window-rewrite-default": "",
-	"window-rewrite": {
-		"class<com.github.th_ch.youtube_music>": "󰝚",
-		"class<firefox>": "",
-		"class<firefox> title<.*github.*>": "",
-		"foot": "", 
-		"code": "󰨞",
-		"class<com.mitchellh.ghostty>": "󰊠",
-		"class<obsidian>": "",
-		"class<VacuumTube>": "󰗃",
-		"class<gimp>": "",
-		"class<steam>": "",
-		"class<org.gnome.Nautilus>": "󱥾",
-		"class<Godot>": "",
-		"class<unityhub>": "",
-		"class<com.obsproject.Studio>": "",
-		"class<org.kde.kdenlive>": "",
-		"class<org.inkscape.Inkscape>": "",
-		"class<blender>": "",
-		"class<discord>": "",
-		"class<nm-connection-editor>": "",
-		"class<org.pulseaudio.pavucontrol>": ""
-}
+    //"hyprland/workspaces": {
+    //"format": "{windows}",
+	//"format-window-separator": " ",
+	//"window-rewrite-default": "",
+	//"window-rewrite": {
+		//"class<com.github.th_ch.youtube_music>": "󰝚",
+		//"class<firefox>": "",
+		//"class<firefox> title<.*github.*>": "",
+		//"foot": "", 
+		//"code": "󰨞",
+		//"class<com.mitchellh.ghostty>": "󰊠",
+		//"class<obsidian>": "",
+		//"class<VacuumTube>": "󰗃",
+		//"class<gimp>": "",
+		//"class<steam>": "",
+		//"class<org.gnome.Nautilus>": "󱥾",
+		//"class<Godot>": "",
+		//"class<unityhub>": "",
+		//"class<com.obsproject.Studio>": "",
+		//"class<org.kde.kdenlive>": "",
+		//"class<org.inkscape.Inkscape>": "",
+		//"class<blender>": "",
+		//"class<discord>": "",
+		//"class<nm-connection-editor>": "",
+		//"class<org.pulseaudio.pavucontrol>": ""
+//}
+"hyprland/workspaces": {
+	"format": "{icon}",
+	"format-icons": {
+		"1": "一",
+		"2": "二",
+		"3": "三",
+		"4": "四",
+		"5": "五",
+		"6": "六",
+		"7": "七",
+		"8": "八",
+		"9": "九",
+		"10": "十"
+	},
+"persistent-workspaces": {
+	"*": [ 1,2,3 ], // 2-5 on every monitor
+"HDMI-A-1": [ 4,5,6 ] // but only workspace 1 on HDMI-A-1
+	}
+
      },
     "keyboard-state": {
         "numlock": true,
@@ -227,17 +245,19 @@
 		}
     },
  "mpris": {
-        "format": "{artist} - {title}",
-        "format-paused": "{artist} - {title}",
-	"max-length": 100,
+        "format": "{player_icon} {artist} - {title}",
+        "format-paused": "{status_icon} {artist} - {title}",
+	"max-length": 110,
         "player-icons": {
-                "default": "▶",
+                "default": "󰎆 ",
                 "mpv": "🎵"
         },
         "status-icons": {
-                "paused": "⏸"
+                "paused": "󰫔 "
         },
         // "ignored-players": ["firefox"]
+	"ellipsis": "",
+	"expand" : true
 },
 
 "custom/spacer": {
@@ -245,7 +265,7 @@
 },
 
 "custom/logos": {
-"format":  " ranger097 ",
+"format":  "ranger097",
 "on-click": "python /home/ranger/Github/waybar-theme-switcher/scripts/wallpaper-switcher.py"
 },
 
@@ -301,6 +321,49 @@
 "custom/mprisicon": {
 "format": " "
 
+},
+
+"custom/hyprshot": {
+"format": "  ",
+"on-click": "hyprshot"
+
+
+},
+
+"custom/hyprpicker": {
+"format": "  ",
+"on-click": "hyprpicker"
+
+},
+
+"hyprland/window": {
+"max-length": 20,
+"format": "{initialClass}",
+"rewrite": {
+	"firefox": "Firefox",
+	"unityhub": "Unity",
+	"steam_app_1276390": "Bloons TD Battles 2",
+	"steam" : "Steam",
+	"org.kde.dolphin" : "Dolphin",
+	"de.haeckerfelix.Shortwave" : "Shortwave",
+	"Ardour-8.12.0" : "Ardour",
+	"com.obsproject.Studio" : "Studio",
+	"com.github.th_ch.youtube_music" : "Youtube Music",
+	"gimp" : "Gimp",
+	"obsidian" : "Obsidian",
+	"libreoffice-startcenter" : "Office",
+	"blender" : "Blender",
+	"discord" : "Discord",
+	"org.inkscape.Inkscape" : "Inkscape",
+	"org.kde.kdenlive" : "Kdenlive",
+	"com.mitchellh.ghostty" : "Ghostty",
+	"vacuumtube" : "Youtube",
+	"Minecraft 1.21.10" : "Minecraft",
+	"steam_app_2073850" : "The Finals",
+	"nm-connection-editor" : "Networks",
+	"blueman-manager" : "Bluetooth",
+	"org.pulseaudio.pavucontrol" : "Audio"
+	}
 }
 
 

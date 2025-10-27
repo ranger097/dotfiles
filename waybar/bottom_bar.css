@@ -12,7 +12,7 @@ window#waybar {
     transition-property: background-color;
     transition-duration: .5s;
     border-radius: 15px;
-    box-shadow: 2px 2px 2px #000000;
+    
 }
 
 #custom-code {
