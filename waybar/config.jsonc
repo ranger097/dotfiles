@@ -4,16 +4,19 @@
     // "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
     "height": 15, // Waybar height (to be removed for auto height)
-    // "width": 1280, // Waybar width
+    "width": 1586, // Waybar width
     "spacing": 0, // Gaps between modules (4px)
+    "margin-top" : 8,
     // Choose the order of the modules
     "modules-left": [
 	"custom/spacer",
+	"custom/power",
 	"custom/logos",
 	"hyprland/workspaces",
 	"hyprland/window",
 	"custom/hyprpicker",
         "custom/hyprshot",
+	"custom/shuriken"
     ],
     "modules-center": [
 	"mpris"
@@ -249,15 +252,15 @@
         "format-paused": "{status_icon} {artist} - {title}",
 	"max-length": 110,
         "player-icons": {
-                "default": "󰎆 ",
+                "default": "  ",
                 "mpv": "🎵"
         },
         "status-icons": {
-                "paused": "󰫔 "
+                "paused": "  "
         },
         // "ignored-players": ["firefox"]
 	"ellipsis": "",
-	"expand" : true
+	"expand" : "true"
 },
 
 "custom/spacer": {
@@ -277,7 +280,7 @@
 },
 
 "custom/bluetooth": {
-"format": " 󰂯",
+"format": " 󰂱",
 "on-click": "blueman-manager"
 },
 
@@ -313,7 +316,7 @@
 },
 
 "custom/bluetoothlabel": {
-"format": " Bluetooth ",
+"format": " Bluetooth",
 "on-click": "blueman-manager"
 
 },
@@ -324,7 +327,7 @@
 },
 
 "custom/hyprshot": {
-"format": "  ",
+"format": "  ",
 "on-click": "hyprshot"
 
 
@@ -364,6 +367,14 @@
 	"blueman-manager" : "Bluetooth",
 	"org.pulseaudio.pavucontrol" : "Audio"
 	}
+},
+
+"custom/shuriken": {
+"format" : "  "
+},
+
+"custom/power": {
+"format" : " ⏻ "
 }
 
 
