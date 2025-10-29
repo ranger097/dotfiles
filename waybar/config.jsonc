@@ -6,7 +6,8 @@
     "height": 15, // Waybar height (to be removed for auto height)
     "width": 1586, // Waybar width
     "spacing": 0, // Gaps between modules (4px)
-    "margin-top" : 8,
+    "margin-top" : 7,
+    "margin-bottom": 0,
     // Choose the order of the modules
     "modules-left": [
 	"custom/spacer",
@@ -269,13 +270,13 @@
 
 "custom/logos": {
 "format":  "ranger097",
-"on-click": "python /home/ranger/Github/waybar-theme-switcher/scripts/wallpaper-switcher.py"
+"on-click": "python /home/ranger/Github/waybar-theme-switcher/scripts/theme-switcher.py && waybar &&  waybar -c /home/ranger/.config/waybar/bottom_bar.jsonc -s /home/ranger/.config/waybar/bottom_bar.css"
 },
 
 
 "custom/logosoo": {
 "format": "  𝖗𝖆𝖓𝖌𝖊𝖗  ",
-"on-click": "python /home/ranger/waybar-theme-switcher/scripts/wallpaper-switcher.py"
+"on-click": "python /home/ranger/waybar-theme-switcher/scripts/wallpaper-switcher.py && waybar"
 
 },
 
