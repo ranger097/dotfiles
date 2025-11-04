@@ -6,10 +6,10 @@
 }
 
 window#waybar {
-background-color: rgba(10, 18, 25, 0.7);
+background-color: rgba(5, 3, 6, 0.7);
     border: 0.7px solid rgba(0,0,0,0);
     color: #ffffff;
-border: 2px solid #1F4968;
+border: 2px solid rgba(154,144,109,0.7);
     transition-duration: .5s;
     border-radius: 7px;
     
@@ -27,9 +27,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(26, 71, 114, 0.2);
+background-color: rgba(77, 134, 153, 0.2);
 transition: all 0.2s ease-in-out;
-color:#87a2ba;
+color:#f2eede;
 }
 
 #custom-yt-music {
@@ -44,9 +44,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(26, 71, 114, 0.2);
+background-color: rgba(77, 134, 153, 0.2);
 transition: all 0.2s ease-in-out;
-color:#87a2ba;
+color:#f2eede;
 }
 
 
@@ -62,9 +62,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(26, 71, 114, 0.2);
+background-color: rgba(77, 134, 153, 0.2);
 transition: all 0.2s ease-in-out;
-color:#87a2ba;
+color:#f2eede;
 }
 
 
@@ -80,9 +80,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(26, 71, 114, 0.2);
+background-color: rgba(77, 134, 153, 0.2);
 transition: all 0.2s ease-in-out;
-color:#87a2ba;
+color:#f2eede;
 }
 
 
@@ -98,9 +98,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(26, 71, 114, 0.2);
+background-color: rgba(77, 134, 153, 0.2);
 transition: all 0.2s ease-in-out;
-color:#87a2ba;
+color:#f2eede;
 }
 
 #custom-steam {
@@ -115,9 +115,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(26, 71, 114, 0.2);
+background-color: rgba(77, 134, 153, 0.2);
 transition: all 0.2s ease-in-out;
-color:#87a2ba;
+color:#f2eede;
 }
 
 #custom-dolphin {
@@ -132,9 +132,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(26, 71, 114, 0.2);
+background-color: rgba(77, 134, 153, 0.2);
 transition: all 0.2s ease-in-out;
-color:#87a2ba;
+color:#f2eede;
 }
 
 #custom-gimp {
@@ -151,9 +151,9 @@ background-size: contain;
 font-size: 18px;
 background-color: rgba(29,19,36,0.8);
 color:#CAAE48;
-background-color: rgba(26, 71, 114, 0.2);
+background-color: rgba(77, 134, 153, 0.2);
 transition: all 0.2s ease-in-out;
-color:#87a2ba;
+color:#f2eede;
 }
 
 #custom-kdenlive {
@@ -168,9 +168,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(26, 71, 114, 0.2);
+background-color: rgba(77, 134, 153, 0.2);
 transition: all 0.2s ease-in-out;
-color:#87a2ba;
+color:#f2eede;
 }
 
 #custom-inkscape {
@@ -185,9 +185,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(26, 71, 114, 0.2);
+background-color: rgba(77, 134, 153, 0.2);
 transition: all 0.2s ease-in-out;
-color:#87a2ba;
+color:#f2eede;
 }
 
 #custom-ghostty {
@@ -202,9 +202,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(26, 71, 114, 0.2);
+background-color: rgba(77, 134, 153, 0.2);
 transition: all 0.2s ease-in-out;
-color:#87a2ba;
+color:#f2eede;
 }
 
 #custom-unity {
@@ -219,9 +219,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(26, 71, 114, 0.2);
+background-color: rgba(77, 134, 153, 0.2);
 transition: all 0.2s ease-in-out;
-color:#87a2ba;
+color:#f2eede;
 }
 
 #custom-blender {
@@ -236,9 +236,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(26, 71, 114, 0.2);
+background-color: rgba(77, 134, 153, 0.2);
 transition: all 0.2s ease-in-out;
-color:#87a2ba;
+color:#f2eede;
 }
 
 #custom-libreoffice {
@@ -253,9 +253,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(26, 71, 114, 0.2);
+background-color: rgba(77, 134, 153, 0.2);
 transition: all 0.2s ease-in-out;
-color:#87a2ba;
+color:#f2eede;
 }
 
 #custom-obs {
@@ -270,9 +270,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(26, 71, 114, 0.2);
+background-color: rgba(77, 134, 153, 0.2);
 transition: all 0.2s ease-in-out;
-color:#87a2ba;
+color:#f2eede;
 }
 
 #custom-shortwave {
@@ -287,9 +287,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(26, 71, 114, 0.2);
+background-color: rgba(77, 134, 153, 0.2);
 transition: all 0.2s ease-in-out;
-color:#87a2ba;
+color:#f2eede;
 }
 
 #custom-obsidian {
@@ -304,9 +304,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(26, 71, 114, 0.2);
+background-color: rgba(77, 134, 153, 0.2);
 transition: all 0.2s ease-in-out;
-color:#87a2ba;
+color:#f2eede;
 }
 #custom-godot {
 margin-bottom: 8px;
@@ -320,9 +320,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(26, 71, 114, 0.2);
+background-color: rgba(77, 134, 153, 0.2);
 transition: all 0.2s ease-in-out;
-color:#87a2ba;
+color:#f2eede;
 }
 
 #custom-ardour {
@@ -337,9 +337,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(26, 71, 114, 0.2);
+background-color: rgba(77, 134, 153, 0.2);
 transition: all 0.2s ease-in-out;
-color:#87a2ba;
+color:#f2eede;
 }
 
 #custom-btdbattles {
@@ -354,9 +354,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(26, 71, 114, 0.2);
+background-color: rgba(77, 134, 153, 0.2);
 transition: all 0.2s ease-in-out;
-color:#87a2ba;
+color:#f2eede;
 }
 
 #custom-settings {
@@ -371,9 +371,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(26, 71, 114, 0.2);
+background-color: rgba(77, 134, 153, 0.2);
 transition: all 0.2s ease-in-out;
-color:#87a2ba;
+color:#f2eede;
 }
 
 #custom-finals {
@@ -388,9 +388,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(26, 71, 114, 0.2);
+background-color: rgba(77, 134, 153, 0.2);
 transition: all 0.2s ease-in-out;
-color:#87a2ba;
+color:#f2eede;
 }
 
 
@@ -406,9 +406,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(26, 71, 114, 0.2);
+background-color: rgba(77, 134, 153, 0.2);
 transition: all 0.2s ease-in-out;
-color:#87a2ba;
+color:#f2eede;
 }
 
 #custom-minecraft {
@@ -423,9 +423,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(26, 71, 114, 0.2);
+background-color: rgba(77, 134, 153, 0.2);
 transition: all 0.2s ease-in-out;
-color:#87a2ba;
+color:#f2eede;
 }
 
 #custom-firefox {
@@ -440,9 +440,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(26, 71, 114, 0.2);
+background-color: rgba(77, 134, 153, 0.2);
 transition: all 0.2s ease-in-out;
-color:#87a2ba;
+color:#f2eede;
 }
 
 #custom-minecraft:hover,
@@ -470,7 +470,7 @@ color:#87a2ba;
 #custom-settings:hover,
 #custom-finals:hover,
 #custom-persona:hover {
-background-color: rgba(10, 18, 25, 0.7);
-color:#4B394F;
+background-color: rgba(5, 3, 6, 0.7);
+color:#E8E63F;
 transition: all 0.2s ease-in-out;
 }

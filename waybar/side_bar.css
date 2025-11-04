@@ -7,19 +7,19 @@ border-radius: 7px;
 #workspaces button {
 padding-left: 5px;
 padding-right: 5px;
-padding-top: 0px;
-padding-bottom: 0px;
-margin-top: 0px;
+padding-top: 1px;
+padding-bottom: 1px;
+margin-top: 10px;
 margin-bottom: 0px;
-margin-left: 3px;
-margin-right: 3px;
+margin-left: 10px;
+margin-right: 10px;
 border-radius: 4px;
 border: 0px solid #000000;
 font-family: JetBrains Mono NF CN;
-font-size: 11px;
-font-weight: 500;
+font-size: 12px;
+font-weight: 600;
 background-color: rgba(77, 134, 153, 0.2);
-color:#f2eede;
+color:#DDD3B1;
 }
 
 #workspaces:hover {
@@ -33,13 +33,13 @@ color: #CAAE48;
 }
 
 #workspaces {
-padding-left: 8px;
-padding-right: 8px;
+padding-left: 0px;
+padding-right: 0px;
 padding-top: 0px;
 padding-bottom: 0px;
-margin-top: 8px;
-margin-bottom: 8px;
-margin-left: -5px;
+margin-top: 10px;
+margin-bottom: 10px;
+margin-left: 0px;
 margin-right: 0px;
 border-radius: 100px;
 border: 0px solid #000000;
@@ -47,12 +47,12 @@ border: 0px solid #000000;
 
 #workspaces button.active {
 background-color: rgba(77, 134, 153, 0.2);
-color:#f2eede;
+color:#DDD3B1;
 }
 
 #workspaces button.urgent {
     background-color: transparent;
-color:#f2eede;
+color:#DDD3B1;
 }
 
 #mode {
@@ -75,21 +75,21 @@ color:#f2eede;
 }
 
 #clock {
-padding-left: 11px;
-padding-right: 11px;
-padding-top: 2px;
-padding-bottom: 0px;
-margin-top: 8px;
-margin-bottom: 8px;
-margin-left: 6px;
-margin-right: 0px;
+padding-left: 3px;
+padding-right: 3px;
+padding-top: 8px;
+padding-bottom: 3px;
+margin-top: 0px;
+margin-bottom: 0px;
+margin-left: 10px;
+margin-right: 10px;
 border-radius:4px;
 border-top: 0px solid #000000;
 border-right: 0px solid #000000;
 border: 0px solid #000000;
 font-family: JetBrains Mono NF CN;
-font-size: 11px;
-font-weight: 400;
+font-size: 14px;
+font-weight: 500;
 background-color: rgba(77, 134, 153, 0.2);
 color:#DDD3B1;
 }
@@ -109,7 +109,7 @@ font-family: JetBrains Mono NF CN;
 font-size: 11px;
 font-weight: 400;
 background-color: rgba(77, 134, 153, 0.2);
-color:#f2eede;
+color:#DDD3B1;
 }
 
 #cpu {
@@ -154,7 +154,7 @@ color: #ffffff;
 #network {
 padding-left: 2px;
 padding-right: 10px;
-padding-top: 2px;
+padding-top: 0px;
 padding-bottom: 0px;
 margin-top: 8px;
 margin-bottom: 8px;
@@ -168,7 +168,7 @@ font-family: JetBrains Mono NF CN;
 font-size: 11px;
 font-weight: 400;
 background-color: rgba(77, 134, 153, 0.2);
-color:#DDD3B1;
+color:#f2eede;
 }
 
 #custom-spacer {
@@ -177,57 +177,57 @@ padding-right: 0px;
 }
 
 #custom-logos {
-padding-left: 10px;
-padding-right: 10px;
-padding-top: 2px;
-padding-bottom: 0px;
-margin-top: 8px;
-margin-bottom: 8px;
-margin-left: 0px;
-margin-right: 0px;
+padding-left: 0px;
+padding-right: 3px;
+padding-top: 1.5px;
+padding-bottom: 1.5px;
+margin-top: 10px;
+margin-bottom: 0px;
+margin-left: 10px;
+margin-right: 10px;
 border-radius: 4px;
 border: 0px solid #000000;
 font-family: JetBrains Mono NF CN;
-font-size: 11px;
+font-size: 16px;
 font-weight: 500;
 background-color: rgba(77, 134, 153, 0.2);
 color:#DDD3B1;
 }
 
 #custom-logosoo {
-padding-left: 6px;
-padding-right: 5px;
+padding-left: 0px;
+padding-right: 0px;
 padding-top: 0px;
 padding-bottom: 0px;
 margin-top: 8px;
 margin-bottom: 8px;
 margin-left: 10px;
-margin-right: 6px;
+margin-right: 10px;
 border-radius: 5px;
 border: 0px solid #000000;
 font-family: JetBrains Mono NF CN;
-font-size: 11px;
-font-weight: 400;
-background-color: rgba(255,240,207,0.2);
-color: #ffffff;
+font-size: 16px;
+font-weight: 700;
+background-color: rgba(255,240,207,0.0);
+color:#9A906D;
 }
 
 #mpris {
-padding-right: 10px;
-padding-top: 0px;
-padding-bottom: 0px;
-padding-left: 11px;
-margin-top: 8px;
-margin-bottom: 8px;
-margin-left: 0px;
-margin-right: 0px;
+padding-right: 4px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 0px;
+margin-top: 10px;
+margin-bottom: 10px;
+margin-left: 10px;
+margin-right: 10px;
 border-radius: 4px;
 border-top: 0px solid #000000;
 border-right: 0px solid #000000;
 border-bottom: 0px solid #000000;
 border: 0px solid #000000;
 font-family: JetBrains Mono NF CN;
-font-size: 11px;
+font-size: 15px;
 font-weight: 500;
 background-color: rgba(77, 134, 153, 0.2);
 color:#DDD3B1;
@@ -294,49 +294,49 @@ color: #ffffff;
 }
 
 #custom-wifiicon {
-padding-left: 10px;
-padding-right: 8px;
-padding-top: 0px;
-padding-bottom: 0px;
-margin-top: 8px;
-margin-bottom: 8px;
-margin-left: 8px;
-margin-right: 0px;
-border-radius: 4px 0px 0px 4px;
+padding-left: 0px;
+padding-right: 5px;
+padding-top: 3px;
+padding-bottom: 3px;
+margin-top: 10px;
+margin-bottom: 10px;
+margin-left: 10px;
+margin-right: 10px;
+border-radius: 4px;
 border-top: 0px solid #000000;
 border-left: 0px solid #000000;
 border-bottom: 0px solid #000000;
 font-family: JetBrains Mono NF CN;
-font-size: 11px;
+font-size: 14px;
 font-weight: 500;
 background-color: rgba(77, 134, 153, 0.2);
-color:#f2eede;
+color:#DDD3B1;
 }
 
 #custom-audioicon {
-padding-left: 11px;
-padding-right: 10px;
-padding-top: 0px;
-padding-bottom: 1px;
-margin-top: 8px;
-margin-bottom: 8px;
-margin-left: 0px;
-margin-right: 0px;
-border-radius: 4px 0px 0px 4px;
+padding-left: 0px;
+padding-right: 5px;
+padding-top: 3px;
+padding-bottom: 3px;
+margin-top: 0px;
+margin-bottom: 0px;
+margin-left: 10px;
+margin-right: 10px;
+border-radius: 4px;
 border-top: 0px solid #000000;
 border-left: 0px solid #000000;
 border-bottom: 0px solid #000000;
 font-family: JetBrains Mono NF CN;
-font-size: 11px;
+font-size: 14px;
 font-weight: 500;
 background-color: rgba(77, 134, 153, 0.2);
-color:#f2eede;
+color:#DDD3B1;
 }
 
 #custom-audio {
 padding-left: 0px;
-padding-right: 10px;
-padding-top: 2px;
+padding-right: 0px;
+padding-top: 0px;
 padding-bottom: 0px;
 margin-top: 8px;
 margin-bottom: 8px;
@@ -344,26 +344,6 @@ margin-left: 0px;
 border-radius: 0px 4px 4px 0px;
 border-top: 0px solid #000000;
 border-right: 0px solid #000000;
-border-bottom: 0px solid #000000;
-font-family: JetBrains Mono NF CN;
-font-size: 11px;
-font-weight: 500;
-background-color: rgba(77, 134, 153, 0.2);
-color:#DDD3B1;
-}
-
-#custom-bluetooth {
-padding-left: 3px;
-padding-right: 2px;
-padding-top: 0px;
-padding-bottom: 0px;
-margin-top: 8px;
-margin-bottom: 8px;
-margin-left: 6px;
-margin-right: 0px;
-border-radius: 4px 0px 0px 4px;
-border-top: 0px solid #000000;
-border-left: 0px solid #000000;
 border-bottom: 0px solid #000000;
 font-family: JetBrains Mono NF CN;
 font-size: 11px;
@@ -372,9 +352,29 @@ background-color: rgba(77, 134, 153, 0.2);
 color:#f2eede;
 }
 
+#custom-bluetooth {
+padding-left: 0px;
+padding-right: 2px;
+padding-top: 2px;
+padding-bottom: 2px;
+margin-top: 10px;
+margin-bottom: 10px;
+margin-left: 10px;
+margin-right: 10px;
+border-radius: 4px;
+border-top: 0px solid #000000;
+border-left: 0px solid #000000;
+border-bottom: 0px solid #000000;
+font-family: JetBrains Mono NF CN;
+font-size: 16px;
+font-weight: 300;
+background-color: rgba(77, 134, 153, 0.2);
+color:#DDD3B1;
+}
+
 #custom-bluetoothlabel {
-padding-left: 3px;
-padding-right: 12px;
+padding-left: 0px;
+padding-right: 0px;
 padding-top: 2px;
 padding-bottom: 0px;
 margin-top: 8px;
@@ -389,12 +389,12 @@ font-family: JetBrains Mono NF CN;
 font-size: 11px;
 font-weight: 500;
 background-color: rgba(77, 134, 153, 0.2);
-color:#DDD3B1;
+color:#f2eede;
 }
 
 #custom-clockicon {
-padding-left: 14px;
-padding-right: 8px;
+padding-left: 0px;
+padding-right: 0px;
 padding-top: 0px;
 padding-bottom: 0px;
 margin-top: 8px;
@@ -413,12 +413,12 @@ color: #ffffff;
 }
 
 #window {
-padding-right: 10px;
-padding-top: 2px;
+padding-right: 0px;
+padding-top: 0px;
 padding-bottom: 0px;
-padding-left: 10px;
-margin-top: 8px;
-margin-bottom: 8px;
+padding-left: 0px;
+margin-top: 10px;
+margin-bottom: 10px;
 margin-left: -5px;
 margin-right: 0px;
 border-radius: 4px;
@@ -430,79 +430,79 @@ font-family: JetBrains Mono NF CN;
 font-size: 11px;
 font-weight: 500;
 background-color: rgba(77, 134, 153, 0.2);
-color:#DDD3B1;
+color:#f2eede;
 }
 
 #custom-hyprshot {
-padding-right: 4px;
-padding-top: 0px;
-padding-bottom: 0px;
-padding-left: 1px;
-margin-top: 8px;
-margin-bottom: 8px;
-margin-left: 6px;
-margin-right: 0px;
+padding-right: 3px;
+padding-top: 2px;
+padding-bottom: 2px;
+padding-left: 0px;
+margin-top: 0px;
+margin-bottom: 10px;
+margin-left: 10px;
+margin-right: 10px;
 border-radius: 4px;
 border-top: 0px solid #000000;
 border-right: 0px solid #000000;
 border-bottom: 0px solid #000000;
 border: 0px solid #000000;
 font-family: JetBrains Mono NF CN;
-font-size: 11px;
-font-weight: 600;
+font-size: 16px;
+font-weight: 500;
 background-color: rgba(77, 134, 153, 0.2);
-color:#f2eede;
+color:#DDD3B1;
 }
 
 #custom-hyprpicker {
-padding-right: 4px;
-padding-top: 0px;
-padding-bottom: 0px;
-padding-left: 2px;
-margin-top: 8px;
-margin-bottom: 8px;
-margin-left: 6px;
-margin-right: 0px;
+padding-right: 2px;
+padding-top: 4px;
+padding-bottom: 4px;
+padding-left: 0px;
+margin-top: 0px;
+margin-bottom: 0px;
+margin-left: 10px;
+margin-right: 10px;
 border-radius: 4px;
 border: 2px solid #3B63A1;
 border: 2px solid #3B63A1;
 border: 2px solid #3B63A1;
 border: 0px solid #000000;
 font-family: JetBrains Mono NF CN;
-font-size: 11px;
+font-size: 12px;
 font-weight: 600;
 background-color: rgba(77, 134, 153, 0.2);
-color:#f2eede;
+color:#DDD3B1;
 }
 
 #custom-power {
-padding-right: 3px;
-padding-top: 0px;
-padding-bottom: 0px;
-padding-left: 1px;
-margin-top: 8px;
-margin-bottom: 8px;
-margin-left: 0px;
-margin-right: 6px;
+padding-right: 6px;
+padding-top: 4px;
+padding-bottom: 4px;
+padding-left: 3px;
+margin-top: 10px;
+margin-bottom: 10px;
+margin-left: 10px;
+margin-right: 10px;
 border-radius: 4px;
 border-top: 0px solid #000000;
 border-right: 0px solid #000000;
 border-bottom: 0px solid #000000;
 border: 0px solid #000000;
 font-family: JetBrains Mono NF CN;
-font-size: 11px;
+font-size: 14px;
 font-weight: 600;
 background-color: rgba(77, 134, 153, 0.2);
-color:#f2eede;
+color:#DDD3B1;
 }
 
 #custom-shuriken {
-padding-right: 4px;
+padding-right: 0px;
 padding-top: 0px;
 padding-bottom: 0px;
-padding-left: 2px;
-margin-top: 8px;
-margin-bottom: 8px;
+padding-left: 0px;
+margin-top: 2px;
+margin-bottom: 2px;
 margin-left: 6px;
 margin-right: 6px;
 border-radius: 4px;
@@ -514,5 +514,5 @@ font-family: JetBrains Mono NF CN;
 font-size: 11px;
 font-weight: 600;
 background-color: rgba(77, 134, 153, 0.2);
-color:#f2eede;
+color:#DDD3B1;
 }
