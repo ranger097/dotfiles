@@ -1,6 +1,6 @@
 window#waybar {
-background-color: rgba(9, 7, 7, 1.0);
-border: 2px solid #897C84;
+background-color: rgba(5, 3, 6, 1.0);
+border: 2px solid #DDD3B1;
 border-radius: 0px;
 }
 
@@ -18,8 +18,8 @@ border: 0px solid #000000;
 font-family: JetBrains Mono NF CN;
 font-size: 12px;
 font-weight: 600;
-background-color: rgba(122, 133, 151, 0.2);
-color:#d2d1da;
+background-color: rgba(168, 171, 146, 0.2);
+color:#4D8699;
 }
 
 #workspaces:hover {
@@ -46,13 +46,13 @@ border: 0px solid #000000;
 }
 
 #workspaces button.active {
-background-color: rgba(122, 133, 151, 0.2);
-color:#d2d1da;
+background-color: rgba(168, 171, 146, 0.2);
+color:#4D8699;
 }
 
 #workspaces button.urgent {
     background-color: transparent;
-color:#d2d1da;
+color:#4D8699;
 }
 
 #mode {
@@ -90,8 +90,8 @@ border: 0px solid #000000;
 font-family: JetBrains Mono NF CN;
 font-size: 14px;
 font-weight: 500;
-background-color: rgba(122, 133, 151, 0.2);
-color:#d2d1da;
+background-color: rgba(168, 171, 146, 0.2);
+color:#4D8699;
 }
 
 #battery {
@@ -108,8 +108,8 @@ border: 0px solid #000000;
 font-family: JetBrains Mono NF CN;
 font-size: 11px;
 font-weight: 400;
-background-color: rgba(122, 133, 151, 0.2);
-color:#d2d1da;
+background-color: rgba(168, 171, 146, 0.2);
+color:#4D8699;
 }
 
 #cpu {
@@ -167,8 +167,8 @@ border-bottom: 0px solid #000000;
 font-family: JetBrains Mono NF CN;
 font-size: 11px;
 font-weight: 400;
-background-color: rgba(122, 133, 151, 0.2);
-color:#7A8597;
+background-color: rgba(168, 171, 146, 0.2);
+color:#A8AB92;
 }
 
 #custom-spacer {
@@ -190,8 +190,8 @@ border: 0px solid #000000;
 font-family: JetBrains Mono NF CN;
 font-size: 16px;
 font-weight: 500;
-background-color: rgba(122, 133, 151, 0.2);
-color:#d2d1da;
+background-color: rgba(168, 171, 146, 0.2);
+color:#4D8699;
 }
 
 #custom-logosoo {
@@ -209,7 +209,7 @@ font-family: JetBrains Mono NF CN;
 font-size: 16px;
 font-weight: 700;
 background-color: rgba(255,240,207,0.0);
-color:#7A8597;
+color:#A8AB92;
 }
 
 #mpris {
@@ -229,8 +229,8 @@ border: 0px solid #000000;
 font-family: JetBrains Mono NF CN;
 font-size: 15px;
 font-weight: 500;
-background-color: rgba(122, 133, 151, 0.2);
-color:#d2d1da;
+background-color: rgba(168, 171, 146, 0.2);
+color:#4D8699;
 }
 
 #custom-mprisicon {
@@ -309,8 +309,8 @@ border-bottom: 0px solid #000000;
 font-family: JetBrains Mono NF CN;
 font-size: 14px;
 font-weight: 500;
-background-color: rgba(122, 133, 151, 0.2);
-color:#d2d1da;
+background-color: rgba(168, 171, 146, 0.2);
+color:#4D8699;
 }
 
 #custom-audioicon {
@@ -329,8 +329,8 @@ border-bottom: 0px solid #000000;
 font-family: JetBrains Mono NF CN;
 font-size: 14px;
 font-weight: 500;
-background-color: rgba(122, 133, 151, 0.2);
-color:#d2d1da;
+background-color: rgba(168, 171, 146, 0.2);
+color:#4D8699;
 }
 
 #custom-audio {
@@ -348,8 +348,8 @@ border-bottom: 0px solid #000000;
 font-family: JetBrains Mono NF CN;
 font-size: 11px;
 font-weight: 500;
-background-color: rgba(122, 133, 151, 0.2);
-color:#7A8597;
+background-color: rgba(168, 171, 146, 0.2);
+color:#A8AB92;
 }
 
 #custom-bluetooth {
@@ -368,8 +368,8 @@ border-bottom: 0px solid #000000;
 font-family: JetBrains Mono NF CN;
 font-size: 16px;
 font-weight: 300;
-background-color: rgba(122, 133, 151, 0.2);
-color:#d2d1da;
+background-color: rgba(168, 171, 146, 0.2);
+color:#4D8699;
 }
 
 #custom-bluetoothlabel {
@@ -388,8 +388,8 @@ border-bottom: 0px solid #000000;
 font-family: JetBrains Mono NF CN;
 font-size: 11px;
 font-weight: 500;
-background-color: rgba(122, 133, 151, 0.2);
-color:#7A8597;
+background-color: rgba(168, 171, 146, 0.2);
+color:#A8AB92;
 }
 
 #custom-clockicon {
@@ -408,7 +408,7 @@ border-bottom: 0px solid #000000;
 font-family: JetBrains Mono NF CN;
 font-size: 11px;
 font-weight: 600;
-background-color: rgba(122, 133, 151, 0.2);
+background-color: rgba(168, 171, 146, 0.2);
 color: #ffffff;
 }
 
@@ -429,8 +429,8 @@ border: 0px solid #000000;
 font-family: JetBrains Mono NF CN;
 font-size: 11px;
 font-weight: 500;
-background-color: rgba(122, 133, 151, 0.2);
-color:#7A8597;
+background-color: rgba(168, 171, 146, 0.2);
+color:#A8AB92;
 }
 
 #custom-hyprshot {
@@ -450,8 +450,8 @@ border: 0px solid #000000;
 font-family: JetBrains Mono NF CN;
 font-size: 16px;
 font-weight: 500;
-background-color: rgba(122, 133, 151, 0.2);
-color:#d2d1da;
+background-color: rgba(168, 171, 146, 0.2);
+color:#4D8699;
 }
 
 #custom-hyprpicker {
@@ -471,8 +471,8 @@ border: 0px solid #000000;
 font-family: JetBrains Mono NF CN;
 font-size: 12px;
 font-weight: 600;
-background-color: rgba(122, 133, 151, 0.2);
-color:#d2d1da;
+background-color: rgba(168, 171, 146, 0.2);
+color:#4D8699;
 }
 
 #custom-power {
@@ -492,8 +492,8 @@ border: 0px solid #000000;
 font-family: JetBrains Mono NF CN;
 font-size: 14px;
 font-weight: 600;
-background-color: rgba(122, 133, 151, 0.2);
-color:#d2d1da;
+background-color: rgba(168, 171, 146, 0.2);
+color:#4D8699;
 }
 
 #custom-shuriken {
@@ -513,6 +513,6 @@ border: 0px solid #000000;
 font-family: JetBrains Mono NF CN;
 font-size: 11px;
 font-weight: 600;
-background-color: rgba(122, 133, 151, 0.2);
-color:#d2d1da;
+background-color: rgba(168, 171, 146, 0.2);
+color:#4D8699;
 }

@@ -6,10 +6,10 @@
     //"height": 890, // Waybar height (to be removed for auto height)
     "width": 8, // Waybar width
     "spacing": 0, // Gaps between modules (4px)
-    "margin-right" : 20,
-    "margin-top" : 20,
-    "margin-bottom" : 20,
-    "margin-left" : -16,
+    "margin-right" : 30,
+    "margin-top" : 30,
+    "margin-bottom" : 30,
+    "margin-left" : -26,
     // Choose the order of the modules
     "modules-left": [
     "custom/spacer",
