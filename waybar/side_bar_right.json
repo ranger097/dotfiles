@@ -2,38 +2,32 @@
 // -*- mode: jsonc -*-
 {
     "layer": "top", // Waybar at top layer
-    // "position": "bottom", // Waybar position (top|bottom|left|right)
-    //"height": 15, // Waybar height (to be removed for auto height)
-    //"width": 1591, // Waybar width
+    "position": "right", // Waybar position (top|bottom|left|right)
+    "height": 890, // Waybar height (to be removed for auto height)
+    "width": 8, // Waybar width
     "spacing": 0, // Gaps between modules (4px)
-    "margin-top" : 5,
+    "margin-left" : 5,
     "margin-bottom": 0,
-    "margin-left" : 4,
-     "margin-right" : 4,
     // Choose the order of the modules
     "modules-left": [
-	"custom/spacer",
-	"custom/power",
-	"custom/logos",
-	"hyprland/workspaces",
-	"hyprland/window",
-	"custom/hyprpicker",
-        "custom/hyprshot",
-	"custom/shuriken"
+    "custom/spacer",
+    "custom/logos",
+    "custom/bluetooth",
+    "custom/audioicon",
+    "custom/wifiicon",
+    "custom/hyprshot",
+    "custom/hyprpicker",
+    "mpris" 
+    
     ],
     "modules-center": [
-	"mpris"
+	"custom/logosoo"
     ],
     "modules-right": [
-	"custom/wifiicon",
-	"network",
-	"custom/audioicon",
-        "custom/audio",
-	"custom/bluetooth",
-	"custom/bluetoothlabel",
-        "battery",
-        "clock",
-	"custom/spacer"
+	"hyprland/workspaces",
+	"clock",
+	"custom/power",
+        "custom/spacer"
     ],
     // Modules configuration
     //"hyprland/workspaces": {
@@ -143,7 +137,8 @@
         // }
     },
     "clock": {
-	"format": "{:%I:%M %p}",
+	"format": "{:%I
+%M}",
         // "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "  {:%Y-%m-%d}"
@@ -169,6 +164,7 @@
         "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
     "battery": {
+	"rotate":90,
         "states": {
             // "good": 95,
             "warning": 30,
@@ -251,39 +247,47 @@
 		}
     },
  "mpris": {
-        "format": "{player_icon} {artist} - {title}",
-        "format-paused": "{status_icon} {artist} - {title}",
+        "format": "{player_icon}",
+        "format-paused": "{status_icon}",
 	"max-length": 110,
         "player-icons": {
-                "default": "  ",
+                "default": "",
                 "mpv": "🎵"
         },
         "status-icons": {
-                "paused": "  "
+                "paused": ""
         },
+	//"rotate": 0,
         // "ignored-players": ["firefox"]
 	"ellipsis": "",
 	"expand" : "true"
 },
 
 "custom/spacer": {
-  "format": " "
+  "format": ""
 },
 
 "custom/logos": {
-"format":  "ranger097",
-"on-click": "python /home/ranger/Github/waybar-theme-switcher/scripts/theme-switcher.py && waybar &&  waybar -c /home/ranger/.config/waybar/bottom_bar.jsonc -s /home/ranger/.config/waybar/bottom_bar.css"
+"format":  "󰣇",
+"on-click": "python /home/ranger/Github/waybar-theme-switcher/scripts/theme-switcher.py &&  waybar -c /home/ranger/.config/waybar/side_bar.jsonc -s /home/ranger/.config/waybar/side_bar.css"
 },
 
 
 "custom/logosoo": {
-"format": "  𝖗𝖆𝖓𝖌𝖊𝖗  ",
+"format": "
+𝖗
+𝖆
+𝖓
+𝖌
+𝖊
+𝖗
+",
 "on-click": "python /home/ranger/waybar-theme-switcher/scripts/wallpaper-switcher.py && waybar"
 
 },
 
 "custom/bluetooth": {
-"format": " 󰂱",
+"format": "󰂱",
 "on-click": "blueman-manager"
 },
 
@@ -325,19 +329,19 @@
 },
 
 "custom/mprisicon": {
-"format": " "
+"format": ""
 
 },
 
 "custom/hyprshot": {
-"format": "  ",
+"format": "",
 "on-click": "hyprshot"
 
 
 },
 
 "custom/hyprpicker": {
-"format": "  ",
+"format": "",
 "on-click": "hyprpicker"
 
 },
@@ -373,11 +377,11 @@
 },
 
 "custom/shuriken": {
-"format" : "  "
+"format" : ""
 },
 
 "custom/power": {
-"format" : " ⏻ "
+"format" : "⏻"
 }
 
 
