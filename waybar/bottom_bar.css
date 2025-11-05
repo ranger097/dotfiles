@@ -6,10 +6,10 @@
 }
 
 window#waybar {
-background-color: rgba(5, 3, 6, 1.0);
+background-color: rgba(15, 15, 15, 1.0);
     border: 0.7px solid rgba(0,0,0,0);
     color: #ffffff;
-border: 2px solid rgba(154,144,109,1.0);
+border: 2px solid #8D8D8D;
     transition-duration: .5s;
     border-radius: 0px;
     
@@ -27,9 +27,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(168, 171, 146, 0.2);
+background-color: rgba(123, 127, 128, 0.5);
 transition: all 0.2s ease-in-out;
-color:#4D8699;
+color:#8D8D8D;
 }
 
 #custom-yt-music {
@@ -44,9 +44,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(168, 171, 146, 0.2);
+background-color: rgba(123, 127, 128, 0.5);
 transition: all 0.2s ease-in-out;
-color:#4D8699;
+color:#8D8D8D;
 }
 
 
@@ -62,9 +62,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(168, 171, 146, 0.2);
+background-color: rgba(123, 127, 128, 0.5);
 transition: all 0.2s ease-in-out;
-color:#4D8699;
+color:#8D8D8D;
 }
 
 
@@ -80,9 +80,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(168, 171, 146, 0.2);
+background-color: rgba(123, 127, 128, 0.5);
 transition: all 0.2s ease-in-out;
-color:#4D8699;
+color:#8D8D8D;
 }
 
 
@@ -98,9 +98,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(168, 171, 146, 0.2);
+background-color: rgba(123, 127, 128, 0.5);
 transition: all 0.2s ease-in-out;
-color:#4D8699;
+color:#8D8D8D;
 }
 
 #custom-steam {
@@ -115,9 +115,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(168, 171, 146, 0.2);
+background-color: rgba(123, 127, 128, 0.5);
 transition: all 0.2s ease-in-out;
-color:#4D8699;
+color:#8D8D8D;
 }
 
 #custom-dolphin {
@@ -132,9 +132,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(168, 171, 146, 0.2);
+background-color: rgba(123, 127, 128, 0.5);
 transition: all 0.2s ease-in-out;
-color:#4D8699;
+color:#8D8D8D;
 }
 
 #custom-gimp {
@@ -151,9 +151,9 @@ background-size: contain;
 font-size: 18px;
 background-color: rgba(29,19,36,0.8);
 color:#CAAE48;
-background-color: rgba(168, 171, 146, 0.2);
+background-color: rgba(123, 127, 128, 0.5);
 transition: all 0.2s ease-in-out;
-color:#4D8699;
+color:#8D8D8D;
 }
 
 #custom-kdenlive {
@@ -168,9 +168,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(168, 171, 146, 0.2);
+background-color: rgba(123, 127, 128, 0.5);
 transition: all 0.2s ease-in-out;
-color:#4D8699;
+color:#8D8D8D;
 }
 
 #custom-inkscape {
@@ -185,9 +185,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(168, 171, 146, 0.2);
+background-color: rgba(123, 127, 128, 0.5);
 transition: all 0.2s ease-in-out;
-color:#4D8699;
+color:#8D8D8D;
 }
 
 #custom-ghostty {
@@ -202,9 +202,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(168, 171, 146, 0.2);
+background-color: rgba(123, 127, 128, 0.5);
 transition: all 0.2s ease-in-out;
-color:#4D8699;
+color:#8D8D8D;
 }
 
 #custom-unity {
@@ -219,9 +219,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(168, 171, 146, 0.2);
+background-color: rgba(123, 127, 128, 0.5);
 transition: all 0.2s ease-in-out;
-color:#4D8699;
+color:#8D8D8D;
 }
 
 #custom-blender {
@@ -236,9 +236,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(168, 171, 146, 0.2);
+background-color: rgba(123, 127, 128, 0.5);
 transition: all 0.2s ease-in-out;
-color:#4D8699;
+color:#8D8D8D;
 }
 
 #custom-libreoffice {
@@ -253,9 +253,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(168, 171, 146, 0.2);
+background-color: rgba(123, 127, 128, 0.5);
 transition: all 0.2s ease-in-out;
-color:#4D8699;
+color:#8D8D8D;
 }
 
 #custom-obs {
@@ -270,9 +270,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(168, 171, 146, 0.2);
+background-color: rgba(123, 127, 128, 0.5);
 transition: all 0.2s ease-in-out;
-color:#4D8699;
+color:#8D8D8D;
 }
 
 #custom-shortwave {
@@ -287,9 +287,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(168, 171, 146, 0.2);
+background-color: rgba(123, 127, 128, 0.5);
 transition: all 0.2s ease-in-out;
-color:#4D8699;
+color:#8D8D8D;
 }
 
 #custom-obsidian {
@@ -304,9 +304,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(168, 171, 146, 0.2);
+background-color: rgba(123, 127, 128, 0.5);
 transition: all 0.2s ease-in-out;
-color:#4D8699;
+color:#8D8D8D;
 }
 #custom-godot {
 margin-bottom: 8px;
@@ -320,9 +320,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(168, 171, 146, 0.2);
+background-color: rgba(123, 127, 128, 0.5);
 transition: all 0.2s ease-in-out;
-color:#4D8699;
+color:#8D8D8D;
 }
 
 #custom-ardour {
@@ -337,9 +337,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(168, 171, 146, 0.2);
+background-color: rgba(123, 127, 128, 0.5);
 transition: all 0.2s ease-in-out;
-color:#4D8699;
+color:#8D8D8D;
 }
 
 #custom-btdbattles {
@@ -354,9 +354,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(168, 171, 146, 0.2);
+background-color: rgba(123, 127, 128, 0.5);
 transition: all 0.2s ease-in-out;
-color:#4D8699;
+color:#8D8D8D;
 }
 
 #custom-settings {
@@ -371,9 +371,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(168, 171, 146, 0.2);
+background-color: rgba(123, 127, 128, 0.5);
 transition: all 0.2s ease-in-out;
-color:#4D8699;
+color:#8D8D8D;
 }
 
 #custom-finals {
@@ -388,9 +388,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(168, 171, 146, 0.2);
+background-color: rgba(123, 127, 128, 0.5);
 transition: all 0.2s ease-in-out;
-color:#4D8699;
+color:#8D8D8D;
 }
 
 
@@ -406,9 +406,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(168, 171, 146, 0.2);
+background-color: rgba(123, 127, 128, 0.5);
 transition: all 0.2s ease-in-out;
-color:#4D8699;
+color:#8D8D8D;
 }
 
 #custom-minecraft {
@@ -423,9 +423,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(168, 171, 146, 0.2);
+background-color: rgba(123, 127, 128, 0.5);
 transition: all 0.2s ease-in-out;
-color:#4D8699;
+color:#8D8D8D;
 }
 
 #custom-firefox {
@@ -440,9 +440,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(168, 171, 146, 0.2);
+background-color: rgba(123, 127, 128, 0.5);
 transition: all 0.2s ease-in-out;
-color:#4D8699;
+color:#8D8D8D;
 }
 
 #custom-minecraft:hover,
@@ -470,7 +470,7 @@ color:#4D8699;
 #custom-settings:hover,
 #custom-finals:hover,
 #custom-persona:hover {
-background-color: rgba(5, 3, 6, 1.0);
-color:#E8E63F;
+background-color: rgba(15, 15, 15, 1.0);
+color:#933737;
 transition: all 0.2s ease-in-out;
 }
