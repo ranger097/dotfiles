@@ -383,7 +383,8 @@
 },
 
 "custom/power": {
-"format" : "⏻"
+"format" : "⏻",
+"on-click": "exec shutdown -h now"
 }
 
 
