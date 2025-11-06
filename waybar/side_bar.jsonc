@@ -284,7 +284,7 @@
 𝖊
 𝖗
 ",
-"on-click": "python /home/ranger/waybar-theme-switcher/scripts/wallpaper-switcher.py && waybar"
+"on-click": "python /home/ranger/Github/Scripts/rofi.py"
 
 },
 

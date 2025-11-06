@@ -6,10 +6,10 @@
 }
 
 window#waybar {
-background-color: rgba(15, 15, 15, 1.0);
+background-color: rgba(13, 20, 22, 1.0);
     border: 0.7px solid rgba(0,0,0,0);
     color: #ffffff;
-border: 2px solid #8D8D8D;
+border: 2px solid #8DA7B4;
     transition-duration: .5s;
     border-radius: 0px;
     
@@ -27,9 +27,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(123, 127, 128, 0.5);
+background-color: rgba(122, 195, 155, 0.5);
 transition: all 0.2s ease-in-out;
-color:#8D8D8D;
+color:#8DA7B4;
 }
 
 #custom-yt-music {
@@ -44,9 +44,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(123, 127, 128, 0.5);
+background-color: rgba(122, 195, 155, 0.5);
 transition: all 0.2s ease-in-out;
-color:#8D8D8D;
+color:#8DA7B4;
 }
 
 
@@ -62,9 +62,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(123, 127, 128, 0.5);
+background-color: rgba(122, 195, 155, 0.5);
 transition: all 0.2s ease-in-out;
-color:#8D8D8D;
+color:#8DA7B4;
 }
 
 
@@ -80,9 +80,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(123, 127, 128, 0.5);
+background-color: rgba(122, 195, 155, 0.5);
 transition: all 0.2s ease-in-out;
-color:#8D8D8D;
+color:#8DA7B4;
 }
 
 
@@ -98,9 +98,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(123, 127, 128, 0.5);
+background-color: rgba(122, 195, 155, 0.5);
 transition: all 0.2s ease-in-out;
-color:#8D8D8D;
+color:#8DA7B4;
 }
 
 #custom-steam {
@@ -115,9 +115,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(123, 127, 128, 0.5);
+background-color: rgba(122, 195, 155, 0.5);
 transition: all 0.2s ease-in-out;
-color:#8D8D8D;
+color:#8DA7B4;
 }
 
 #custom-dolphin {
@@ -132,9 +132,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(123, 127, 128, 0.5);
+background-color: rgba(122, 195, 155, 0.5);
 transition: all 0.2s ease-in-out;
-color:#8D8D8D;
+color:#8DA7B4;
 }
 
 #custom-gimp {
@@ -151,9 +151,9 @@ background-size: contain;
 font-size: 18px;
 background-color: rgba(29,19,36,0.8);
 color:#CAAE48;
-background-color: rgba(123, 127, 128, 0.5);
+background-color: rgba(122, 195, 155, 0.5);
 transition: all 0.2s ease-in-out;
-color:#8D8D8D;
+color:#8DA7B4;
 }
 
 #custom-kdenlive {
@@ -168,9 +168,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(123, 127, 128, 0.5);
+background-color: rgba(122, 195, 155, 0.5);
 transition: all 0.2s ease-in-out;
-color:#8D8D8D;
+color:#8DA7B4;
 }
 
 #custom-inkscape {
@@ -185,9 +185,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(123, 127, 128, 0.5);
+background-color: rgba(122, 195, 155, 0.5);
 transition: all 0.2s ease-in-out;
-color:#8D8D8D;
+color:#8DA7B4;
 }
 
 #custom-ghostty {
@@ -202,9 +202,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(123, 127, 128, 0.5);
+background-color: rgba(122, 195, 155, 0.5);
 transition: all 0.2s ease-in-out;
-color:#8D8D8D;
+color:#8DA7B4;
 }
 
 #custom-unity {
@@ -219,9 +219,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(123, 127, 128, 0.5);
+background-color: rgba(122, 195, 155, 0.5);
 transition: all 0.2s ease-in-out;
-color:#8D8D8D;
+color:#8DA7B4;
 }
 
 #custom-blender {
@@ -236,9 +236,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(123, 127, 128, 0.5);
+background-color: rgba(122, 195, 155, 0.5);
 transition: all 0.2s ease-in-out;
-color:#8D8D8D;
+color:#8DA7B4;
 }
 
 #custom-libreoffice {
@@ -253,9 +253,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(123, 127, 128, 0.5);
+background-color: rgba(122, 195, 155, 0.5);
 transition: all 0.2s ease-in-out;
-color:#8D8D8D;
+color:#8DA7B4;
 }
 
 #custom-obs {
@@ -270,9 +270,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(123, 127, 128, 0.5);
+background-color: rgba(122, 195, 155, 0.5);
 transition: all 0.2s ease-in-out;
-color:#8D8D8D;
+color:#8DA7B4;
 }
 
 #custom-shortwave {
@@ -287,9 +287,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(123, 127, 128, 0.5);
+background-color: rgba(122, 195, 155, 0.5);
 transition: all 0.2s ease-in-out;
-color:#8D8D8D;
+color:#8DA7B4;
 }
 
 #custom-obsidian {
@@ -304,9 +304,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(123, 127, 128, 0.5);
+background-color: rgba(122, 195, 155, 0.5);
 transition: all 0.2s ease-in-out;
-color:#8D8D8D;
+color:#8DA7B4;
 }
 #custom-godot {
 margin-bottom: 8px;
@@ -320,9 +320,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(123, 127, 128, 0.5);
+background-color: rgba(122, 195, 155, 0.5);
 transition: all 0.2s ease-in-out;
-color:#8D8D8D;
+color:#8DA7B4;
 }
 
 #custom-ardour {
@@ -337,9 +337,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(123, 127, 128, 0.5);
+background-color: rgba(122, 195, 155, 0.5);
 transition: all 0.2s ease-in-out;
-color:#8D8D8D;
+color:#8DA7B4;
 }
 
 #custom-btdbattles {
@@ -354,9 +354,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(123, 127, 128, 0.5);
+background-color: rgba(122, 195, 155, 0.5);
 transition: all 0.2s ease-in-out;
-color:#8D8D8D;
+color:#8DA7B4;
 }
 
 #custom-settings {
@@ -371,9 +371,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(123, 127, 128, 0.5);
+background-color: rgba(122, 195, 155, 0.5);
 transition: all 0.2s ease-in-out;
-color:#8D8D8D;
+color:#8DA7B4;
 }
 
 #custom-finals {
@@ -388,9 +388,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(123, 127, 128, 0.5);
+background-color: rgba(122, 195, 155, 0.5);
 transition: all 0.2s ease-in-out;
-color:#8D8D8D;
+color:#8DA7B4;
 }
 
 
@@ -406,9 +406,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(123, 127, 128, 0.5);
+background-color: rgba(122, 195, 155, 0.5);
 transition: all 0.2s ease-in-out;
-color:#8D8D8D;
+color:#8DA7B4;
 }
 
 #custom-minecraft {
@@ -423,9 +423,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(123, 127, 128, 0.5);
+background-color: rgba(122, 195, 155, 0.5);
 transition: all 0.2s ease-in-out;
-color:#8D8D8D;
+color:#8DA7B4;
 }
 
 #custom-firefox {
@@ -440,9 +440,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 font-size: 18px;
-background-color: rgba(123, 127, 128, 0.5);
+background-color: rgba(122, 195, 155, 0.5);
 transition: all 0.2s ease-in-out;
-color:#8D8D8D;
+color:#8DA7B4;
 }
 
 #custom-minecraft:hover,
@@ -470,7 +470,7 @@ color:#8D8D8D;
 #custom-settings:hover,
 #custom-finals:hover,
 #custom-persona:hover {
-background-color: rgba(15, 15, 15, 1.0);
-color:#933737;
+background-color: rgba(13, 20, 22, 1.0);
+color:#718D99;
 transition: all 0.2s ease-in-out;
 }

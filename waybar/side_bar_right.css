@@ -1,25 +1,25 @@
 window#waybar {
-background-color: rgba(15, 15, 15, 1.0);
-border: 2px solid #8D8D8D;
+background-color: rgba(13, 20, 22, 1.0);
+border: 2px solid #8DA7B4;
 border-radius: 0px;
 }
 
 #workspaces button {
 padding-left: 5px;
 padding-right: 5px;
-padding-top: 2px;
-padding-bottom: 2px;
-margin-top: 5px;
+padding-top: 1px;
+padding-bottom: 1px;
+margin-top: 10px;
 margin-bottom: 0px;
-margin-left: 7px;
-margin-right: 7px;
+margin-left: 10px;
+margin-right: 10px;
 border-radius: 2px;
 border: 0px solid #000000;
 font-family: JetBrains Mono NF CN;
-font-size: 14px;
-font-weight: 300;
-background-color: rgba(123, 127, 128, 0.5);
-color:#7B7F80;
+font-size: 12px;
+font-weight: 600;
+background-color: rgba(122, 195, 155, 0.5);
+color:#7AC39B;
 }
 
 #workspaces:hover {
@@ -38,7 +38,7 @@ padding-right: 0px;
 padding-top: 0px;
 padding-bottom: 0px;
 margin-top: 10px;
-margin-bottom: 5px;
+margin-bottom: 10px;
 margin-left: 0px;
 margin-right: 0px;
 border-radius: 100px;
@@ -46,13 +46,13 @@ border: 0px solid #000000;
 }
 
 #workspaces button.active {
-background-color: rgba(123, 127, 128, 0.5);
-color:#7B7F80;
+background-color: rgba(122, 195, 155, 0.5);
+color:#7AC39B;
 }
 
 #workspaces button.urgent {
     background-color: transparent;
-color:#7B7F80;
+color:#7AC39B;
 }
 
 #mode {
@@ -75,14 +75,14 @@ color:#7B7F80;
 }
 
 #clock {
-padding-left: 4px;
+padding-left: 3px;
 padding-right: 3px;
-padding-top: 9px;
-padding-bottom: 6px;
+padding-top: 8px;
+padding-bottom: 3px;
 margin-top: 0px;
 margin-bottom: 0px;
-margin-left: 7px;
-margin-right: 7px;
+margin-left: 10px;
+margin-right: 10px;
 border-radius:2px;
 border-top: 0px solid #000000;
 border-right: 0px solid #000000;
@@ -90,8 +90,8 @@ border: 0px solid #000000;
 font-family: JetBrains Mono NF CN;
 font-size: 14px;
 font-weight: 500;
-background-color: rgba(123, 127, 128, 0.5);
-color:#7B7F80;
+background-color: rgba(122, 195, 155, 0.5);
+color:#7AC39B;
 }
 
 #battery {
@@ -108,8 +108,8 @@ border: 0px solid #000000;
 font-family: JetBrains Mono NF CN;
 font-size: 11px;
 font-weight: 400;
-background-color: rgba(123, 127, 128, 0.5);
-color:#7B7F80;
+background-color: rgba(122, 195, 155, 0.5);
+color:#7AC39B;
 }
 
 #cpu {
@@ -167,8 +167,8 @@ border-bottom: 0px solid #000000;
 font-family: JetBrains Mono NF CN;
 font-size: 11px;
 font-weight: 400;
-background-color: rgba(123, 127, 128, 0.5);
-color:#7B7F80;
+background-color: rgba(122, 195, 155, 0.5);
+color:#7AC39B;
 }
 
 #custom-spacer {
@@ -179,19 +179,19 @@ padding-right: 0px;
 #custom-logos {
 padding-left: 0px;
 padding-right: 3px;
-padding-top: 2px;
-padding-bottom: 3px;
-margin-top: 7px;
+padding-top: 1.5px;
+padding-bottom: 1.5px;
+margin-top: 10px;
 margin-bottom: 0px;
-margin-left: 7px;
-margin-right: 7px;
+margin-left: 10px;
+margin-right: 10px;
 border-radius: 2px;
 border: 0px solid #000000;
 font-family: JetBrains Mono NF CN;
 font-size: 16px;
 font-weight: 500;
-background-color: rgba(123, 127, 128, 0.5);
-color:#7B7F80;
+background-color: rgba(122, 195, 155, 0.5);
+color:#7AC39B;
 }
 
 #custom-logosoo {
@@ -209,18 +209,18 @@ font-family: JetBrains Mono NF CN;
 font-size: 16px;
 font-weight: 700;
 background-color: rgba(255,240,207,0.0);
-color:#7B7F80;
+color:#7AC39B;
 }
 
 #mpris {
 padding-right: 4px;
-padding-top: 4px;
-padding-bottom: 4px;
+padding-top: 3px;
+padding-bottom: 3px;
 padding-left: 0px;
-margin-top: 5px;
-margin-bottom: 5px;
-margin-left: 7px;
-margin-right: 7px;
+margin-top: 10px;
+margin-bottom: 10px;
+margin-left: 10px;
+margin-right: 10px;
 border-radius: 2px;
 border-top: 0px solid #000000;
 border-right: 0px solid #000000;
@@ -229,8 +229,8 @@ border: 0px solid #000000;
 font-family: JetBrains Mono NF CN;
 font-size: 15px;
 font-weight: 500;
-background-color: rgba(123, 127, 128, 0.5);
-color:#7B7F80;
+background-color: rgba(122, 195, 155, 0.5);
+color:#7AC39B;
 }
 
 #custom-mprisicon {
@@ -296,12 +296,12 @@ color: #ffffff;
 #custom-wifiicon {
 padding-left: 0px;
 padding-right: 5px;
-padding-top: 4px;
+padding-top: 3px;
 padding-bottom: 3px;
-margin-top: 5px;
-margin-bottom: 5px;
-margin-left: 7px;
-margin-right: 7px;
+margin-top: 10px;
+margin-bottom: 10px;
+margin-left: 10px;
+margin-right: 10px;
 border-radius: 2px;
 border-top: 0px solid #000000;
 border-left: 0px solid #000000;
@@ -309,19 +309,19 @@ border-bottom: 0px solid #000000;
 font-family: JetBrains Mono NF CN;
 font-size: 14px;
 font-weight: 500;
-background-color: rgba(123, 127, 128, 0.5);
-color:#7B7F80;
+background-color: rgba(122, 195, 155, 0.5);
+color:#7AC39B;
 }
 
 #custom-audioicon {
 padding-left: 0px;
 padding-right: 5px;
-padding-top: 4px;
-padding-bottom: 4px;
+padding-top: 3px;
+padding-bottom: 3px;
 margin-top: 0px;
 margin-bottom: 0px;
-margin-left: 7px;
-margin-right: 7px;
+margin-left: 10px;
+margin-right: 10px;
 border-radius: 2px;
 border-top: 0px solid #000000;
 border-left: 0px solid #000000;
@@ -329,8 +329,8 @@ border-bottom: 0px solid #000000;
 font-family: JetBrains Mono NF CN;
 font-size: 14px;
 font-weight: 500;
-background-color: rgba(123, 127, 128, 0.5);
-color:#7B7F80;
+background-color: rgba(122, 195, 155, 0.5);
+color:#7AC39B;
 }
 
 #custom-audio {
@@ -348,19 +348,19 @@ border-bottom: 0px solid #000000;
 font-family: JetBrains Mono NF CN;
 font-size: 11px;
 font-weight: 500;
-background-color: rgba(123, 127, 128, 0.5);
-color:#7B7F80;
+background-color: rgba(122, 195, 155, 0.5);
+color:#7AC39B;
 }
 
 #custom-bluetooth {
-padding-left: 4px;
-padding-right: 5px;
-padding-top: 3px;
-padding-bottom: 3px;
-margin-top: 5px;
-margin-bottom: 5px;
-margin-left: 7px;
-margin-right: 7px;
+padding-left: 0px;
+padding-right: 2px;
+padding-top: 2px;
+padding-bottom: 2px;
+margin-top: 10px;
+margin-bottom: 10px;
+margin-left: 10px;
+margin-right: 10px;
 border-radius: 2px;
 border-top: 0px solid #000000;
 border-left: 0px solid #000000;
@@ -368,8 +368,8 @@ border-bottom: 0px solid #000000;
 font-family: JetBrains Mono NF CN;
 font-size: 16px;
 font-weight: 300;
-background-color: rgba(123, 127, 128, 0.5);
-color:#7B7F80;
+background-color: rgba(122, 195, 155, 0.5);
+color:#7AC39B;
 }
 
 #custom-bluetoothlabel {
@@ -388,8 +388,8 @@ border-bottom: 0px solid #000000;
 font-family: JetBrains Mono NF CN;
 font-size: 11px;
 font-weight: 500;
-background-color: rgba(123, 127, 128, 0.5);
-color:#7B7F80;
+background-color: rgba(122, 195, 155, 0.5);
+color:#7AC39B;
 }
 
 #custom-clockicon {
@@ -408,7 +408,7 @@ border-bottom: 0px solid #000000;
 font-family: JetBrains Mono NF CN;
 font-size: 11px;
 font-weight: 600;
-background-color: rgba(123, 127, 128, 0.5);
+background-color: rgba(122, 195, 155, 0.5);
 color: #ffffff;
 }
 
@@ -429,19 +429,19 @@ border: 0px solid #000000;
 font-family: JetBrains Mono NF CN;
 font-size: 11px;
 font-weight: 500;
-background-color: rgba(123, 127, 128, 0.5);
-color:#7B7F80;
+background-color: rgba(122, 195, 155, 0.5);
+color:#7AC39B;
 }
 
 #custom-hyprshot {
 padding-right: 3px;
-padding-top: 3px;
-padding-bottom: 3px;
+padding-top: 2px;
+padding-bottom: 2px;
 padding-left: 0px;
 margin-top: 0px;
-margin-bottom: 5px;
-margin-left: 7px;
-margin-right: 7px;
+margin-bottom: 10px;
+margin-left: 10px;
+margin-right: 10px;
 border-radius: 2px;
 border-top: 0px solid #000000;
 border-right: 0px solid #000000;
@@ -450,19 +450,19 @@ border: 0px solid #000000;
 font-family: JetBrains Mono NF CN;
 font-size: 16px;
 font-weight: 500;
-background-color: rgba(123, 127, 128, 0.5);
-color:#7B7F80;
+background-color: rgba(122, 195, 155, 0.5);
+color:#7AC39B;
 }
 
 #custom-hyprpicker {
-padding-right: 3px;
-padding-top: 5px;
-padding-bottom: 5px;
+padding-right: 2px;
+padding-top: 4px;
+padding-bottom: 4px;
 padding-left: 0px;
 margin-top: 0px;
 margin-bottom: 0px;
-margin-left: 7px;
-margin-right: 7px;
+margin-left: 10px;
+margin-right: 10px;
 border-radius: 2px;
 border: 2px solid #3B63A1;
 border: 2px solid #3B63A1;
@@ -471,19 +471,19 @@ border: 0px solid #000000;
 font-family: JetBrains Mono NF CN;
 font-size: 12px;
 font-weight: 600;
-background-color: rgba(123, 127, 128, 0.5);
-color:#7B7F80;
+background-color: rgba(122, 195, 155, 0.5);
+color:#7AC39B;
 }
 
 #custom-power {
-padding-right: 7px;
+padding-right: 6px;
 padding-top: 4px;
 padding-bottom: 4px;
-padding-left: 5px;
-margin-top: 5px;
-margin-bottom: 7px;
-margin-left: 7px;
-margin-right: 7px;
+padding-left: 3px;
+margin-top: 10px;
+margin-bottom: 10px;
+margin-left: 10px;
+margin-right: 10px;
 border-radius: 2px;
 border-top: 0px solid #000000;
 border-right: 0px solid #000000;
@@ -491,9 +491,9 @@ border-bottom: 0px solid #000000;
 border: 0px solid #000000;
 font-family: JetBrains Mono NF CN;
 font-size: 14px;
-font-weight: 300;
-background-color: rgba(123, 127, 128, 0.5);
-color:#7B7F80;
+font-weight: 600;
+background-color: rgba(122, 195, 155, 0.5);
+color:#7AC39B;
 }
 
 #custom-shuriken {
@@ -503,8 +503,8 @@ padding-bottom: 0px;
 padding-left: 0px;
 margin-top: 2px;
 margin-bottom: 2px;
-margin-left: 10px;
-margin-right: 10px;
+margin-left: 6px;
+margin-right: 6px;
 border-radius: 2px;
 border-top: 0px solid #000000;
 border-right: 0px solid #000000;
@@ -513,6 +513,6 @@ border: 0px solid #000000;
 font-family: JetBrains Mono NF CN;
 font-size: 11px;
 font-weight: 600;
-background-color: rgba(123, 127, 128, 0.5);
-color:#7B7F80;
+background-color: rgba(122, 195, 155, 0.5);
+color:#7AC39B;
 }

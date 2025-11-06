@@ -4,7 +4,7 @@
     "layer": "top", // Waybar at top layer
     "position": "right", // Waybar position (top|bottom|left|right)
     //"height": 890, // Waybar height (to be removed for auto height)
-    "width": 20, // Waybar width
+    "width": 8, // Waybar width
     "spacing": 0, // Gaps between modules (4px)
     "margin-right" : 30,
     "margin-top" : 30,
@@ -271,7 +271,7 @@
 
 "custom/logos": {
 "format":  "󰣇",
-"on-click": "python /home/ranger/Github/waybar-theme-switcher/scripts/theme-switcher.py &&  waybar -c /home/ranger/.config/waybar/side_bar_right.jsonc -s /home/ranger/.config/waybar/side_bar_right.css"
+"on-click": "python /home/ranger/Github/waybar-theme-switcher/scripts/theme-switcher.py &&  waybar -c /home/ranger/.config/waybar/side_bar_right.jsonc -s /home/ranger/.config/waybar/side_bar.css"
 },
 
 
