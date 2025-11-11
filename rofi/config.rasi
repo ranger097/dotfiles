@@ -39,7 +39,7 @@ window {
 background-color: rgba(0, 0, 0, 0);
    height : 300px;
    width: 600px;
-border-color: #C76E8C;
+border-color: #46476A;
    font: "Maple Mono";
    }
 
@@ -91,14 +91,14 @@ listview {
 	scrollbar: false;
 	margin: -115px  -90px 0px 300px;
     padding: 20px 4px 0px 4px;
-background-image: linear-gradient( transparent,transparent , rgba(8, 7, 23, 0.8));
+background-image: linear-gradient( transparent,transparent , rgba(15, 19, 30, 0.8));
 }
 
 mainbox {
 children: [inputbar,listview];
 padding: 0px 0px 0px 0px;
 margin: 0px 0px 0px 0px;
-background-image: url('/home/ranger/Github/waybar-theme-switcher/wallpapers/wallpaper72.png', width);
+background-image: url('/home/ranger/Github/waybar-theme-switcher/wallpapers/wallhaven-og3p6m.jpg', width);
 }
 
 
@@ -114,7 +114,7 @@ border-color: rgba(0, 0, 0, 0);
 
 element-text {
 background-color: rgba(0, 0, 0, 0);
-text-color: rgba(166,193,209,1.0);
+text-color: rgba(220,131,137,1.0);
     padding: 3px 4px;
     border-radius: 0px;
     margin: -2px 100px -2px 10px;
@@ -128,15 +128,15 @@ element selected {
 
 element selected.normal {
     background-color: #cc2a25ff;
-background-color: #C76E8C;
+background-color: #46476A;
 	border-radius: 5px;
 	text-color: #000000;
 border-color: rgba(0, 0, 0, 0);
 }
 
 element-text.selected {
-text-color: rgba(8, 7, 23, 0.8);
-background-color: #C76E8C;
+text-color: rgba(15, 19, 30, 0.8);
+background-color: #46476A;
     padding: 4px;
 }
 
