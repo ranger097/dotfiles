@@ -336,8 +336,8 @@
 },
 
 "custom/hyprshot": {
-"format": "",
-"on-click": "hyprshot"
+"format": "",
+"on-click": "hyprlock"
 
 
 },

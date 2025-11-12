@@ -1,8 +1,8 @@
 format = """
 [](#CAAE48)\
-[𝖗𝖆𝖓𝖌𝖊𝖗](#CAAE48)\
+[𝖗𝖆𝖓𝖌𝖊𝖗](#55A9F4)\
 [ ](fg:#CAAE48)\
-[on](fg:#CAAE48)\
+[on](#55A9F4)\
 $directory\
 [](fg:#CAAE48)\
 $git_branch\
@@ -20,7 +20,7 @@ $php\
 
 
 [directory]
-style = "fg:#CAAE48"
+style = '#D945A9'
 format = "[ $path]($style)"
 truncation_length = 3
 truncation_symbol = ""
@@ -35,11 +35,11 @@ truncation_symbol = ""
 
 [git_branch]
 symbol = ""
-style = "fg:#CAAE48"
-format = '[[ $symbol $branch ](fg:#769ff0)]($style)'
+style = '#E6D076'
+format = '[[ $symbol $branch ](#55A9F4)]($style)'
 
 [git_status]
-style = "fg:#CAAE48"
+style = '#58A14D'
 format = '[[($all_status$ahead_behind)](fg:#769ff0)]($style)'
 
 
