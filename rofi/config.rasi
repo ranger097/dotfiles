@@ -17,7 +17,7 @@ configuration {
 }
 
 * {
-   font: "JetBrains Mono 8";
+   font: "Maple Mono NF 8";
    
 }
 
@@ -98,7 +98,7 @@ mainbox {
 children: [inputbar,listview];
 padding: 0px 0px 0px 0px;
 margin: 0px 0px 0px 0px;
-background-image: url('/home/ranger/Github/waybar-theme-switcher/wallpapers/wallhaven-og3p6m.jpg', width);
+background-image: url('/home/ranger/Github/waybar-theme-switcher/wallpapers/wallhaven-5wlpq1.jpg', width);
 }
 
 
