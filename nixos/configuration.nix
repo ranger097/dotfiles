@@ -159,6 +159,7 @@ adwaita-qt6
 kdePackages.qt6ct
 hyprcursor
 hyprlock
+protonvpn-gui
 ];
 
 environment.sessionVariables = {
