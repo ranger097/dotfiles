@@ -1,8 +1,10 @@
 #ranger097
 
 #FONT_SETTINGS
-font-family = Maple Mono
-
+font-family = Maple Mono NF
+font-size = 14
+font-style-bold = SemiBold
+font-style = Regular
 #WINDOW_SETTINGS
 window-padding-x = 20
 window-padding-y = 20

@@ -21,6 +21,7 @@ nvidiaSettings = true;
 package = config.boot.kernelPackages.nvidiaPackages.stable;
 };
 
+security.polkit.enable = true;
 
 
 
@@ -32,15 +33,19 @@ package = config.boot.kernelPackages.nvidiaPackages.stable;
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
   boot.initrd.luks.devices."luks-1997167d-6340-4911-b856-b88bdd43c13d".device = "/dev/disk/by-uuid/1997167d-6340-4911-b856-b88bdd43c13d";
-  networking.hostName = "pokemon"; # Define your hostname.
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
+
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
+
   # Enable networking
-  networking.networkmanager.enable = true;
+  networking.hostName = "pokemon"; # Define your hostname.
+  networking.networkmanager.enable = true;  
+
+
+
 
   # Set your time zone.
   time.timeZone = "America/New_York";
@@ -144,7 +149,6 @@ blueman
 networkmanager
 ranger
 nodejs
-vite
 ghostty
 swww
 rofi
@@ -160,6 +164,13 @@ kdePackages.qt6ct
 hyprcursor
 hyprlock
 protonvpn-gui
+brightnessctl
+discord
+libreoffice-fresh
+python3
+wlogout
+hyprpolkitagent
+playerctl
 ];
 
 environment.sessionVariables = {
@@ -167,6 +178,25 @@ QT_QPA_PLATFORM = "wayland";
 QT_QPA_PLATFORMTHEME="qt5ct";
 NIXOS_OZONE_WL=1;
 };
+
+
+services.logind.settings.Login = {
+  lidSwitch = "ignore";
+  lidSwitchDocked = "ignore";
+  lidSwitchExternalPower = "ignore";
+};
+
+fonts.packages = with pkgs;[
+maple-mono.Normal-NF-CN-unhinted
+];
+
+fonts.fontconfig = {
+antialias = true;
+hinting.enable = true;
+subpixel.rgba = "rgb";
+};
+
+fonts.fontconfig.defaultFonts.monospace = [ "Maple Mono NF CN" ];
 
 
 programs.steam.enable = true;

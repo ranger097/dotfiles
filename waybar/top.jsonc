@@ -1,0 +1,89 @@
+
+// -*- mode: jsonc -*-
+{
+    "layer": "top", // Waybar at top layer
+    // "position": "bottom", // Waybar position (top|bottom|left|right)
+    "height": 5, // Waybar height (to be removed for auto height)
+    "width": 1520, // Waybar width
+    "spacing": 0, // Gaps between modules (4px)
+    "margin-top" : 0,
+    "margin-bottom": 0,
+    "margin-left" : 0,
+     "margin-right" : 0,
+    // Choose the order of the modules
+    "modules-left": [
+	"hyprland/workspaces"
+    ],
+    "modules-center": [
+    "mpris" 
+    ],
+    "modules-right": [
+        "custom/vpn_ip",
+        "clock",
+	"battery"
+    ],
+"hyprland/workspaces": {
+	"format": "{icon}",
+	"format-icons": {
+		"1": "一",
+		"2": "二",
+		"3": "三",
+		"4": "四",
+		"5": "五",
+		"6": "六",
+		"7": "七",
+		"8": "八",
+		"9": "九",
+		"10": "十"
+	},
+"persistent-workspaces": {
+	"*": [ 1,2,3,4,5,6,7,8,9 ],
+"HDMI-A-1": [ 1,2,3,4,5,6,7,8,9 ]
+	}
+
+     },
+    "clock": {
+	"format": "{:%I:%M %p}",
+        // "timezone": "America/New_York",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "  {:%Y-%m-%d}"
+    },
+    "battery": {
+        "states": {
+            // "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-full": "{icon} {capacity}%",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
+        "format-icons": ["󰁺", "󰁼", "󰁾", "󰂂", "󱟢"]
+    },
+ "mpris": {
+        "format": "{artist} - {title}",
+        "format-paused": "{artist} - {title}",
+	"max-length": 110,
+        "player-icons": {
+                "default": "  ",
+                "mpv": "🎵"
+        },
+        "status-icons": {
+                "paused": "  "
+        },
+        // "ignored-players": ["firefox"]
+	"ellipsis": "",
+	"expand" : "true"
+},
+
+"custom/vpn_ip": {
+   "format":"VPN_IP {}",
+   "exec": "curl -s https://icanhazip.com",
+   "internal": 30,
+   "on-click": "nm-connection-editor"
+
+}
+}

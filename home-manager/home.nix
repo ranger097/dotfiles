@@ -40,19 +40,28 @@ style.name = "kvantum";
 
   home.pointerCursor = {
   gtk.enable = true;
+  
+
   package = pkgs.pokemon-cursor;
-  name = "pokemon-cursor";
+  name = "Pokemon";
   size = 30;
+  hyprcursor.enable = true;
   };
   
   gtk = {
   enable = true;
      font = {
      package = pkgs.maple-mono.NF;
-     name = "MapleMono-NF";
+     name = "Maple Mono NF";
      size = 14;
      };
      
+     cursorTheme = {
+     package = pkgs.pokemon-cursor;
+     name = "Pokemon";
+     size = 30;
+     };
+
      iconTheme = {
      package = pkgs.sweet-folders;
      name = "sweet-folders";

@@ -1,0 +1,29 @@
+/* ranger097 */
+
+window#waybar {background-color: rgba(0,0,0,0);}
+
+#custom-VacuumTube,
+#custom-ProtonVpn,
+#custom-code,
+#custom-ghostty,
+#custom-steam,
+#custom-firefox, 
+#custom-discord {
+padding-top: 5px;
+padding-bottom: 5px;
+padding-left: 10px;
+padding-right: 10px;
+margin-top: 8px;
+margin-bottom: 8px;
+margin-left: 3px;
+margin-right: 3px;
+border: 1px solid #000000;
+border-radius:2px;
+font-family: Maple Mono NF;
+font-size: 11px;
+font-weight: 700;
+background-color: rgba(80,80,80,0.5);
+color:#000000;
+box-shadow: -2px 2px 2px rgba(0,0,0,0.5);
+}
+

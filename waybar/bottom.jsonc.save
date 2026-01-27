@@ -1,0 +1,94 @@
+#custom-VacuumTube {
+padding-left: 9px;
+padding-right: 9px;
+padding-top: 2px;
+padding-bottom: 0px;
+margin-top: 8px;
+margin-bottom: 8px;
+margin-left: 6px;
+margin-right: 10px;
+border-radius:4px;
+border-top: 0px solid #000000;
+border-right: 0px solid #000000;
+border: 1px solid #000000;
+font-family: Maple Mono NF;
+font-size: 11px;
+font-weight: 900;
+background-color: rgba(80,80,80,1);
+color:#000000;
+box-shadow: -2px 2px 2px rgba(0,0,0,0.5);
+}
+// -*- mode: jsonc -*-
+{
+    "layer": "top", // Waybar at top layer
+    "position": "bottom", // Waybar position (top|bottom|left|right)
+    //"height": 15, // Waybar height (to be removed for auto height)
+    "width": 1514, // Waybar width
+    "spacing": 0, // Gaps between modules (4px)
+    "margin-top" : 0,
+    "margin-bottom": 0,
+    "margin-left" : 30,
+     "margin-right" : 30,
+    // Choose the order of the modules
+    "modules-left": [
+    "custom/VacuumTube",
+    "custom/ProtonVpn"
+    ],
+    "modules-center": [
+    "custom/code"
+    ],
+    "modules-right": [
+
+
+    ],
+
+
+
+"custom/spacer": {
+  "format": ""
+},
+
+"custom/VacuumTube" {
+"format": "",
+"on-click": "VacuumTube"
+},
+
+"custom/ProtonVpn" {
+"format": "󱛍",
+"on-click": "protonvpn-app"
+},
+
+"custom/code" {
+"format": "",
+"on-click": "code"
+},
+
+"custom/ghostty" {
+"format": "",
+"on-click": "ghostty"
+},
+
+"custom/firefox" {
+"format": "󰈹",
+"on-click": "firefox"
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

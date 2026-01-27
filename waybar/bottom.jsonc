@@ -1,0 +1,71 @@
+
+// -*- mode: jsonc -*-
+{
+    "layer": "top", // Waybar at top layer
+    "position": "bottom", // Waybar position (top|bottom|left|right)
+    //"height": 15, // Waybar height (to be removed for auto height)
+    "width": 1526, // Waybar width
+    "spacing": 0, // Gaps between modules (4px)
+    "margin-top" : 0,
+    "margin-bottom": 0,
+    "margin-left" : 0,
+     "margin-right" : 0,
+    // Choose the order of the modules
+    "modules-left": [
+    "custom/VacuumTube",
+    "custom/ProtonVpn"
+    ],
+    "modules-center": [
+    "custom/code",
+    "custom/ghostty",
+    "custom/firefox"
+    ],
+    "modules-right": [
+    "custom/steam",
+    "custom/discord"
+
+    ],
+
+
+
+"custom/spacer": {
+  "format": ""
+},
+
+"custom/VacuumTube": {
+"format": " Youtube 貴方の管",
+"on-click": "VacuumTube"
+},
+
+"custom/ProtonVpn": {
+"format": "󱛍 Proton_VPN 陽子",
+"on-click": "protonvpn-app"
+},
+
+"custom/code": {
+"format": " VSCODE コード",
+"on-click": "code"
+},
+
+"custom/ghostty": {
+"format": " Ghostty 幽霊",
+"on-click": "ghostty"
+},
+
+"custom/firefox": {
+"format": "󰈹 Firefox 火狐",
+"on-click": "firefox"
+},
+
+
+"custom/steam": {
+"format": " Steam 蒸気",
+"on-click": "steam"
+},
+
+"custom/discord": {
+"format": " Discord 会話",
+"on-click": "discord"
+},
+
+}
