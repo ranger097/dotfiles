@@ -54,7 +54,19 @@ alias gii="sudo nano ~/.config/ghostty/config"
 EDITOR="code --wait"
 
 
-
+alias sendconfigs="cd ~/Github/dotfiles &&\
+rm -rf ghostty && cp -r ~/.config/ghostty/ ghostty &&\
+rm -rf home-manager && cp -r ~/.config/home-manager/ home-manager &&\
+rm -rf hypr && cp -r ~/.config/hypr/ hypr &&\ 
+rm -rf rofi && cp -r ~/.config/rofi/ rofi &&\
+rm -rf starship && mkdir starship && cp -r ~/.config/starship.toml starship/starship.toml &&\
+rm -rf vscode && mkdir vscode &&\
+cp ~/.config/Code/User/settings.json vscode/settings.json &&\
+rm -rf waybar && cp -r ~/.config/waybar/ waybar &&\
+cp ~/.bashrc shell/bash.sh &&\
+rm -rf nixos && cp -r /etc/nixos/ nixos &&\
+git add . && git commit -m 'updated configs' &&\
+git push origin main"
 
 
 

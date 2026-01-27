@@ -19,7 +19,7 @@
     "untitledEditors": false,
     "notebookEditors": false
   },
-  "editor.fontFamily": "Maple Mono NF CN",
+  "editor.fontFamily": "Maple Mono Normal NF CN",
   "editor.fontSize": 17,
   "editor.fontWeight": "500",
   "editor.lineHeight": 2.2,
@@ -86,6 +86,7 @@
 
 
 
+
   
 
 
@@ -99,7 +100,6 @@
 
   
   ],
-  "workbench.startupEditor": "none",
   "workbench.sideBar.location": "right",
   "breadcrumbs.enabled": false,
   "notebook.stickyScroll.enabled": true,
@@ -115,48 +115,36 @@
   "editor.guides.bracketPairs": true,
   "editor.scrollbar.horizontalScrollbarSize": 8,
   "editor.cursorSmoothCaretAnimation": "on",
-  "backgroundCover.imagePath": "/home/ranger/Downloads/blue.png",
-  "backgroundCover.opacity": 0.8,
+  "backgroundCover.imagePath": "/home/ranger/Github/waybar-theme-switcher/wallpapers/wallhaven-761r29.png",
   "RainbowBrackets.depreciation-notice": false,
   "backgroundCover.sizeModel": "cover",
-  "backgroundCover.blur": 0,
   "workbench.secondarySideBar.defaultVisibility": "hidden",
   "explorer.confirmDelete": false,
   "backgroundCover.randomImageFolder": "/home/ranger/.config/Code",
-  "backgroundCover.autoStatus": true,
+  "backgroundCover.autoStatus": false,
   "workbench.statusBar.visible": false,
   "editor.allowVariableFontsInAccessibilityMode": true,
-  "editor.codeLensFontFamily": "Maple Mono",
+  "editor.codeLensFontFamily": "Maple Mono NF CN",
   "editor.inlineSuggest.fontFamily": "\"Maple Mono NF CN\", \"Maple Mono\";\t",
   "debug.console.fontFamily": "\"Maple Mono NF CN\", \"Maple Mono\";\t",
   "terminal.integrated.fontLigatures.enabled": true,
-  "scm.inputFontFamily": "Maple Mono",
-  "terminal.integrated.fontFamily": "SpaceMono Nerd Font Mono",
-  "notebook.markup.fontFamily": "Maple Mono",
-  "notebook.output.fontFamily": "Maple Mono",
-  "chat.editor.fontFamily": "Maple Mono",
+  "scm.inputFontFamily": "Maple Mono NF CN",
+  "terminal.integrated.fontFamily": "Maple Mono NF CN",
+  "notebook.markup.fontFamily": "Maple Mono NF CN",
+  "notebook.output.fontFamily": "Maple Mono NF CN",
+  "chat.editor.fontFamily": "Maple Mono NF CN",
   "terminal.integrated.fontWeight": "normal",
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "terminal.integrated.fontWeightBold": "bold",
-  "workbench.colorTheme": "AlterNight",
+  "workbench.colorTheme": "Hammerhead",
   "svelte.enable-ts-plugin": true,
   "background.enabled": true,
   "lldb.suppressUpdateNotifications": true,
   "workbench.preferredHighContrastColorTheme": "Gruvbox Dark Hard",
-  "qt-core.additionalQtPaths": [
-    {
-      "name": "Qt-5.15.17-linux-g++_from_PATH",
-      "path": "/usr/bin/qmake"
-    }
-  ],
-  "qt-qml.qmlls.useQmlImportPathEnvVar": true,
 
   
 "workbench.colorCustomizations": {
-"editor.background": "#0f0f0f",
-"activityBar.background": "#0f0f0f",
-"sideBar.background": "#0f0f0f",
-"editorGroupHeader.tabsBackground": "#0f0f0f",
+
 
 
         },
@@ -184,7 +172,9 @@
           }
         },
         "terminal.explorerKind": "external",
-        "terminal.external.linuxExec": "ghostty"
+        "terminal.external.linuxExec": "ghostty",
+        "workbench.startupEditor": "none",
+        "backgroundCover.blur": 5
         
 
   
