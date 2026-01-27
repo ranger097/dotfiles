@@ -1,8 +1,8 @@
-# Edit this configuration file to define what should be installed on
-# your system.  Help is available in the configuration.nix(5) man page
-# and in the NixOS manual (accessible by running ‘nixos-help’).
+#ranger097
+
 
 { config, pkgs, ... }:
+
 
 {
   imports =
@@ -11,126 +11,160 @@
     ];
 
 
+
+#GPU_SETTINGS_START
 hardware.graphics.enable = true;
 services.xserver.videoDrivers = [ "nvidia" ];
-
 hardware.nvidia = {
 open = true;
 modesetting.enable = true;
 nvidiaSettings = true;
 package = config.boot.kernelPackages.nvidiaPackages.stable;
 };
-
-security.polkit.enable = true;
-
-
-
-  # Bootloader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
-
-  # Use latest kernel.
-  boot.kernelPackages = pkgs.linuxPackages_latest;
-
-  boot.initrd.luks.devices."luks-1997167d-6340-4911-b856-b88bdd43c13d".device = "/dev/disk/by-uuid/1997167d-6340-4911-b856-b88bdd43c13d";
-
-
-  # Configure network proxy if necessary
-  # networking.proxy.default = "http://user:password@proxy:port/";
-  # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
-
-
-  # Enable networking
-  networking.hostName = "pokemon"; # Define your hostname.
-  networking.networkmanager.enable = true;  
+#GPU_SETTINGS_END
 
 
 
-
-  # Set your time zone.
-  time.timeZone = "America/New_York";
-
-  # Select internationalisation properties.
-  i18n.defaultLocale = "en_US.UTF-8";
-
-  i18n.extraLocaleSettings = {
-    LC_ADDRESS = "en_US.UTF-8";
-    LC_IDENTIFICATION = "en_US.UTF-8";
-    LC_MEASUREMENT = "en_US.UTF-8";
-    LC_MONETARY = "en_US.UTF-8";
-    LC_NAME = "en_US.UTF-8";
-    LC_NUMERIC = "en_US.UTF-8";
-    LC_PAPER = "en_US.UTF-8";
-    LC_TELEPHONE = "en_US.UTF-8";
-    LC_TIME = "en_US.UTF-8";
+#BLUETOOTH/AUDIO_SETTINGS_START
+hardware.bluetooth.enable = true;
+services.blueman.enable = true;
+hardware.bluetooth.settings = {
+General = {
+Enable = "Source,Sink,Media,Socket";
+Experimental = true;
   };
+};
+services.pipewire.wireplumber.extraConfig."10-bluez" = {
+"monitor.bluez.properties" = {
+"bluez5.enable-sbc-xq" = true;
+"bluez5.enable-msbc" = true;
+"bluez5.enable-hw-volume" = true;
+"bluez5.roles" = [
+"hsp_hs"
+"hsp_ag"
+"hfp_hf"
+"hfp_ag"];};};
+services.pulseaudio.enable = false;
+security.rtkit.enable = true;
+services.pipewire = {
+enable = true;
+alsa.enable = true;
+alsa.support32Bit = true;
+pulse.enable = true;
+#jack.enable = true;
+#media-session.enable = true;
+};
+#BLUETOOTH/AUDIO_SETTINGS_END
 
-  # Enable the X11 windowing system.
-  # You can disable this if you're only using the Wayland session.
-  services.xserver.enable = false;
 
-  # Enable the KDE Plasma Desktop Environment.
-  
+
+
+#BOOT/SECURITY_SETTINGS_START
+boot.loader.systemd-boot.enable = true;
+boot.loader.efi.canTouchEfiVariables = true;
+boot.kernelPackages = pkgs.linuxPackages_latest;
+boot.initrd.luks.devices."luks-1997167d-6340-4911-b856-b88bdd43c13d".device = "/dev/disk/by-uuid/1997167d-6340-4911-b856-b88bdd43c13d";
+security.polkit.enable = true;
+#BOOT/SECURITY_SETTINGS_END
+
+
+
+
+#NETWORK_SETTINGS_START
+# Configure network proxy if necessary
+# networking.proxy.default = "http://user:password@proxy:port/";
+# networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
+networking.hostName = "pokemon"; # Define your hostname.
+networking.networkmanager.enable = true;
+# programs.mtr.enable = true;
+# programs.gnupg.agent = {
+#   enable = true;
+#   enableSSHSupport = true;
+# };
+# services.openssh.enable = true;
+# networking.firewall.allowedTCPPorts = [ ... ];
+# networking.firewall.allowedUDPPorts = [ ... ];  # Or disable the firewall altogether.
+# networking.firewall.enable = false;  
+#NETWORK_SETTINGS_END
+
+
+
+
+#GENERAL_SETTINGS_START
+time.timeZone = "America/New_York";
+i18n.defaultLocale = "en_US.UTF-8";
+i18n.extraLocaleSettings = {
+LC_ADDRESS = "en_US.UTF-8";
+LC_IDENTIFICATION = "en_US.UTF-8";
+LC_MEASUREMENT = "en_US.UTF-8";
+LC_MONETARY = "en_US.UTF-8";
+LC_NAME = "en_US.UTF-8";
+LC_NUMERIC = "en_US.UTF-8";
+LC_PAPER = "en_US.UTF-8";
+LC_TELEPHONE = "en_US.UTF-8";
+LC_TIME = "en_US.UTF-8";
+};
+services.xserver.xkb = {
+layout = "us";
+variant = "";
+};
+environment.variables.QT_QTA_PLATFORMTHEME = "qt5ct";
+environment.sessionVariables = {
+QT_QPA_PLATFORM = "wayland";
+QT_QPA_PLATFORMTHEME="qt5ct";
+NIXOS_OZONE_WL=1;
+};
+services.logind.settings.Login = {
+lidSwitch = "ignore";
+lidSwitchDocked = "ignore";
+lidSwitchExternalPower = "ignore";
+};
+#GENERAL_SETTINGS_END
+
+
+
+
+#DM/WM_SETTINGS_START
+services.xserver.enable = false;
 services.displayManager = {
 sddm.enable = true;
 sddm.wayland.enable = true;
-
-  autoLogin = {
-  enable = true;
-  user = "ranger";
+autoLogin = {
+enable = true;
+user = "ranger";
   };
 };
-  
-#hyprland
 programs.hyprland.enable = true;
-
-  # Configure keymap in X11
-  services.xserver.xkb = {
-    layout = "us";
-    variant = "";
-  };
-
-  # Enable CUPS to print documents.
-  services.printing.enable = true;
-
-  # Enable sound with pipewire.
-  services.pulseaudio.enable = false;
-  security.rtkit.enable = true;
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
-    # If you want to use JACK applications, uncomment this
-    #jack.enable = true;
-
-    # use the example session manager (no others are packaged yet so this is enabled by default,
-    # no need to redefine it in your config for now)
-    #media-session.enable = true;
-  };
-
-  # Enable touchpad support (enabled default in most desktopManager).
-  # services.xserver.libinput.enable = true;
-
-  # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.ranger = {
-    isNormalUser = true;
-    description = "ranger";
-    extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-      kdePackages.kate
-    #  thunderbird
-    ];
-  };
+#DM/WM_SETTINGS_END
 
 
-  # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
 
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
-  environment.systemPackages = with pkgs; [
-  #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+
+#PRINTING/TOUCHPAD_SETTINGS_START
+services.printing.enable = true;
+# services.xserver.libinput.enable = true;
+#PRINTING/TOUCHPAD_SETTINGS_END
+
+
+
+
+#USER_SETTINGS_START
+users.users.ranger = {
+isNormalUser = true;
+description = "ranger";
+extraGroups = [ "networkmanager" "wheel" ];
+packages = with pkgs; [
+kdePackages.kate
+];
+};
+#USER_SETTINGS_END
+
+
+
+
+#SYSTEM_PACKAGE_SETTINGS_START
+nixpkgs.config.allowUnfree = true;
+environment.systemPackages = with pkgs; [
 wget
 kitty
 vacuum-tube
@@ -171,63 +205,38 @@ python3
 wlogout
 hyprpolkitagent
 playerctl
+pavucontrol
+bluez
 ];
-
-environment.sessionVariables = {
-QT_QPA_PLATFORM = "wayland";
-QT_QPA_PLATFORMTHEME="qt5ct";
-NIXOS_OZONE_WL=1;
-};
+#SYSTEM_PACKAGE_SETTINGS_END
 
 
-services.logind.settings.Login = {
-  lidSwitch = "ignore";
-  lidSwitchDocked = "ignore";
-  lidSwitchExternalPower = "ignore";
-};
 
+
+#FONT_SETTINGS_START
 fonts.packages = with pkgs;[
 maple-mono.Normal-NF-CN-unhinted
 ];
-
 fonts.fontconfig = {
 antialias = true;
 hinting.enable = true;
 subpixel.rgba = "rgb";
 };
-
 fonts.fontconfig.defaultFonts.monospace = [ "Maple Mono NF CN" ];
+#FONT_SETTINGS_END
 
 
+
+
+#STEAM_SETTINGS_START
 programs.steam.enable = true;
-environment.variables.QT_QTA_PLATFORMTHEME = "qt5ct";
+#STEAM_SETTINGS_END
 
 
-  # Some programs need SUID wrappers, can be configured further or are
-  # started in user sessions.
-  # programs.mtr.enable = true;
-  # programs.gnupg.agent = {
-  #   enable = true;
-  #   enableSSHSupport = true;
-  # };
 
-  # List services that you want to enable:
 
-  # Enable the OpenSSH daemon.
-  # services.openssh.enable = true;
 
-  # Open ports in the firewall.
-  # networking.firewall.allowedTCPPorts = [ ... ];
-  # networking.firewall.allowedUDPPorts = [ ... ];
-  # Or disable the firewall altogether.
-  # networking.firewall.enable = false;
-
-  # This value determines the NixOS release from which the default
-  # settings for stateful data, like file locations and database versions
-  # on your system were taken. It‘s perfectly fine and recommended to leave
-  # this value at the release version of the first install of this system.
-  # Before changing this value read the documentation for this option
-  # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
-  system.stateVersion = "25.11"; # Did you read the comment?
-
+#PROBABLY_SHOULDNT_EDIT_SETTINGS_START
+system.stateVersion = "25.11"; # Did you read the comment?
+#PROBABLY_SHOULDNT_EDIT_SETTINGS_END
 }

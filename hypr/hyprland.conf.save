@@ -36,7 +36,7 @@ permission = /usr/(bin|local/bin)/hyprpm, plugin, allow
 general {
    #GAPS
     gaps_in = 5
-    gaps_out = 9,9,9,9
+    gaps_out = 0,9,0,9
     border_size = 1
 
    #BORDER
@@ -75,7 +75,7 @@ decoration {
     #BLUR
      blur {
         enabled = true
-        size = 10
+        size = 2
         passes = 2
         contrast = 1
         vibrancy = 0
@@ -169,7 +169,9 @@ bind = $mainMod, B, exec, firefox
 bind = $mainMod, D, exec, $fileManager
 bind = $mainMod, C, exec, code
 bind = $mainMod, F, fullscreenstate, 2
-bind = $mainMod, Z, exec, python /home/ranger/Github/Scripts/waybar_toggle.py
+bind = $mainMod, Z, exec, waybar -c ~/.config/waybar/top.jsonc -s ~/.config/waybar/top.css
+bind = $mainMod, M, exec, waybar -c ~/.config/waybar/bottom.jsonc -s ~/.config/waybar/bottom.css
+bind = $mainMod, X, exec, pkill waybar
 bind = $mainMod, V, exec, VacuumTube
 
 # Move focus with mainMod + arrow keys
@@ -234,14 +236,9 @@ windowrule = suppressevent maximize, class:.*
 windowrule = nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0
 windowrule = opacity 1.0, class:com.mitchellh.ghostty
 windowrule = opacity 0.9, class:code
-windowrule = opacity 1.0, class:com.github.th_ch.youtube_music
 windowrule = opacity 1.0, class:firefox
 windowrule = opacity 1.0, class:discord
 windowrule = opacity 1.0 override, fullscreen:1, class:.*
-windowrule = opacity 1, class:gjs
-windowrule = opacity 1.0, class:org.gnome.Nautilus
-windowrule = opacity 1.0, class:nwg-look
-windowrule = opacity 1.0, class:Vivaldi-stable
 windowrule = noshadow, floating:1
 windowrule = opacity 1 , class:^(Rofi)$
 windowrule = opacity 1.0, class:libreoffice-writer
