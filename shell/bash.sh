@@ -66,6 +66,9 @@ rm -rf waybar && cp -r ~/.config/waybar/ waybar &&\
 cp ~/.bashrc shell/bash.sh &&\
 rm -rf nixos && cp -r /etc/nixos/ nixos &&\
 git add . && git commit -m 'updated configs' &&\
+git push origin main &&\
+cd ~/Github/Scripts/ && git add . &&\
+git commit -m 'updated configs' &&\
 git push origin main"
 
 
