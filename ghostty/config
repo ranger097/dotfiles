@@ -5,13 +5,14 @@ font-family = Maple Mono NF
 font-size = 14
 font-style-bold = SemiBold
 font-style = Regular
+
 #WINDOW_SETTINGS
-window-padding-x = 20
+window-padding-x = 30
 window-padding-y = 20
 
 #BACKGROUND_SETTINGS
 background = #000000
-background-image = /home/ranger/Github/waybar-theme-switcher/wallpapers/wallpaper69.png
+background-image = /home/ranger/Github/waybar-theme-switcher/wallpapers/wallpaper73.jpg
 background-image-opacity = 0.1
 background-image-position = center
 background-image-fit = cover

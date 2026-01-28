@@ -1,201 +1,140 @@
-//@import "~/.cache/wal/colors-rofi-dark.rasi"
-
+/* ranger097 */
 
 configuration {
-    modes: [drun];
-    combi-modes:  [window, drun, ssh, keys, filebrowser, games];
-    display-drun: "";
-    display-games: "";
-    display-emoji: "󰱯";
-    display-filebrowser: "";
-    display-calc: "";
-    display-combi: "";
-	prompt: "";
-	font: "Maple Mono";
-    
-    
+modes: [drun];
+prompt: "";
+font: "Maple Mono NF";
 }
 
-* {
-   font: "Maple Mono NF 8";
-   
-}
+* { font: "Maple Mono NF 12"; }
 
 window {
-    location: center;
-    anchor:   center;
-    //x-offset: 30px;
-    transparency: "real";
-    padding: 0px;
-    border:  2px;
-    border-radius: 0px;
-    color: @selected-active-background;
-    background-color: rgba(0, 0, 0, 0);
-    spacing: 0px;
-    //children:  [listview];
-	children: [mainbox];
-    orientation: horizontal;
-	//orientation: vertical;
-background-color: rgba(0, 0, 0, 0);
-   height : 300px;
-   width: 600px;
-border-color: #46476A;
-   font: "Maple Mono";
-   }
+location: center;
+anchor: center;
+transparency: "real";
+padding: 0px;
+border: 2px;
+border-radius: 2px;
+spacing: 0px;
+children: [mainbox];
+orientation: horizontal;
+background-color: rgba(100,100,100, 0.5);
+height : 300px;
+width: 600px;
+border-color: #000000;
+padding: -109px 0px 0px 0px;
+}
 
 inputbar {
-    color: #000000ff;
-    background-color:  rgba(0, 0, 0, 0);
-    font: "Maple Mono";
-    border-color: #CAAE48;
-    orientation: vertical;
-    margin: -100px 0px 100px 0px;
-    
+color: #000000ff;
+background-color: rgba(0, 0, 0, 0);
+border-color: #CAAE48;
+orientation: horizontal;
+margin: -30px 0px 110px 0px;    
 }
 
 prompt {
-    margin:  0px;
-	padding:0px;
-	text-color: #CAAE48;
-	background-color: rgba(0, 0, 0, 0);
-	border-color: #CAAE48;
+margin: 0px;
+padding:0px;
+text-color: #CAAE48;
+background-color: rgba(0, 0, 0, 0);
+border-color: #CAAE48;
 }
 
 textbox-prompt-colon {
-        content: "";
-		str: "";
-    }
-textbox {
-    content: "";
-		str: "";
-        placeholder: "";
-	background-color: rgba(0,0,0,0);
+content: "";
+str: "";
+}
 
+textbox {
+content: "";
+str: "";
+placeholder: "";
+background-color: rgba(0,0,0,0);
 }
 
 entry {
-	placeholder: "Search here";
-	background-color: rgba(0,0,0,0);
-	text-size: 20px;
-    color: #CAAE48;
-	border-color: #CAAE48;
+placeholder: "Search here";
+background-color: rgba(0,0,0,0);
+text-size: 16px;
+color: #CAAE48;
+border-color: #CAAE48;
 border: 1px;
 }
+
 listview {
-    border-radius: 0px;
-    border-color: black;
-    border: 0px;
-    
-    dynamic: false;
-    lines:4;
-	scrollbar: false;
-	margin: -115px  -90px 0px 300px;
-    padding: 20px 4px 0px 4px;
-background-image: linear-gradient( transparent,transparent , rgba(15, 19, 30, 0.8));
+border-radius: 0px;
+border-color: black;
+border: 0px;   
+dynamic: false;
+scrollbar: false;
+margin: 0px 0px 0px 0px;
+padding: 20px 0px 0px 20px;
+//background-image: url('/home/ranger/Github/waybar-theme-switcher/wallpapers/wallhaven-kx8xkq.jpg', width);
 }
 
 mainbox {
 children: [inputbar,listview];
 padding: 0px 0px 0px 0px;
 margin: 0px 0px 0px 0px;
-background-image: url('/home/ranger/Github/waybar-theme-switcher/wallpapers/wallhaven-5wlpq1.jpg', width);
 }
 
-
 element {
-    padding: 5px 0px 5px 0px;
-    border-radius: 5px;
-    font:inherit;
-    margin: 0px 0px 0px 100px;
+padding: 5px 0px 5px 0px;
+border-radius: 5px;
+margin: 0px -20px 0px 0px;
 border-color: rgba(0, 0, 0, 0);
-    background-color: #ff0000ff;
-   font: "Maple Mono";
+background-color: #ff0000ff;
 }
 
 element-text {
 background-color: rgba(0, 0, 0, 0);
-text-color: rgba(220,131,137,1.0);
-    padding: 3px 4px;
-    border-radius: 0px;
-    margin: -2px 100px -2px 10px;
-    
+text-color: rgba(0,0,0,1.0);
+padding: 3px 4px;
+border-radius: 0px;
+margin: -2px 100px -2px 10px;    
 }
 
 element selected {
-    background-color: rgba(0, 132, 255, 1);
-    border: 2px solid;
+background-color: rgba(200, 0, 0, 0);
+border: 2px solid;
 }
 
 element selected.normal {
-    background-color: #cc2a25ff;
-background-color: #46476A;
-	border-radius: 5px;
-	text-color: #000000;
+background-color: rgba(0,0,0,1);
+border-radius: 2px;
+text-color: #000000;
 border-color: rgba(0, 0, 0, 0);
 }
 
 element-text.selected {
-text-color: rgba(15, 19, 30, 0.8);
-background-color: #46476A;
-    padding: 4px;
+text-color: rgba(255,255,255,1);
+background-color: rgba(255,0,0,0);
 }
 
-
-element.normal.normal , element alternate normal  {
+element.normal.normal,
+element alternate normal {
 background-color: rgba(0, 0, 0, 0);
 border: 1px;
-
-
-}
-
-
-vertb {
-    expand: false;
-    children: [ dummy0, mode-switcher, dummy1  ];
-}
-dummy0,  dummy1 {
-    expand: true;
 }
 
 button {
-    font: "FontAwesome 20";
-    padding: 0px;
-    border: 1px;
-    border-radius: 7px;
-    background-color: rgba(0,0,0,0);
-    border-color: rgba(0,0,0,0);
-    color: #CAAE4881;
-    margin: 0px;
-    
+padding: 0px;
+border: 1px;
+border-radius: 7px;
+background-color: rgba(0,0,0,0);
+border-color: rgba(0,0,0,0);
+color: #CAAE4881;
+margin: 0px;    
 }
 
 button selected normal {
-     font: "FontAwesome 20";
-    padding: 0px;
-    border: 1px;
-    border-radius: 7px;
-    background-color: rgba(0,0,0,0);
-    border-color: rgba(0,0,0,0);
-    color:  #CAAE48;
-    margin: 0px;
-}
-error-message {
-    expand: true;
-    background-color: red;
-    border-color: @selected-active-background;
-    border: 2px;
-    padding: 1em;
+padding: 0px;
+border: 1px;
+border-radius: 7px;
+background-color: rgba(0,0,0,0);
+border-color: rgba(0,0,0,0);
+color:  #CAAE48;
+margin: 0px;
 }
 
-mode-switcher {
-    orientation: vertical;
-    background-color: rgba(0, 0, 0, 0);
-    spacing: 0px;
-    padding: 0px 0px 50px 5px;
-    margin: 40px 0px -10px 40px;
-}
-
- #header-count {
-    enabled: false;
-    color: rgba(0,0,0,0);
-}
