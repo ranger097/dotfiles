@@ -15,7 +15,9 @@
 	"hyprland/workspaces"
     ],
     "modules-center": [
-    "mpris" 
+    "custom/spacer",
+    "mpris",
+    "custom/spacer" 
     ],
     "modules-right": [
         "custom/vpn_ip",
@@ -84,6 +86,11 @@
    "exec": "curl -s https://icanhazip.com",
    "internal": 30,
    "on-click": "nm-connection-editor"
+
+},
+
+"custom/spacer": {
+"format": " ",
 
 }
 }

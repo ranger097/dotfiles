@@ -18,6 +18,8 @@
 
 "modules-center": [
 "custom/dna",
+"custom/dna",
+"custom/dna",
 "custom/code",
 "custom/ghostty",
 "custom/firefox",
@@ -25,6 +27,8 @@
 "custom/steam",
 "custom/discord",
 "custom/hyprlock",
+"custom/dna",
+"custom/dna",
 "custom/dna"
 ],
 

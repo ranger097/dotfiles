@@ -14,36 +14,45 @@ padding-left: 12px;
 padding-right: 12px;
 padding-top: 0px;
 padding-bottom: 0px;
-margin-top: 8px;
-margin-bottom: 8px;
-margin-left: 0px;
-border-radius: 2px;
-border: 1px solid #000000;
+margin-top: 0px;
+margin-bottom: 1px;
+border-radius: 0px;
+border: 0px solid rgba(0,0,0,1);
 font-family: Maple Mono NF;
 font-size: 12px;
 font-weight: 700;
-background-color: rgba(255,255,255,0.5);
+background: linear-gradient(rgba(200,60,60,1),#3c3c3c,#1c1c1c);
 color:#000000;
-box-shadow: -2px 2px 2px rgba(0,0,0,0.4);
+margin-right: 0px;
 }
 
+#mpris,
 #clock,
 #custom-vpn_ip,
 #workspaces button {
-margin-right: 5px;
+margin-right: 2px;
+}
+
+#battery {
+margin-right: 0px;
+}
+
+#custom-spacer {
+color:#000000;
+margin-right: 2px;
+padding-right: 100px;
+padding-left: 100px;
 }
 
 
-#workspaces:hover { background-color: rgba(255,240,207,0.0); color: #000000; }
+#workspaces:hover { background-color: rgba(0,0,0,1); color: #000000; }
 #workspaces button:hover { background-color: rgba(0,0,0,1); color: #000000; }
-#workspaces button.active { background-color: rgba(0,0,0,0.8); color:#ffffff; }
-#workspaces button.urgent { background-color: rgba(0,0,0,1); color:#ffffff; }
-#mode { background-color: transparent; }
+#workspaces button.active { background-color: rgba(0,0,0,1); color:#808080; }
+#workspaces button.urgent { background-color: rgba(0,0,0,1); color:#000000; }
+#mode { background-color: rgba(0,0,0,1); }
 #window { margin: 0 0px; }
 /* If workspaces is the leftmost module, omit left margin */
 .modules-left > widget:first-child > #workspaces { margin-left: 0; }
 /* If workspaces is the rightmost module, omit right margin */
 .modules-right > widget:last-child > #workspaces { margin-right: 0; }
-
-
 

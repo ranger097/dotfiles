@@ -207,6 +207,9 @@ hyprpolkitagent
 playerctl
 pavucontrol
 bluez
+hyprcursor
+hyprpicker
+hyprshot
 ];
 #SYSTEM_PACKAGE_SETTINGS_END
 
