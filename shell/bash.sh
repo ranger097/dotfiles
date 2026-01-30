@@ -51,7 +51,6 @@ alias bye="sudo shutdown -h now"
 alias hmii="sudo nano ~/.config/home-manager/home.nix"
 alias gii="sudo nano ~/.config/ghostty/config"
 
-EDITOR="code --wait"
 
 
 alias sendconfigs="cd ~/Github/dotfiles &&\
