@@ -1,7 +1,9 @@
 /* ranger097 */
 
 window#waybar {
-background-color: rgba(0,0,0,0);
+background-color: rgba(0,0,0,1);
+padding-left: 8px;
+border-left: 1px solid rgba(200,100,100,0);
 }
 
 #custom-nix,
@@ -16,7 +18,7 @@ background-color: rgba(0,0,0,0);
 #clock,
 #custom-vpn_ip,
 #battery,
-#mpris {
+#custom-music {
 padding-left: 8px;
 padding-right: 8px;
 padding-top: 4px;
@@ -29,24 +31,20 @@ border: 1px solid #000000;
 font-family: Maple Mono NF;
 font-size: 14px;
 font-weight: 400;
-background-color: rgba(0,0,0,0.9);
+background-color: rgba(40,40,40,1);
 color:#808080;
-box-shadow: -2px 2px 2px rgba(0,0,0,0.5);
+box-shadow: -2px 2px 2px rgba(0,0,0,0.4);
+margin-left: 9px;
+text-shadow: -1px 1px 2px rgba(0,0,0,0.2);
 }
 
-/*
-#clock,
-#custom-vpn_ip,
-#workspaces button {
-margin-right: 5px;
-}
-*/
-
-#mpris { 
+#custom-music { 
 padding-top: 5px;
 padding-bottom: 5px;
 padding-right:10px;
 font-size: 17px;
+margin-top: -10px;
+text-shadow: -1px 1px 2px rgba(0,0,0,0.4);
 }
 
 #custom-power {
@@ -56,12 +54,13 @@ padding-right:10px;
 padding-bottom:6px;
 margin-bottom: 5px;
 font-weight: 400;
-background-color: rgba(0,0,0,0.9);
-color:#808080;
+margin-bottom: 10px;
+text-shadow: -1px 1px 2px rgba(0,0,0,0.4);
 }
 
 #workspaces {
-margin-top: -2px;
+margin-top: 3px;
+margin-bottom: 1px;
 }
 
 #clock {
@@ -71,29 +70,30 @@ font-weight: 400;
 font-size: 14px;
 }
 
-
 #battery {
 padding-top: 6px;
 padding-bottom: 6px;
 font-size: 14px;
+text-shadow: -1px 1px 2px rgba(0,0,0,0.4);
 }
 
 #custom-code {
-margin-top: 35px;
+margin-top: 0px;
 padding-top: 5px;
 padding-bottom: 5px;
 padding-right:10px;
 font-size: 16px;
-background-color: rgba(20,20,20,0.9);
-color:#606060;}
+color: rgba(255,255,255,0.5);
+background: rgba(255,70,70,0.6);
+}
 
 #custom-ghostty {
 padding-top: 5px;
 padding-bottom: 5px;
 padding-right:8px;
 font-size: 16px;
-background-color: rgba(20,20,20,0.9);
-color:#606060;
+color: rgba(255,255,255,0.5);
+background: rgba(255,70,70,0.6);
 }
 
 #custom-firefox {
@@ -101,8 +101,8 @@ padding-top: 5px;
 padding-bottom: 5px;
 padding-right:11.5px;
 font-size: 16px;
-background-color: rgba(20,20,20,0.9);
-color:#606060;
+color: rgba(255,255,255,0.5);
+background: rgba(255,70,70,0.6);
 }
 
 #custom-nix {
@@ -110,8 +110,8 @@ padding-top: 5px;
 padding-bottom: 5px;
 padding-right:12px;
 font-size: 16px;
-background-color: rgba(20,20,20,0.9);
-color:#606060;
+color: rgba(255,255,255,0.5);
+background: rgba(255,70,70,0.6);
 }
 
 #custom-steam {
@@ -119,8 +119,8 @@ padding-top: 5px;
 padding-bottom: 5px;
 padding-right:1.5px;
 font-size: 16px;
-background-color: rgba(20,20,20,0.9);
-color:#606060;
+color: rgba(255,255,255,0.5);
+background: rgba(255,70,70,0.6);
 }
 
 #custom-discord {
@@ -128,23 +128,35 @@ padding-top: 5px;
 padding-bottom: 5px;
 padding-right:4px;
 font-size: 16px;
-background-color: rgba(20,20,20,0.9);
-color:#606060;
+color: rgba(255,255,255,0.5);
+background: rgba(255,70,70,0.6);
 }
-
 
 #custom-hyprlock {
 padding-top: 5px;
 padding-bottom: 5px;
 padding-right:10px;
 font-size: 16px;
-background-color: rgba(20,20,20,0.9);
-color:#606060;
+border: 1px solid #000000;
+margin-bottom: 0px;
+color: rgba(255,255,255,0.5);
+background: rgba(255,70,70,0.6);
+}
+
+#custom-dna {
+padding-top: 0px;
+padding-bottom: 0px;
+padding-right: 1px;
+font-size: 35px;
+color: rgba(200,100,100,0.4);
+margin-top: -7px;
+margin-bottom: -7px;
+text-shadow: 0px 0px 2px rgba(255,70,70,0);
 }
 
 #workspaces:hover { background-color: rgba(255,240,207,0.0); color: #000000; }
 #workspaces button:hover { background-color: rgba(0,0,0,0); color: #000000; }
-#workspaces button.active { background-color: rgba(80,80,80,0.5); color:#000000; }
+#workspaces button.active { background: rgba(255,70,70,0.6); color: rgba(255,255,255,0.5); text-shadow: -1px 1px 2px rgba(0,0,0,0.2); }
 #workspaces button.urgent { background-color: rgba(0,0,0,1); color:#ffffff; }
 #mode { background-color: transparent; }
 #window { margin: 0 0px; }
