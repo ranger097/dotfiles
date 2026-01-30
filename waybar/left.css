@@ -4,6 +4,7 @@ window#waybar {
 background-color: rgba(0,0,0,1);
 padding-right: 0px;
 border-right: 0px solid rgba(200,100,100,0);
+background: linear-gradient(90deg,rgba(0,0,0,0.2),rgba(0,0,0,1));
 }
 
 #custom-nix,

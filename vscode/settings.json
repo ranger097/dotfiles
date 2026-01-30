@@ -19,7 +19,7 @@
     "untitledEditors": false,
     "notebookEditors": false
   },
-  "editor.fontFamily": "Maple Mono Normal NF CN",
+  "editor.fontFamily": "Maple Mono NF",
   "editor.fontSize": 17,
   "editor.fontWeight": "500",
   "editor.lineHeight": 2.2,
@@ -124,19 +124,18 @@
   "backgroundCover.autoStatus": false,
   "workbench.statusBar.visible": false,
   "editor.allowVariableFontsInAccessibilityMode": true,
-  "editor.codeLensFontFamily": "Maple Mono NF CN",
-  "editor.inlineSuggest.fontFamily": "\"Maple Mono NF CN\", \"Maple Mono\";\t",
-  "debug.console.fontFamily": "\"Maple Mono NF CN\", \"Maple Mono\";\t",
+  "editor.codeLensFontFamily": "Maple Mono NF",
+  "editor.inlineSuggest.fontFamily": "\"Maple Mono NF\", \"Maple Mono\";\t",
+  "debug.console.fontFamily": "\"Maple Mono NF\", \"Maple Mono\";\t",
   "terminal.integrated.fontLigatures.enabled": true,
-  "scm.inputFontFamily": "Maple Mono NF CN",
-  "terminal.integrated.fontFamily": "Maple Mono NF CN",
-  "notebook.markup.fontFamily": "Maple Mono NF CN",
-  "notebook.output.fontFamily": "Maple Mono NF CN",
-  "chat.editor.fontFamily": "Maple Mono NF CN",
+  "scm.inputFontFamily": "Maple Mono NF",
+  "terminal.integrated.fontFamily": "Maple Mono NF",
+  "notebook.markup.fontFamily": "Maple Mono NF",
+  "notebook.output.fontFamily": "Maple Mono NF",
+  "chat.editor.fontFamily": "Maple Mono NF",
   "terminal.integrated.fontWeight": "normal",
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "terminal.integrated.fontWeightBold": "bold",
-  "workbench.colorTheme": "Hammerhead",
   "svelte.enable-ts-plugin": true,
   "background.enabled": true,
   "lldb.suppressUpdateNotifications": true,
@@ -148,7 +147,7 @@
 
 
         },
-        "editor.inlayHints.fontFamily": "Maple Mono NF CN",
+        "editor.inlayHints.fontFamily": "Maple Mono NF",
         "nebulaOni.update.restoreConfiguration": {
           "themeSettings": {
             "background": "Grey",
@@ -174,7 +173,8 @@
         "terminal.explorerKind": "external",
         "terminal.external.linuxExec": "ghostty",
         "workbench.startupEditor": "none",
-        "backgroundCover.blur": 5
+        "backgroundCover.blur": 5,
+        "workbench.colorTheme": "AlterNight"
         
 
   
