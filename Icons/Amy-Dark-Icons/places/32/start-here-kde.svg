@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="64"
+   version="1.1"
+   height="64"
+   id="svg1"
+   sodipodi:docname="start-here-kde.svg"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="2.9765625"
+     inkscape:cx="15.790026"
+     inkscape:cy="69.207349"
+     inkscape:window-width="1920"
+     inkscape:window-height="994"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs5455" />
+  <metadata
+     id="metadata5458" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-420.57143,-626.798)">
+    <flowRoot
+       line-height="125%"
+       style="font-size:32.5px;font-family:sans-serif"
+       id="flowRoot4170"><flowRegion
+         id="flowRegion4172"><rect
+           width="87.75001"
+           x="452.32144"
+           y="489.79807"
+           height="48.750004"
+           id="rect4174" /></flowRegion><flowPara
+         id="flowPara4176">Plasm</flowPara></flowRoot>
+    <g
+       id="start-here-kde"
+       transform="matrix(2,0,0,2,420.57143,626.798)">
+      <rect
+         style="fill:none;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         id="rect3343"
+         width="32"
+         height="32"
+         x="0"
+         y="0" />
+      <path
+         d="M 16,2.75 C 8.6826882,2.75 2.75,8.6826882 2.75,16 c 0,7.317309 5.9326882,13.25 13.25,13.25 1.451982,0 2.8355,-0.260585 4.140632,-0.694409 -0.17115,-0.133606 -0.335975,-0.272456 -0.493872,-0.420526 -4.471866,-0.117062 -8.063425,-3.771006 -8.063425,-8.27048 0,-4.573453 3.707797,-8.28125 8.28125,-8.28125 4.499474,0 8.153418,3.591559 8.270465,8.063435 0.146853,0.159 0.285817,0.323825 0.420526,0.493872 C 28.989527,18.8355 29.25,17.451982 29.25,16 29.25,8.6826882 23.317309,2.75 16,2.75 Z m 7.729165,15.458335 a 5.5208335,5.5208335 0 0 0 0,11.041665 5.5208335,5.5208335 0 0 0 0,-11.041665 z"
+         id="path1509"
+         style="fill:#bac8df;fill-opacity:1;stroke:none;stroke-width:1.10415;stroke-opacity:1" />
+    </g>
+  </g>
+</svg>

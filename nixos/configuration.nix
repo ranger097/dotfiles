@@ -213,6 +213,7 @@ hyprpicker
 hyprshot
 gimp
 nautilus
+dtrx
 ];
 #SYSTEM_PACKAGE_SETTINGS_END
 
