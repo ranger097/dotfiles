@@ -210,6 +210,7 @@ bluez
 hyprcursor
 hyprpicker
 hyprshot
+gimp
 ];
 #SYSTEM_PACKAGE_SETTINGS_END
 
