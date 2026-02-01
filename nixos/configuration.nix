@@ -193,6 +193,7 @@ home-manager
 lsd
 libsForQt5.qt5ct
 libsForQt5.qtstyleplugin-kvantum
+kdePackages.kio-extras
 adwaita-qt
 adwaita-qt6
 kdePackages.qt6ct
@@ -214,6 +215,8 @@ hyprshot
 gimp
 nautilus
 dtrx
+kdePackages.qtsvg
+kdePackages.ffmpegthumbs
 ];
 #SYSTEM_PACKAGE_SETTINGS_END
 
