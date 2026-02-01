@@ -12,14 +12,18 @@
      "margin-right" : 0,
     // Choose the order of the modules
     "modules-left": [
-	"hyprland/workspaces"
+	"hyprland/workspaces",
+        "custom/spacerLeft"
     ],
     "modules-center": [
     "custom/spacer",
+    "custom/spacerRight",
     "mpris",
+    "custom/spacerLeft",
     "custom/spacer" 
     ],
     "modules-right": [
+        "custom/spacerRight",
         "custom/vpn_ip",
         "clock",
 	"battery"
@@ -89,8 +93,16 @@
 
 },
 
-"custom/spacer": {
-"format": " ",
+"custom/spacerRight": {
+  "format": " "
+},
 
+"custom/spacerLeft": {
+  "format": " "
+},
+
+"custom/spacer": {
+  "format": " "
+},
 }
 }

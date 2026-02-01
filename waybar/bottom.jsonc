@@ -13,14 +13,18 @@
     // Choose the order of the modules
     "modules-left": [
     "custom/VacuumTube",
-    "custom/ProtonVpn"
+    "custom/ProtonVpn",
+    "custom/spacerRight"
     ],
     "modules-center": [
+    "custom/spacerLeft",
     "custom/code",
     "custom/ghostty",
-    "custom/firefox"
+    "custom/firefox",
+    "custom/spacerRight"
     ],
     "modules-right": [
+    "custom/spacerLeft",
     "custom/steam",
     "custom/discord"
 
@@ -28,8 +32,12 @@
 
 
 
-"custom/spacer": {
-  "format": ""
+"custom/spacerRight": {
+  "format": " "
+},
+
+"custom/spacerLeft": {
+  "format": " "
 },
 
 "custom/VacuumTube": {
@@ -67,5 +75,7 @@
 "format": " Discord 会話",
 "on-click": "discord"
 },
+
+
 
 }

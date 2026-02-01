@@ -5,6 +5,8 @@ background-color: rgba(0,0,0,1);
 background: linear-gradient(180deg,rgba(0,0,0,0.3),rgba(0,0,0,1));
 }
 
+#custom-spacerRight,
+#custom-spacerLeft,
 #workspaces button,
 #clock,
 #custom-vpn_ip,
@@ -38,11 +40,27 @@ margin-right: 2px;
 margin-right: 0px;
 }
 
-#custom-spacer {
+
+#custom-spacerRight {
 color:#000000;
 margin-right: 2px;
-padding-right: 100px;
-padding-left: 100px;
+padding-right: 12px;
+padding-left: 12px;
+border-radius: 0px 0px 0px 100px;
+}
+
+#custom-spacerLeft {
+color:#000000;
+margin-right: 2px;
+padding-right: 12px;
+padding-left: 12px;
+border-radius: 0px 0px 100px 0px;
+}
+
+
+#mpris {
+
+margin-right: 2px;
 }
 
 

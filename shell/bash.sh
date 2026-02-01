@@ -43,15 +43,15 @@ alias hii="sudo nano ~/.config/hypr/hyprland.conf"
 alias nii="sudo nano /etc/nixos/configuration.nix"
 alias bii="sudo nano ~/.bashrc"
 alias sbii="source ~/.bashrc"
-alias cii="cd ~/.config"
+alias cii="cd ~/.config && lsd"
 alias ls="lsd"
 alias cgit="git add . && git commit -m 'updated configs' && git push origin main"
 alias update="sudo nixos-rebuild switch --upgrade"
 alias bye="sudo shutdown -h now"
 alias hmii="sudo nano ~/.config/home-manager/home.nix"
 alias gii="sudo nano ~/.config/ghostty/config"
-
-
+alias wii="cd ~/.config/waybar && lsd"
+alias edit="sudo nano"
 
 alias sendconfigs="cd ~/Github/dotfiles &&\
 rm -rf ghostty && cp -r ~/.config/ghostty/ ghostty &&\

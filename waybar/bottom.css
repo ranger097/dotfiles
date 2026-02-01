@@ -5,6 +5,9 @@ background-color: rgba(0,0,0,1);
 background: linear-gradient(0deg,rgba(0,0,0,0.8),rgba(0,0,0,1));
 }
 
+
+#custom-spacerRight,
+#custom-spacerLeft,
 #custom-VacuumTube,
 #custom-ProtonVpn,
 #custom-code,
@@ -36,4 +39,14 @@ margin-right: 0px;
 
 #custom-VacuumTube {
 margin-left: 0px;
+}
+
+
+#custom-spacerRight {
+border-radius: 0px 100px 0px 0px;
+}
+
+
+#custom-spacerLeft {
+border-radius: 100px 0px 0px 0px;
 }
