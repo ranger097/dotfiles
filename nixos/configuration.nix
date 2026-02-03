@@ -109,11 +109,19 @@ services.xserver.xkb = {
 layout = "us";
 variant = "";
 };
-environment.variables.QT_QTA_PLATFORMTHEME = "qt5ct";
+environment.variables.QT_QPA_PLATFORMTHEME = "qt6ct";
 environment.sessionVariables = {
 QT_QPA_PLATFORM = "wayland";
-QT_QPA_PLATFORMTHEME="qt5ct";
+QT_QPA_PLATFORMTHEME="qt6ct";
 NIXOS_OZONE_WL=1;
+
+XDG_DATA_DIRS = [
+"/home/ranger/.icons"
+"$XDG_DATA_DIRS"
+
+
+
+ ];
 };
 services.logind.settings.Login = {
 lidSwitch = "ignore";
@@ -121,7 +129,6 @@ lidSwitchDocked = "ignore";
 lidSwitchExternalPower = "ignore";
 };
 #GENERAL_SETTINGS_END
-
 
 
 
@@ -217,6 +224,7 @@ nautilus
 dtrx
 kdePackages.qtsvg
 kdePackages.ffmpegthumbs
+kdePackages.konsole
 ];
 #SYSTEM_PACKAGE_SETTINGS_END
 

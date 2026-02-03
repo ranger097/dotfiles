@@ -1,6 +1,5 @@
 {
   "window.autoDetectColorScheme": false,
-  "workbench.productIconTheme": "material-product-icons",
   "workbench.navigationControl.enabled": false,
   "workbench.layoutControl.enabled": false,
   "workbench.editor.enablePreview": false,
@@ -31,6 +30,7 @@
   "editor.lineNumbers": "on",
   "editor.showFoldingControls": "never",
   "editor.tokenColorCustomizations": {
+    "strings": "#a3a3a3",
     "textMateRules": [
       {
         "scope": [
@@ -79,6 +79,8 @@
   "editor.padding.bottom": 35,
   "editor.padding.top": 35,
   "json.schemas": [
+    
+
 
 
 
@@ -139,18 +141,27 @@
   "svelte.enable-ts-plugin": true,
   "background.enabled": true,
   "lldb.suppressUpdateNotifications": true,
-  "workbench.preferredHighContrastColorTheme": "Gruvbox Dark Hard",
+  
 
   
 "workbench.colorCustomizations": {
-
-
+        "editor.background": "#0a0a0a",
+        "sideBar.background": "#0a0a0a",
+    "sideBar.foreground": "#959595",
+    "sideBarSectionHeader.background": "#0a0a0a",
+    "sideBar.border": "#6a6a6a",
+    "activityBar.background": "#000000",
+    "sideBarTitle.foreground": "#abb2bf",
+    "editor.foreground": "#ff8b8b",
+    "list.activeSelectionForeground": "#ffffff",
+    "activityBar.foreground": "#ff5353",
+    
 
         },
         "editor.inlayHints.fontFamily": "Maple Mono NF",
         "nebulaOni.update.restoreConfiguration": {
           "themeSettings": {
-            "background": "Grey",
+            "background": "Blue",
             "main": "Bumblebee",
             "highlight": "Ultra Violet",
             "focusBorder": "ON",
@@ -174,7 +185,9 @@
         "terminal.external.linuxExec": "ghostty",
         "workbench.startupEditor": "none",
         "backgroundCover.blur": 5,
-        "workbench.colorTheme": "AlterNight"
+        "workbench.colorTheme": "Tanuki",
+        "workbench.iconTheme": "flow-dim",
+        "workbench.productIconTheme": "cheesewaffle-product"
         
 
   

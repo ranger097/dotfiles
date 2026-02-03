@@ -1,8 +1,7 @@
 /* ranger097 */
 
 window#waybar {
-background-color: rgba(0,0,0,1);
-background: linear-gradient(180deg,rgba(0,0,0,0.3),rgba(0,0,0,1));
+background-color: rgba(10,10,10,0.8);
 }
 
 #custom-spacerRight,
@@ -47,6 +46,7 @@ margin-right: 2px;
 padding-right: 12px;
 padding-left: 12px;
 border-radius: 0px 0px 0px 100px;
+background: linear-gradient(rgba(0,0,0,0));
 }
 
 #custom-spacerLeft {
@@ -55,6 +55,7 @@ margin-right: 2px;
 padding-right: 12px;
 padding-left: 12px;
 border-radius: 0px 0px 100px 0px;
+background: linear-gradient(rgba(0,0,0,0));
 }
 
 

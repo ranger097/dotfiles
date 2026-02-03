@@ -17,6 +17,13 @@
 
   ];
 
+home.sessionVariables = {
+XDG_DATA_DIRS = "$HOME/.icons:$XDG_DATA_DIRS";
+QT_QPA_PLATFORMTHEME = "qt6ct";
+};
+
+
+
   home.file = {
 
 
@@ -27,7 +34,7 @@
 
 qt = {
 enable = true;
-platformTheme.name = "qtct";
+platformTheme.name = "qt6ct";
 style.name = "kvantum";
 
 
@@ -63,10 +70,14 @@ style.name = "kvantum";
      };
 
      iconTheme = {
-     package = pkgs.sweet-folders;
-     name = "sweet-folders";
+     name = "Ars-Light-Icons";
      
      };
   };
+
+
+
+
+
 }
 
