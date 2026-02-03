@@ -79,6 +79,7 @@
   "editor.padding.bottom": 35,
   "editor.padding.top": 35,
   "json.schemas": [
+
     
 
 
@@ -147,14 +148,14 @@
 "workbench.colorCustomizations": {
         "editor.background": "#0a0a0a",
         "sideBar.background": "#0a0a0a",
-    "sideBar.foreground": "#959595",
+    "sideBar.foreground": "#ff6161",
     "sideBarSectionHeader.background": "#0a0a0a",
-    "sideBar.border": "#6a6a6a",
-    "activityBar.background": "#000000",
+    "sideBar.border": "#ff6161",
+    "activityBar.background": "#0a0a0a",
     "sideBarTitle.foreground": "#abb2bf",
     "editor.foreground": "#ff8b8b",
     "list.activeSelectionForeground": "#ffffff",
-    "activityBar.foreground": "#ff5353",
+    "activityBar.foreground": "#ff6161",
     
 
         },
