@@ -66,6 +66,16 @@ boot.kernelPackages = pkgs.linuxPackages_latest;
 boot.initrd.luks.devices."luks-1997167d-6340-4911-b856-b88bdd43c13d".device = "/dev/disk/by-uuid/1997167d-6340-4911-b856-b88bdd43c13d";
 security.polkit.enable = true;
 boot.loader.timeout = 0;
+
+#CAMERA
+services.udev.extraRules = ''
+  # Disable Microdia Integrated_Webcam_HD (0c45:6732)
+  ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="0c45", ATTR{idProduct}=="6732", ATTR{authorized}="0"
+'';
+
+boot.blacklistedKernelModules = [ "uvcvideo" ];
+
+
 #BOOT/SECURITY_SETTINGS_END
 
 
@@ -225,6 +235,7 @@ dtrx
 kdePackages.qtsvg
 kdePackages.ffmpegthumbs
 kdePackages.konsole
+usbutils
 ];
 #SYSTEM_PACKAGE_SETTINGS_END
 
