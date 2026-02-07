@@ -69,13 +69,15 @@ boot.loader.timeout = 0;
 
 #CAMERA
 services.udev.extraRules = ''
-  # Disable Microdia Integrated_Webcam_HD (0c45:6732)
-  ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="0c45", ATTR{idProduct}=="6732", ATTR{authorized}="0"
+# Disable Microdia Integrated_Webcam_HD (0c45:6732)
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="0c45", ATTR{idProduct}=="6732", ATTR{authorized}="0"
 '';
 
-boot.blacklistedKernelModules = [ "uvcvideo" ];
-
-
+boot.blacklistedKernelModules = [ 
+"uvcvideo" 
+"snd_soc_dmic" 
+"snd_soc_rt715_sdca" 
+];
 #BOOT/SECURITY_SETTINGS_END
 
 
