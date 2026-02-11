@@ -75,9 +75,25 @@ ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="0c45", ATTR{idProduct}=="6732"
 
 boot.blacklistedKernelModules = [ 
 "uvcvideo" 
-"snd_soc_dmic" 
-"snd_soc_rt715_sdca" 
 ];
+
+services.pipewire.wireplumber.extraConfig."10-disable-mic" = {
+  "monitor.alsa.rules" = [
+    {
+      matches = [
+        {
+          # This matches all internal ALSA input sources (microphones)
+          "node.name" = "~alsa_input.*"; 
+        }
+      ];
+      actions = {
+        update-props = {
+          "node.disabled" = true;
+        };
+      };
+    }
+  ];
+};
 #BOOT/SECURITY_SETTINGS_END
 
 
