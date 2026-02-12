@@ -188,7 +188,8 @@
         "backgroundCover.blur": 5,
         "workbench.colorTheme": "Tanuki",
         "workbench.iconTheme": "flow-dim",
-        "workbench.productIconTheme": "cheesewaffle-product"
+        "workbench.productIconTheme": "cheesewaffle-product",
+        "git.openRepositoryInParentFolders": "always"
         
 
   

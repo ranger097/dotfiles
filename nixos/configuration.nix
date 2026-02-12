@@ -94,6 +94,9 @@ services.pipewire.wireplumber.extraConfig."10-disable-mic" = {
     }
   ];
 };
+
+services.gvfs.enable = true;
+
 #BOOT/SECURITY_SETTINGS_END
 
 
@@ -254,7 +257,11 @@ kdePackages.qtsvg
 kdePackages.ffmpegthumbs
 kdePackages.konsole
 usbutils
-ytmdl
+yt-dlp
+mtpfs
+jmtpfs
+gphoto2
+foliate
 ];
 #SYSTEM_PACKAGE_SETTINGS_END
 
