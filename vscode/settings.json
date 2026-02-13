@@ -189,7 +189,8 @@
         "workbench.colorTheme": "Tanuki",
         "workbench.iconTheme": "flow-dim",
         "workbench.productIconTheme": "cheesewaffle-product",
-        "git.openRepositoryInParentFolders": "always"
+        "git.openRepositoryInParentFolders": "always",
+        "python.defaultInterpreterPath": "/run/current-system/sw/bin/python"
         
 
   

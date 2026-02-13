@@ -241,7 +241,6 @@ protonvpn-gui
 brightnessctl
 discord
 libreoffice-fresh
-python3
 wlogout
 hyprpolkitagent
 playerctl
@@ -262,6 +261,15 @@ mtpfs
 jmtpfs
 gphoto2
 foliate
+(python3.withPackages (ps: with ps; [
+
+npyscreen
+pandas
+requests
+
+]))
+
+
 ];
 #SYSTEM_PACKAGE_SETTINGS_END
 
