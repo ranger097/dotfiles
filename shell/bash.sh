@@ -52,6 +52,10 @@ alias hmii="sudo nano ~/.config/home-manager/home.nix"
 alias gii="sudo nano ~/.config/ghostty/config"
 alias wii="cd ~/.config/waybar && lsd"
 alias edit="sudo nano"
+alias gotham="nmap -v -A scanme.nmap.org"
+
+
+
 
 alias sendconfigs="cd ~/Github/dotfiles &&\
 rm -rf ghostty && cp -r ~/.config/ghostty/ ghostty &&\

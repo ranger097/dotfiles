@@ -261,6 +261,8 @@ mtpfs
 jmtpfs
 gphoto2
 foliate
+nmap
+amberol
 (python3.withPackages (ps: with ps; [
 
 npyscreen
