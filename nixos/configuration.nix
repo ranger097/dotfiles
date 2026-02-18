@@ -262,7 +262,7 @@ jmtpfs
 gphoto2
 foliate
 nmap
-amberol
+qmmp
 (python3.withPackages (ps: with ps; [
 
 npyscreen
