@@ -266,10 +266,12 @@ gphoto2
 foliate
 nmap
 qmmp
-godot
 scons
 pkg-config
 gnumake
+cmake
+godot_4
+raylib
 (python3.withPackages (ps: with ps; [
 
 npyscreen
@@ -281,13 +283,19 @@ requests
 
 ];
 
+
+# QUICK_NOTE_FOR_NIX-LD
+# at the time of writing this my understanding
+# is that any library needed for any program
+# can be installed here globally if its present
+# as a nixos package.
+
 programs.nix-ld.enable = true;
 programs.nix-ld.libraries = with pkgs; [
 stdenv.cc.cc
 libGL
 zlib
-  
-# Godot specific X11/Input requirements
+raylib
 xorg.libX11
 xorg.libXcursor
 xorg.libXinerama
@@ -296,8 +304,6 @@ xorg.libXi
 xorg.libXext
 xorg.libXrender
 libxkbcommon
-  
-# Audio/Other
 alsa-lib
 ];
 #SYSTEM_PACKAGE_SETTINGS_END
