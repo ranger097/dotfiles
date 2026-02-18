@@ -145,7 +145,10 @@ environment.sessionVariables = {
 QT_QPA_PLATFORM = "wayland";
 QT_QPA_PLATFORMTHEME="qt6ct";
 NIXOS_OZONE_WL=1;
-
+#CPP_LIBRARY_PATHS
+LD_LIBRARY_PATH = "$LD_LIBRARY_PATH:/run/current-system/sw/share/nix-ld/lib";
+CPATH = "/run/current-system/sw/include";
+LIBRARY_PATH = "/run/current-system/sw/lib";
 XDG_DATA_DIRS = [
 "/home/ranger/.icons"
 "$XDG_DATA_DIRS"
@@ -263,6 +266,10 @@ gphoto2
 foliate
 nmap
 qmmp
+godot
+scons
+pkg-config
+gnumake
 (python3.withPackages (ps: with ps; [
 
 npyscreen
@@ -272,6 +279,26 @@ requests
 ]))
 
 
+];
+
+programs.nix-ld.enable = true;
+programs.nix-ld.libraries = with pkgs; [
+stdenv.cc.cc
+libGL
+zlib
+  
+# Godot specific X11/Input requirements
+xorg.libX11
+xorg.libXcursor
+xorg.libXinerama
+xorg.libXrandr
+xorg.libXi
+xorg.libXext
+xorg.libXrender
+libxkbcommon
+  
+# Audio/Other
+alsa-lib
 ];
 #SYSTEM_PACKAGE_SETTINGS_END
 
