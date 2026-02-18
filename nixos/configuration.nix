@@ -15,6 +15,7 @@
 #GPU_SETTINGS_START
 hardware.graphics.enable = true;
 services.xserver.videoDrivers = [ "nvidia" ];
+
 hardware.nvidia = {
 open = true;
 modesetting.enable = true;
@@ -108,6 +109,7 @@ services.gvfs.enable = true;
 # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 networking.hostName = "pokemon"; # Define your hostname.
 networking.networkmanager.enable = true;
+hardware.enableRedistributableFirmware = true;
 # programs.mtr.enable = true;
 # programs.gnupg.agent = {
 #   enable = true;
