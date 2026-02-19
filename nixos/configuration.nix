@@ -272,8 +272,9 @@ scons
 pkg-config
 gnumake
 cmake
-godot_4
 raylib
+
+
 (python3.withPackages (ps: with ps; [
 
 npyscreen
@@ -294,19 +295,12 @@ requests
 
 programs.nix-ld.enable = true;
 programs.nix-ld.libraries = with pkgs; [
-stdenv.cc.cc
 libGL
-zlib
-raylib
 xorg.libX11
 xorg.libXcursor
-xorg.libXinerama
 xorg.libXrandr
-xorg.libXi
-xorg.libXext
-xorg.libXrender
-libxkbcommon
-alsa-lib
+xorg.libXinerama
+openal
 ];
 #SYSTEM_PACKAGE_SETTINGS_END
 
