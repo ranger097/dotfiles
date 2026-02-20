@@ -38,17 +38,15 @@
 	"format": "[ {windows} ]",
 	"window-rewrite-default": "",
 	"window-rewrite": {
-	"class<firefox>":"FIREFOX 火狐",
-	"class<com.mitchellh.ghostty>":"GHOSTTY 幽霊",
-        "class<> title<.*>": "QMMP 音楽",
-        "class<code>": "VSCODE コード",
-	"class<steam>": "STEAM 蒸気",
+	"class<firefox>":"FIREFOX",
+
+	}
 },
 
-//"persistent-workspaces": {
-//	"*": [],
-//"HDMI-A-1": [ 1,2,3,4,5,6,7,8,9,10 ]
-	
+"persistent-workspaces": {
+	"*": [1,2,3,4,5,6,7,8,9,10 ],
+"HDMI-A-1": [ 1,2,3,4,5,6,7,8,9,10 ]
+	}
 
      },
     "clock": {
@@ -90,7 +88,7 @@
 },
 "custom/qmmp": {
     "format": "{}",
-    "max-length": 60,
+    "max-length": 40,
     "interval": 2,
     "exec": "playerctl --player=qmmp metadata --format '{{artist}} - {{title}}'",
     "on-click": "playerctl --player=qmmp play-pause",
@@ -98,7 +96,6 @@
     "on-scroll-down": "playerctl --player=qmmp previous"
 },
 "custom/vpn_ip": {
-   "format":"[ VIEW IP ]",
    "format-alt":"[ IP: {} ]",
    "exec": "curl -s https://icanhazip.com",
    "internal": 30,

@@ -1,82 +1,89 @@
 /* ranger097 */
 
 window#waybar {
-background-color: rgba(10,10,10,0.8);
+background: linear-gradient(180deg, rgba(0,0,0,0.0));
+border-bottom: 1px solid rgba(0,0,0,1);
+border-top: 0px solid rgba(200,60,60,1);
 }
 
-#custom-spacerRight,
-#custom-spacerLeft,
+#custom-right-bracket,
+#custom-left-bracket,
 #workspaces button,
 #clock,
 #custom-vpn_ip,
 #battery,
 #mpris,
 workspaces {
-padding-left: 12px;
-padding-right: 12px;
+padding-left: 5px;
+padding-right: 5px;
 padding-top: 0px;
 padding-bottom: 0px;
-margin-top: 0px;
-margin-bottom: 1px;
+margin-top: 5px;
+margin-bottom: 5px;
 border-radius: 0px;
-border: 0px solid rgba(0,0,0,1);
+border-top: 0px solid rgba(200,60,60,1);
 font-family: Maple Mono NF;
 font-size: 12px;
-font-weight: 700;
-background: linear-gradient(rgba(200,60,60,1));
-color:#000000;
+font-weight: 400;
+background: linear-gradient(0deg, rgba(0,0,0,1));
+color:#808080;
 margin-right: 0px;
 }
 
 #mpris,
 #clock,
 #custom-vpn_ip,
-#workspaces button {
-margin-right: 2px;
+#battery {
+margin-right: 5px;
 }
 
-#battery {
+#workspaces button {
+margin-right: 4px;
+margin-left:0px;
+padding-left: 5px;
+padding-right: 5px;
+color: rgba(200,60,60,1);
+font-size: 12px;
+}
+
+#custom-left-bracket {
+color: #808080;
+margin-right: -1px;
+padding-right: 0px;
+padding-left: 5px;
+border-radius: 0px 0px 0px 0px;
+background: linear-gradient(rgba(0,0,0,1));
+margin-bottom: 6px;
+margin-left: 5px;
+}
+
+#custom-right-bracket {
+color: #808080;
+margin-right: 2px;
+padding-right: 5px;
+padding-left: 0px;
+border-radius: 0px 0px 0px 0px;
+background: linear-gradient(rgba(0,0,0,1));
+margin-bottom: 6px;
+}
+
+#mpris {
 margin-right: 0px;
 }
 
-#workspaces button {
-
-
-}
-
-#custom-spacerRight {
-color:#000000;
-margin-right: 2px;
-padding-right: 12px;
-padding-left: 12px;
-border-radius: 0px 0px 0px 100px;
-background: linear-gradient(rgba(0,0,0,0));
-}
-
-#custom-spacerLeft {
-color:#000000;
-margin-right: 2px;
-padding-right: 12px;
-padding-left: 12px;
-border-radius: 0px 0px 100px 0px;
-background: linear-gradient(rgba(0,0,0,0));
+#custom-vpn_ip {
+color: #808080;
 }
 
 
-#mpris {
-
-margin-right: 2px;
-}
-
-
-#workspaces:hover { background-color: rgba(0,0,0,1); color: #000000; }
+#workspaces:hover { background-color: rgba(0,0,0,0); color: #000000; }
 #workspaces button:hover { background-color: rgba(0,0,0,1); color: #000000; }
-#workspaces button.active { background-color: rgba(0,0,0,1); color:#808080; }
-#workspaces button.urgent { background-color: rgba(0,0,0,1); color:#000000; }
-#mode { background-color: rgba(0,0,0,1); }
+#workspaces button.active { background-color: rgba(0,0,0,0); color: rgba(200,60,60,1); border-top: 0px solid rgba(200,60,60,0) }
+#workspaces button.urgent { background-color: rgba(0,0,0,0); color:#000000; }
+#mode { background-color: rgba(0,0,0,0); }
+#mode:hover {background-color: rgba(0,0,0,1);}
 #window { margin: 0 0px; }
 /* If workspaces is the leftmost module, omit left margin */
-.modules-left > widget:first-child > #workspaces { margin-left: 0; }
+.modules-left > widget:first-child > #workspaces { margin-left: 5px; }
 /* If workspaces is the rightmost module, omit right margin */
 .modules-right > widget:last-child > #workspaces { margin-right: 0; }
-

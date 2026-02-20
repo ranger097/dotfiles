@@ -80,6 +80,7 @@
   "editor.padding.top": 35,
   "json.schemas": [
 
+
     
 
 
@@ -145,20 +146,18 @@
   
 
   
-"workbench.colorCustomizations": {
-        "editor.background": "#0a0a0a",
-        "sideBar.background": "#0a0a0a",
-    "sideBar.foreground": "#ff6161",
-    "sideBarSectionHeader.background": "#0a0a0a",
-    "sideBar.border": "#ff6161",
-    "activityBar.background": "#0a0a0a",
-    "sideBarTitle.foreground": "#abb2bf",
-    "editor.foreground": "#ff8b8b",
-    "list.activeSelectionForeground": "#ffffff",
-    "activityBar.foreground": "#ff6161",
-    
-
-        },
+//"workbench.colorCustomizations": {
+//        "editor.background": "#606060",
+//        "sideBar.background": "#0a0a0a",
+//    "sideBar.foreground": "#ff6161",
+//    "sideBarSectionHeader.background": "#0a0a0a",
+//    "sideBar.border": "#ff6161",
+//    "activityBar.background": "#0a0a0a",
+//    "sideBarTitle.foreground": "#000000",
+//    "editor.foreground": "#000000",
+//    "list.activeSelectionForeground": "#000000",
+//    "activityBar.foreground": "#ff6161",
+//        },
         "editor.inlayHints.fontFamily": "Maple Mono NF",
         "nebulaOni.update.restoreConfiguration": {
           "themeSettings": {
@@ -186,7 +185,7 @@
         "terminal.external.linuxExec": "ghostty",
         "workbench.startupEditor": "none",
         "backgroundCover.blur": 5,
-        "workbench.colorTheme": "Tanuki",
+        "workbench.colorTheme": "Kanagawa Black",
         "workbench.iconTheme": "flow-dim",
         "workbench.productIconTheme": "cheesewaffle-product",
         "git.openRepositoryInParentFolders": "always",

@@ -1,54 +1,55 @@
 /* ranger097 */
 
 window#waybar {
-background-color: rgba(10,10,10,0.8);
+background: linear-gradient(180deg, rgba(0,0,0,0), rgba(255,255,255,0));
 border-top: 1px solid #000000;
 }
 
 
 #custom-spacerRight,
 #custom-spacerLeft,
+#custom-power,
 #custom-VacuumTube,
 #custom-ProtonVpn,
 #custom-code,
 #custom-ghostty,
 #custom-steam,
 #custom-firefox, 
-#custom-discord {
+#custom-discord,
+#custom-qmmp,
+#custom-blender,
+#custom-dolphin,
+#custom-volume {
 padding-top: 5px;
 padding-bottom: 5px;
-padding-left: 10px;
-padding-right: 10px;
-margin-top: 1px;
-margin-bottom: 0px;
-margin-left: 1px;
-margin-right: 1px;
-border: 0px solid rgba(0,0,0,1);
+padding-left: 5px;
+padding-right: 5px;
+margin-top: 9px;
+margin-bottom: 8px;
+margin-left: 3px;
+margin-right: 2px;
+border-bottom: 0px solid rgba(200,60,60,1);
 border-radius: 0px;
 font-family: Maple Mono NF;
 font-size: 11px;
-font-weight: 700;
-background: linear-gradient(rgba(200,60,60,1));
-color:#000000;
+font-weight: 400;
+background: linear-gradient(180deg, rgba(0,0,0,1), rgba(0,0,0,1));
+color:#808080;
 }
 
-#custom-discord {
-margin-right: 0px;
-
-}
-
-#custom-VacuumTube {
-margin-left: 0px;
-}
 
 
 #custom-spacerRight {
 border-radius: 0px 0px 0px 0px;
-background: linear-gradient(rgba(0,0,0,0));
+background: linear-gradient(rgba(0,0,0,1));
+padding-right:32px;
+margin-left:5px;
 }
 
 
 #custom-spacerLeft {
 border-radius: 0px 0px 0px 0px;
-background: linear-gradient(rgba(0,0,0,0));
+background: linear-gradient(rgba(0,0,0,1));
+padding-left:36px;
+margin-left:3px;
 }

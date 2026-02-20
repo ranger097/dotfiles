@@ -12,22 +12,25 @@
      "margin-right" : 0,
     // Choose the order of the modules
     "modules-left": [
-    "custom/VacuumTube",
-    "custom/ProtonVpn",
-    "custom/spacerRight"
+    
     ],
     "modules-center": [
-    "custom/spacerLeft",
+    //"custom/spacerLeft",
+    "custom/power",
+    "custom/VacuumTube",
+    "custom/qmmp",
+    "custom/ProtonVpn",
     "custom/code",
-    "custom/ghostty",
     "custom/firefox",
-    "custom/spacerRight"
+    "custom/ghostty",
+    "custom/blender",
+    "custom/dolphin",
+    "custom/steam",
+    "custom/discord",
+    "custom/volume"
+    //"custom/spacerRight"
     ],
     "modules-right": [
-    "custom/spacerLeft",
-    "custom/steam",
-    "custom/discord"
-
     ],
 
 
@@ -39,43 +42,62 @@
 "custom/spacerLeft": {
   "format": " "
 },
-
+//
 "custom/VacuumTube": {
-"format": " Youtube 貴方の管",
+"format": "[ YOUTUBE 貴方の管 ]",
 "on-click": "VacuumTube"
 },
 
 "custom/ProtonVpn": {
-"format": "󱛍 Proton_VPN 陽子",
+"format": "[ PROTON_VPN 陽子 ]",
 "on-click": "protonvpn-app"
 },
 
 "custom/code": {
-"format": " VSCODE コード",
+"format": "[ VSCODE コード ]",
 "on-click": "code"
 },
 
 "custom/ghostty": {
-"format": " Ghostty 幽霊",
+"format": "[ GHOSTTY 幽霊 ]",
 "on-click": "ghostty"
 },
 
 "custom/firefox": {
-"format": "󰈹 Firefox 火狐",
+"format": "[ FIREFOX 火狐 ]",
 "on-click": "firefox"
 },
 
 
 "custom/steam": {
-"format": " Steam 蒸気",
+"format": "[ STEAM 蒸気 ]",
 "on-click": "steam"
 },
 
 "custom/discord": {
-"format": " Discord 会話",
+"format": "[ DISCORD 会話 ]",
 "on-click": "discord"
 },
 
+"custom/qmmp": {
+"format": "[ QMMP 音楽 ]",
+},
 
+"custom/blender": {
+"format": "[ BLENDER ブレンダー ]"
+},
+
+"custom/dolphin": {
+"format": "[ DOLPHIN 海豚 ]"
+
+},
+
+"custom/volume": {
+"format": "[ VOLUME 音量 ]"
+},
+
+"custom/power": {
+"format": "[ POWER 力 ]"
+},
 
 }

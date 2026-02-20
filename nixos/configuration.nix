@@ -273,7 +273,8 @@ pkg-config
 gnumake
 cmake
 raylib
-
+blender
+mpvpaper
 
 (python3.withPackages (ps: with ps; [
 
