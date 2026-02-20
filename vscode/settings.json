@@ -76,6 +76,7 @@
   "editor.padding.bottom": 35,
   "editor.padding.top": 35,
   "json.schemas": [
+
     
   ],
   "workbench.sideBar.location": "right",
@@ -124,19 +125,19 @@
 "vscode_custom_css.policy": true
 
   
-//"workbench.colorCustomizations": {
-//        "editor.background": "#606060",
-//        "sideBar.background": "#0a0a0a",
+"workbench.colorCustomizations": {
+        "editor.background": "#181818",
+       "sideBar.background": "#181818",
 //    "sideBar.foreground": "#ff6161",
-//    "sideBarSectionHeader.background": "#0a0a0a",
-//    "sideBar.border": "#ff6161",
-//    "activityBar.background": "#0a0a0a",
+   "sideBarSectionHeader.background": "#181818",
+    "sideBar.border": "#ff6161",
+    "activityBar.background": "#181818",
 //    "sideBarTitle.foreground": "#000000",
 //    "editor.foreground": "#000000",
 //    "list.activeSelectionForeground": "#000000",
 //    "activityBar.foreground": "#ff6161",
-   //},
-       , "editor.inlayHints.fontFamily": "Maple Mono NF",
+   },
+        "editor.inlayHints.fontFamily": "Maple Mono NF",
         "nebulaOni.update.restoreConfiguration": {
           "themeSettings": {
             "background": "Blue",

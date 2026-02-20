@@ -212,7 +212,6 @@ environment.systemPackages = with pkgs; [
 wget
 kitty
 vacuum-tube
-vscode-fhs
 firefox
 ani-cli
 steam
@@ -275,6 +274,8 @@ cmake
 raylib
 blender
 mpvpaper
+vscode-fhs
+clang-tools
 
 (python3.withPackages (ps: with ps; [
 
@@ -302,6 +303,7 @@ xorg.libXcursor
 xorg.libXrandr
 xorg.libXinerama
 openal
+libclang
 ];
 #SYSTEM_PACKAGE_SETTINGS_END
 
