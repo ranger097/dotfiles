@@ -75,6 +75,7 @@ git commit -m 'updated configs' &&\
 git push origin main"
 
 
+export LS_COLORS="di=38;5;250"
 
 
 
