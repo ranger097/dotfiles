@@ -212,7 +212,7 @@ environment.systemPackages = with pkgs; [
 wget
 kitty
 vacuum-tube
-vscode
+vscode-fhs
 firefox
 ani-cli
 steam

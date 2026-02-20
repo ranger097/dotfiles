@@ -1,131 +1,87 @@
-
 // -*- mode: jsonc -*-
 {
-    "layer": "top", // Waybar at top layer
-    // "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 5, // Waybar height (to be removed for auto height)
-    //"width": 1520, // Waybar width
-    "spacing": 0, // Gaps between modules (4px)
-    "margin-top" : 0,
+    "layer": "top",
+    "height": 5,
+    "spacing": 0,
+    "margin-top": 0,
     "margin-bottom": 0,
-    "margin-left" : 0,
-     "margin-right" : 0,
-    // Choose the order of the modules
+    "margin-left": 0,
+    "margin-right": 0,
+
     "modules-left": [
-	//"custom/left-bracket",
-	"hyprland/workspaces",
-	//"hyprland/window",
-	//"custom/right-bracket",
+        "hyprland/window",
         "custom/spacerLeft"
     ],
     "modules-center": [
-    "custom/spacer",
-    "custom/spacerRight",
-  //  "mpris",
-"custom/qmmp",
-    "custom/spacerLeft",
-    "custom/spacer" 
+        "custom/spacer",
+        "custom/spacerRight",
+        "custom/qmmp",
+        "custom/spacerLeft",
+        "custom/spacer"
     ],
     "modules-right": [
         "custom/spacerRight",
         "custom/vpn_ip",
         "clock",
-	"battery"
+        "battery"
     ],
 
-
-"hyprland/workspaces": {
-	"format": "[ {windows} ]",
-	"window-rewrite-default": "",
-	"window-rewrite": {
-	"class<firefox>":"FIREFOX 火狐",
-	"class<com.mitchellh.ghostty>":"GHOSTTY 幽霊",
-        "class<> title<.*>": "QMMP 音楽",
-        "class<code>": "VSCODE コード",
-	"class<steam>": "STEAM 蒸気",
-},
-
-//"persistent-workspaces": {
-//	"*": [],
-//"HDMI-A-1": [ 1,2,3,4,5,6,7,8,9,10 ]
-	
-
-     },
-    "clock": {
-	"format": "[ {:%I:%M %p} ]",
-        // "timezone": "America/New_York",
-        //"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        //"format-alt": "  {:%Y-%m-%d}"
+    "hyprland/window": {
+        "format": "{class} {title}",
+        "separate-outputs": true,
+        "icon": false,
+        "rewrite": {
+            "(.*)ghostty(.*)": "[ GHOSTTY 幽霊 ]",
+            "(.*)Qmmp(.*)": "[ QMMP 音楽 ]",  
+            "(.*)home/ranger/Music(.*)": "[ QMMP 音楽 ]",
+            "(.*)code(.*)": "[ VSCODE コード ]",
+            "(.*)steam(.*)": "[ STEAM 蒸気 ]",
+            "(.*)pavucontrol(.*)": "[ VOLUME 音量 ]",
+            "(.*)blueman-manager(.*)": "[ BLUETOOTH 青 ]",
+            "(.*)discord(.*)": "[ DISCORD 会話 ]",
+	    "(.*)gimp(.*)": "[ GIMP 芸術 ]",
+            "(.*)blender(.*)": "[ BLENDER ブレンダー ]",
+            "(.*)libreoffice-writer(.*)": "[ LIBREOFFICE 書 ]",
+	    "(.*)kdenlive(.*)": "[ KDENLIVE 動画 ]",
+            "(.*)firefox(.*)": "[ FIREFOX 火狐 ]",
+            " ": "[ RANGER097 レンジャー ]",
+        }
     },
+
+    "clock": {
+        "format": "[ {:%I:%M %p} ]"
+    },
+
     "battery": {
         "states": {
-            // "good": 95,
             "warning": 30,
             "critical": 15
         },
-        "format": "[ {icon} {capacity}% ]",
-        "format-full": "[ {icon} {capacity}% ]",
+        "format": "[ {capacity}% ]",
+        "format-full": "[ {capacity}% ]",
         "format-charging": "[ {capacity}%  ]",
         "format-plugged": "[ {capacity}%  ]",
-        "format-alt": "[ {time} {icon} ]",
-        // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
-        "format-icons": ["󰁺", "󰁼", "󰁾", "󰂂", "󱟢"]
+        "format-icons": ["  ", "  ", "  ", "  ", "  "]
     },
- "mpris": {
-        "format": "[{title} ]",
-        "format-paused": "{artist} - {title}",
-	"max-length": 50,
-        "player-icons": {
-                "default": "  ",
-                "mpv": "🎵",
-		"qmmp":""
-        },
-        "status-icons": {
-                "paused": "  "
-        },
-        // "ignored-players": ["firefox"]
-	"ellipsis": "",
-	"expand" : "true"
-},
-"custom/qmmp": {
-    "format": "{}",
-    "max-length": 60,
-    "interval": 2,
-    "exec": "playerctl --player=qmmp metadata --format '{{artist}} - {{title}}'",
-    "on-click": "playerctl --player=qmmp play-pause",
-    "on-scroll-up": "playerctl --player=qmmp next",
-    "on-scroll-down": "playerctl --player=qmmp previous"
-},
-"custom/vpn_ip": {
-   "format":"[ VIEW IP ]",
-   "format-alt":"[ IP: {} ]",
-   "exec": "curl -s https://icanhazip.com",
-   "internal": 30,
-   "on-click": "nm-connection-editor"
 
-},
+    "custom/qmmp": {
+        "format": "[ {}",
+        "interval": 2,
+        //"max-length": 50,
+         "exec": "playerctl --player=qmmp metadata --format '{{artist}} - {{title}}' | tr '[:lower:]' '[:upper:]' | awk '{ print substr($0, 1, 140) \" ]\" }'", 
+        "on-click": "playerctl --player=qmmp play-pause",
+        "on-scroll-up": "playerctl --player=qmmp next",
+        "on-scroll-down": "playerctl --player=qmmp previous"
+    },
 
-"custom/spacerRight": {
-  "format": " "
-},
+    "custom/vpn_ip": {
+       "format":"[ VIEW IP ]",
+       "format-alt":"[ IP: {} ]",
+       "exec": "curl -s https://icanhazip.com",
+       "on-click": "nm-connection-editor"
+    },
 
-"custom/spacerLeft": {
-  "format": " "
-},
-
-"custom/spacer": {
-  "format": " "
-},
-
-"custom/left-bracket": {
-"format": "["
-},
-
-"custom/right-bracket": {
-"format": "]"
-},
-
-
-}
+    "custom/spacerRight": { "format": " " },
+    "custom/spacerLeft": { "format": " " },
+    "custom/spacer": { "format": " " }
 }

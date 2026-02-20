@@ -10,9 +10,6 @@
   "editor.formatOnSaveMode": "modifications",
   "editor.formatOnSave": false,
   "window.menuBarVisibility": "toggle",
-  "vscode_custom_css.imports": [
-    "file:///home/ranger/vscodeTheme/style.css"
-  ],
   "vscode_custom_css.enabled": true,
   "workbench.editor.languageDetectionHints": {
     "untitledEditors": false,
@@ -79,30 +76,7 @@
   "editor.padding.bottom": 35,
   "editor.padding.top": 35,
   "json.schemas": [
-
-
     
-
-
-
-
-
-
-
-
-
-  
-
-
-  
-
-
-
-
-
-
-
-  
   ],
   "workbench.sideBar.location": "right",
   "breadcrumbs.enabled": false,
@@ -144,6 +118,10 @@
   "background.enabled": true,
   "lldb.suppressUpdateNotifications": true,
   
+"vscode_custom_css.imports": [
+    "file:///home/ranger/.vscode/extensions/shaobeichen.gradient-theme-1.1.0/custom.css"
+],
+"vscode_custom_css.policy": true
 
   
 //"workbench.colorCustomizations": {
@@ -157,8 +135,8 @@
 //    "editor.foreground": "#000000",
 //    "list.activeSelectionForeground": "#000000",
 //    "activityBar.foreground": "#ff6161",
-//        },
-        "editor.inlayHints.fontFamily": "Maple Mono NF",
+   //},
+       , "editor.inlayHints.fontFamily": "Maple Mono NF",
         "nebulaOni.update.restoreConfiguration": {
           "themeSettings": {
             "background": "Blue",
@@ -185,7 +163,7 @@
         "terminal.external.linuxExec": "ghostty",
         "workbench.startupEditor": "none",
         "backgroundCover.blur": 5,
-        "workbench.colorTheme": "Kanagawa Black",
+        "workbench.colorTheme": "Gradient Modern Dark",
         "workbench.iconTheme": "flow-dim",
         "workbench.productIconTheme": "cheesewaffle-product",
         "git.openRepositoryInParentFolders": "always",
