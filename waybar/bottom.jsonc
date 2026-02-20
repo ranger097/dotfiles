@@ -97,7 +97,9 @@
 },
 
 "custom/power": {
-"format": "[ POWER 力 ]"
+"format": "[ POWER 力 ]",
+"on-click":"wlogout"
+
 },
 
 }

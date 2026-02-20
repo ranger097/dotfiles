@@ -1,26 +1,26 @@
 format = """
-[](#CAAE48)\
-[𝖗𝖆𝖓𝖌𝖊𝖗](#55A9F4)\
-[ ](fg:#CAAE48)\
-[on](#55A9F4)\
+[](#B4B4B4)\
+[𝖗𝖆𝖓𝖌𝖊𝖗](#B4B4B4)\
+[ ](fg:#B4B4B4)\
+[on](#B4B4B4)\
 $directory\
-[](fg:#CAAE48)\
+[](fg:#B4B4B4)\
 $git_branch\
 $git_status\
-[](fg:#CAAE48)\
+[](fg:#B4B4B4)\
 $nodejs\
 $rust\
 $golang\
 $php\
-[](fg:#212736)\ 
-[](fg:#1d2230)\ 
-[ $fill](fg:#a0a9cb)[](#a3aed2)$time\
-[](#1d2230)\ 
+[](fg:#B4B4B4)\ 
+[](fg:#B4B4B4)\ 
+[ $fill](fg:#B4B4B4)[](#B4B4B4)$time\
+[](#ffffff)\ 
 \n$character"""
 
 
 [directory]
-style = '#D945A9'
+style = '#B4B4B4'
 format = "[ $path]($style)"
 truncation_length = 3
 truncation_symbol = ""
@@ -35,12 +35,12 @@ truncation_symbol = ""
 
 [git_branch]
 symbol = ""
-style = '#E6D076'
-format = '[[ $symbol $branch ](#55A9F4)]($style)'
+style = '#B4B4B4'
+format = '[[ $symbol $branch ](#909090)]($style)'
 
 [git_status]
-style = '#58A14D'
-format = '[[($all_status$ahead_behind)](fg:#769ff0)]($style)'
+style = '#B4B4B4'
+format = '[[($all_status$ahead_behind)](fg:#909090)]($style)'
 
 
 
@@ -66,7 +66,7 @@ format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
 
 [fill]
 symbol = " "
-style = "fg:#ffffff" 
+style = "fg:#B4B4B4" 
 
 
 
