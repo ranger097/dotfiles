@@ -85,13 +85,11 @@ function sendconfigs {
    git add . &> /dev/null && git commit -m 'updated configs' &> /dev/null && git push origin main &> /dev/null
    cd  ~/Github/Scripts/ && git add . && git commit -m 'updated configs' && git push origin main &> /dev/null
    echo "󱄅 Pushing Nixos Configs" >&2
-   sleep 0.5
    echo " Pushing Dotfiles Directory" >&2
-   sleep 0.5
    echo " Pushing Scripts Directory" >&2
-   sleep 0.5
    echo "󰸵 Pushing Games Directory" >&2
-   sleep 0.5
+   git add . &> /dev/null && git commit -m 'updated configs' &> /dev/null && git push origin main &> /dev/null
+   cd  ~/Github/Scripts/ && git add .  &> /dev/null && git commit -m 'updated configs'  &> /dev/null  && git push origin main &> /dev/null
    ) 
 
    if [ $? -eq 0 ]; then
