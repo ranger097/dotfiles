@@ -97,10 +97,10 @@ function sendconfigs {
    
    cd ~/Github/Scripts/ &> /dev/null && git add . &> /dev/null && git commit -m 'updated configs' &> /dev/null && git push origin main &> /dev/null
    
-   echo "   Pushing Nixos Configs" >&2
+   echo "Pushing Nixos Configs" >&2
    echo " Pushing Dotfiles Directory" >&2
    echo " Pushing Scripts Directory" >&2
-   echo "   Pushing Games Directory" >&2
+   echo "Pushing Games Directory" >&2
    )
 
    if [ $? -eq 0 ]; then
