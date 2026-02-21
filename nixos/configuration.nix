@@ -217,15 +217,11 @@ ani-cli
 steam
 kdePackages.dolphin
 kdePackages.kdenlive
-javaPackages.compiler.openjdk25
-gcc
-gdb
 kdePackages.qtstyleplugin-kvantum
 waybar
 blueman
 networkmanager
 ranger
-nodejs
 ghostty
 swww
 rofi
@@ -236,8 +232,6 @@ lsd
 libsForQt5.qt5ct
 libsForQt5.qtstyleplugin-kvantum
 kdePackages.kio-extras
-adwaita-qt
-adwaita-qt6
 kdePackages.qt6ct
 hyprcursor
 hyprlock
@@ -254,28 +248,20 @@ hyprcursor
 hyprpicker
 hyprshot
 gimp
-nautilus
 dtrx
 kdePackages.qtsvg
 kdePackages.ffmpegthumbs
 kdePackages.konsole
 usbutils
 yt-dlp
-mtpfs
-jmtpfs
-gphoto2
 foliate
-nmap
 qmmp
-scons
-pkg-config
-gnumake
-cmake
-raylib
 blender
 mpvpaper
-vscode-fhs
-clang-tools
+vscode
+distrobox
+
+
 
 (python3.withPackages (ps: with ps; [
 
@@ -284,28 +270,32 @@ pandas
 requests
 
 ]))
-
-
-];
-
-
-# QUICK_NOTE_FOR_NIX-LD
-# at the time of writing this my understanding
-# is that any library needed for any program
-# can be installed here globally if its present
-# as a nixos package.
-
-programs.nix-ld.enable = true;
-programs.nix-ld.libraries = with pkgs; [
-libGL
-xorg.libX11
-xorg.libXcursor
-xorg.libXrandr
-xorg.libXinerama
-openal
-libclang
 ];
 #SYSTEM_PACKAGE_SETTINGS_END
+
+
+#DEVELOPER_SETTINGS
+
+virtualisation.podman = {
+enable = true;
+dockerCompat = true;
+defaultNetwork.settings.dns_enabled = true;
+};
+
+#DEVELOPER_SETTINGS_END
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -76,7 +76,9 @@ style.name = "kvantum";
   };
 
 
-
+programs.vscode.profiles.default.extensions = with pkgs; [
+	vscode-marketplace.be5invis.vscode-custom-css
+];
 
 
 }
