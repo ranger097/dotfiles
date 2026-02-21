@@ -92,7 +92,7 @@ function sendconfigs {
    sleep 0.5
    echo "󰸵 Pushing Games Directory" >&2
    sleep 0.5
-   ) &> /dev/null
+   ) > /dev/null
 
    if [ $? -eq 0 ]; then
       echo " Github Backup Completed"
