@@ -68,10 +68,10 @@ alias RustWebDevBox="distrobox enter RustWebDevBox"
 
 
 
-function sendconfigs() {
+function sendconfigs {
    echo "Backing Up System To Github..."
    (
-   cd ~/.Github/dotfiles || exit &&  echo " Entering Github Directory 'dotfiles' on  Main" >&2
+   cd ~/Github/dotfiles || exit &&  echo " Entering Github Directory 'dotfiles' on  Main" >&2
    rm -rf ghostty home-manager hypr rofi starship vscode waybar nixos && echo " Replacing Sub Directories" >&2 
    cp -r ~/.config/ghostty/ ghostty && echo " Pulling Ghostty Configuration" >&2
    cp -r ~/.config/home-manager/ home-manager && echo " Pulling Nixos Home-manager Configuration" >&2
@@ -92,7 +92,8 @@ function sendconfigs() {
    sleep 0.5
    echo "󰸵 Pushing Games Directory" >&2
    sleep 0.5
-   ) &> /dev/null
+   )
+# &> /dev/null
 
    if [ $? -eq 0 ]; then
       echo " Github Backup Completed"
