@@ -71,26 +71,37 @@ alias RustWebDevBox="distrobox enter RustWebDevBox"
 function sendconfigs {
    echo "Backing Up System To Github..."
    (
-   cd ~/Github/dotfiles || exit &&  echo " Entering Github Directory 'dotfiles' on  Main" >&2
-   rm -rf ghostty home-manager hypr rofi starship vscode waybar nixos && echo " Replacing Sub Directories" >&2 
-   cp -r ~/.config/ghostty/ ghostty && echo " Pulling Ghostty Configuration" >&2
-   cp -r ~/.config/home-manager/ home-manager && echo " Pulling Nixos Home-manager Configuration" >&2
-   cp -r ~/.config/hypr/ hypr && echo " Pulling Hyprland WM Configuration" >&2
-   cp -r ~/.config/rofi/ rofi && echo " Pulling Rofi Application Manager Configuration" >&2
-   mkdir -p starship && cp -r ~/.config/starship.toml starship/starship.toml && echo " Making Sub Directory for Starship Configuration" >&2 && echo " Pulling Starship Configuration" >&2
-   mkdir -p vscode && cp ~/.config/Code/User/settings.json vscode/settings.json && echo "Making Sub Directory for Vscode Configuration" >&2 && echo " Pulling Vscode Configuration" >&2
-   cp -r  ~/.config/waybar/ waybar && echo " Pulling Waybar Configuration" >&2
-   cp ~/.bashrc shell/bash.sh && echo " Pulling Bash Configuration" >&2
-   cp -r /etc/nixos/ nixos && echo " Pulling Nixos Configuration" >&2
+   # We hide the output of every command, but let the 'echo >&2' pass through
+   cd ~/Github/dotfiles &> /dev/null || exit
+   echo " Entering Github Directory 'dotfiles' on  Main" >&2
+   
+   rm -rf ghostty home-manager hypr rofi starship vscode waybar nixos &> /dev/null
+   echo " Replacing Sub Directories" >&2
+   
+   cp -r ~/.config/ghostty/ ghostty &> /dev/null && echo " Pulling Ghostty Configuration" >&2
+   cp -r ~/.config/home-manager/ home-manager &> /dev/null && echo " Pulling Nixos Home-manager Configuration" >&2
+   cp -r ~/.config/hypr/ hypr &> /dev/null && echo " Pulling Hyprland WM Configuration" >&2
+   cp -r ~/.config/rofi/ rofi &> /dev/null && echo " Pulling Rofi Application Manager Configuration" >&2
+   
+   mkdir -p starship && cp -r ~/.config/starship.toml starship/starship.toml &> /dev/null && echo " Pulling Starship Configuration" >&2
+   mkdir -p vscode && cp ~/.config/Code/User/settings.json vscode/settings.json &> /dev/null && echo " Pulling Vscode Configuration" >&2
+   
+   cp -r ~/.config/waybar/ waybar &> /dev/null && echo " Pulling Waybar Configuration" >&2
+   cp ~/.bashrc shell/bash.sh &> /dev/null && echo " Pulling Bash Configuration" >&2
+   
+   # Note: if this requires sudo, it might still show a prompt
+   cp -r /etc/nixos/ nixos &> /dev/null && echo " Pulling Nixos Configuration" >&2
+   
+   # Silencing the Git noise
    git add . &> /dev/null && git commit -m 'updated configs' &> /dev/null && git push origin main &> /dev/null
-   cd  ~/Github/Scripts/ && git add . && git commit -m 'updated configs' && git push origin main &> /dev/null
-   echo "󱄅 Pushing Nixos Configs" >&2
+   
+   cd ~/Github/Scripts/ &> /dev/null && git add . &> /dev/null && git commit -m 'updated configs' &> /dev/null && git push origin main &> /dev/null
+   
+   echo "   Pushing Nixos Configs" >&2
    echo " Pushing Dotfiles Directory" >&2
    echo " Pushing Scripts Directory" >&2
-   echo "󰸵 Pushing Games Directory" >&2
-   git add . &> /dev/null && git commit -m 'updated configs' &> /dev/null && git push origin main &> /dev/null
-   cd  ~/Github/Scripts/ && git add .  &> /dev/null && git commit -m 'updated configs'  &> /dev/null  && git push origin main &> /dev/null
-   ) 
+   echo "   Pushing Games Directory" >&2
+   )
 
    if [ $? -eq 0 ]; then
       echo " Github Backup Completed"
