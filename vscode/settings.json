@@ -77,6 +77,7 @@
   "editor.padding.top": 35,
   "json.schemas": [
 
+
     
   ],
   "workbench.sideBar.location": "right",
@@ -122,10 +123,10 @@
 "vscode_custom_css.imports": [
     "file:///home/ranger/.vscode/extensions/shaobeichen.gradient-theme-1.1.0/custom.css"
 ],
-"vscode_custom_css.policy": true
+"vscode_custom_css.policy": true,
 
   
-"workbench.colorCustomizations": {
+//"workbench.colorCustomizations": {
         "editor.background": "#181818",
        "sideBar.background": "#181818",
 //    "sideBar.foreground": "#ff6161",
@@ -136,7 +137,7 @@
 //    "editor.foreground": "#000000",
 //    "list.activeSelectionForeground": "#000000",
 //    "activityBar.foreground": "#ff6161",
-   },
+  // },
         "editor.inlayHints.fontFamily": "Maple Mono NF",
         "nebulaOni.update.restoreConfiguration": {
           "themeSettings": {
@@ -164,7 +165,7 @@
         "terminal.external.linuxExec": "ghostty",
         "workbench.startupEditor": "none",
         "backgroundCover.blur": 5,
-        "workbench.colorTheme": "Gradient Modern Dark",
+        "workbench.colorTheme": "Morandi Gruv",
         "workbench.iconTheme": "flow-dim",
         "workbench.productIconTheme": "cheesewaffle-product",
         "git.openRepositoryInParentFolders": "always",

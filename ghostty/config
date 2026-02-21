@@ -11,7 +11,8 @@ window-padding-x = 30
 window-padding-y = 20
 
 #BACKGROUND_SETTINGS
-background = #181818
+background-opacity = 0.4
+background = #000000
 foreground = #A0A0A0
 #background-image = /home/ranger/Github/waybar-theme-switcher/wallpapers/one-piece-zoro-lightning-epic-desktop-wallpaper-4k.jpg
 background-image-opacity = 0.2
