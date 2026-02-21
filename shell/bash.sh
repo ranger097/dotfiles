@@ -82,8 +82,8 @@ function sendconfigs {
    cp -r  ~/.config/waybar/ waybar && echo " Pulling Waybar Configuration" >&2
    cp ~/.bashrc shell/bash.sh && echo " Pulling Bash Configuration" >&2
    cp -r /etc/nixos/ nixos && echo " Pulling Nixos Configuration" >&2
-   git add . && git commit -m 'updated configs' && git push origin main
-   cd  ~/Github/Scripts/ && git add . && git commit -m 'updated configs' && git push origin main
+   git add . &> /dev/null && git commit -m 'updated configs' &> /dev/null && git push origin main &> /dev/null
+   cd  ~/Github/Scripts/ && git add . && git commit -m 'updated configs' && git push origin main &> /dev/null
    echo "󱄅 Pushing Nixos Configs" >&2
    sleep 0.5
    echo " Pushing Dotfiles Directory" >&2
@@ -92,7 +92,7 @@ function sendconfigs {
    sleep 0.5
    echo "󰸵 Pushing Games Directory" >&2
    sleep 0.5
-   ) > /dev/null
+   ) 
 
    if [ $? -eq 0 ]; then
       echo " Github Backup Completed"
