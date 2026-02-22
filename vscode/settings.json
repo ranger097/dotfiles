@@ -171,7 +171,8 @@
         "git.openRepositoryInParentFolders": "always",
         "python.defaultInterpreterPath": "/run/current-system/sw/bin/python",
         "security.workspace.trust.untrustedFiles": "open",
-        "C_Cpp.intelliSenseEngine": "disabled"
+        "C_Cpp.intelliSenseEngine": "disabled",
+        "dev.containers.dockerPath": "podman"
         
 
   
