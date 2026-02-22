@@ -1,7 +1,7 @@
 /* ranger097 */
 
 window#waybar {
-background: linear-gradient(180deg, rgba(24,24,24,0.3));
+background: linear-gradient(rgba(40,40,44,0.3));
 border-bottom: 1px solid rgba(0,0,0,1);
 border-top: 0px solid rgba(200,60,60,1);
 }
@@ -17,7 +17,7 @@ border-top: 0px solid rgba(200,60,60,1);
 #custom-vpn_ip,
 #battery,
 #mpris,
-workspaces {
+#workspaces {
 padding-left: 5px;
 padding-right: 5px;
 padding-top: 5px;
@@ -94,6 +94,8 @@ color: #808080;
 margin-left: 0px;
 margin-right: 0px;
 }
+
+
 
 #workspaces:hover { background-color: rgba(0,0,0,0); color: #000000; }
 #workspaces button:hover { background-color: rgba(0,0,0,1); color: #000000; }

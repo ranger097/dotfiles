@@ -165,7 +165,7 @@
         "terminal.external.linuxExec": "ghostty",
         "workbench.startupEditor": "none",
         "backgroundCover.blur": 5,
-        "workbench.colorTheme": "Morandi Gruv",
+        "workbench.colorTheme": "Kanagawa Black",
         "workbench.iconTheme": "flow-dim",
         "workbench.productIconTheme": "cheesewaffle-product",
         "git.openRepositoryInParentFolders": "always",
