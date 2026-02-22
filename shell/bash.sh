@@ -55,16 +55,11 @@ alias bye="sudo shutdown -h now"
 
 
 #DISTROBOX_CONTAINERS
-alias JavaGameDevBox="distrobox enter JavaGameDevBox"
-alias JavaAndroidDevBox="distrobox enter JavaAndroidDevBox"
-alias JavaWebDevBox="distrobox enter JavaWebDevBox"
-alias CPPGameDevBox="distrobox enter CPPGameDevBox"
-alias CPPLinuxDevBox="distrobox enter CPPLinuxDevBox"
-alias PythonGameDevBox="distrobox enter PythonGameDevBox"
-alias PythonLinuxDevBox="distrobox enter PythonLinuxDevBox"
-alias RustGameDevBox="distrobox enter RustGameDevBox"
-alias RustLinuxDevBox="distrobox enter RustLinuxDevBox"
-alias RustWebDevBox="distrobox enter RustWebDevBox"
+alias JavaDevBox="distrobox enter JavaDevBox"
+alias CppDevBox="distrobox enter CPPDevBox"
+alias PythonDevBox="distrobox enter PythonDevBox"
+alias RustDevBox="distrobox enter RustDevBox"
+alias ElixirDevBox="distrobox enter ElixirDevBox"
 
 
 
