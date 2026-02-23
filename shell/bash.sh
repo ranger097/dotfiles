@@ -72,7 +72,7 @@ function sendconfigs {
    (
    cd ~/Github/ranger097s_dotfiles &> /dev/null || exit
    echo " Entering Github Directory 'ranger097s_dotfiles' on  Main" >&2
-   rm -rf ghostty home-manager hypr rofi starship vscode waybar nixos &> /dev/null
+   rm -rf ghostty home-manager hypr rofi starship vscode waybar nixos dolphin &> /dev/null
    echo " Replacing Sub Directories" >&2
    cp -r ~/.config/ghostty/ ghostty &> /dev/null && echo " Pulling Ghostty Configuration" >&2
    cp -r ~/.config/home-manager/ home-manager &> /dev/null && echo " Pulling Nixos Home-manager Configuration" >&2
