@@ -81,8 +81,8 @@ function sendconfigs {
    mkdir -p  dolphin && cp ~/.config/dolphinrc dolphin/dolphinrc &> /dev/null && echo " Pulling Dolphin File Manager Configuration" >&2
    mkdir -p starship && cp -r ~/.config/starship.toml starship/starship.toml &> /dev/null && echo " Pulling Starship Configuration" >&2
    mkdir -p vscode && cp ~/.config/Code/User/settings.json vscode/settings.json &> /dev/null && echo " Pulling Vscode Configuration" >&2
-   mkdir -p wlogout && cp -r ~/.config/wlogout wlogout/ &> /dev/null && echo " Pulling Wlogout Configuration" >&2
-cp -r ~/.config/waybar/ waybar &> /dev/null && echo " Pulling Waybar Configuration" >&2
+   mkdir -p wlogout && cp -r ~/.config/wlogout wlogout &> /dev/null && echo " Pulling Wlogout Configuration" >&2
+   cp -r ~/.config/waybar/ waybar &> /dev/null && echo " Pulling Waybar Configuration" >&2
    cp ~/.bashrc shell/bash.sh &> /dev/null && echo " Pulling Bash Configuration" >&2
    cp -r /etc/nixos/ nixos &> /dev/null && echo " Pulling Nixos Configuration" >&2
 
