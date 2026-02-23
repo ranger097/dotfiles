@@ -39,6 +39,26 @@ box-shadow: -1px 2px 2px rgba(0,0,0,0.4);
 }
 
 
+#custom-power:hover,
+#custom-VacuumTube:hover,
+#custom-ProtonVpn:hover,
+#custom-code:hover,
+#custom-ghostty:hover,
+#custom-steam:hover,
+#custom-firefox:hover,
+#custom-discord:hover,
+#custom-qmmp:hover,
+#custom-blender:hover,
+#custom-dolphin:hover,
+#custom-volume:hover {
+
+color: rgba(200,60,60,1);
+
+}
+
+
+
+
 
 #custom-spacerRight {
 border-radius: 0px 0px 0px 0px;
