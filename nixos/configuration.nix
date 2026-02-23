@@ -261,7 +261,7 @@ blender
 mpvpaper
 vscode
 distrobox
-
+mpv
 
 
 (python3.withPackages (ps: with ps; [

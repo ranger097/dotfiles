@@ -54,7 +54,7 @@ git push origin main --quiet > /dev/null  2>&1
 
 function update {
 sudo nixos-rebuild switch --upgrade 
-home-manager switch --upgrade
+home-manager switch 
 }
 
 #DISTROBOX_CONTAINERS

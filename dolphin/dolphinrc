@@ -13,14 +13,11 @@ dateFormat=ShortFormat
 Places Icons Auto-resize=false
 Places Icons Static Size=22
 
-[MainWindow]
-MenuBar=Disabled
-
 [PreviewSettings]
 Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,mltpreview,opendocumentthumbnail,svgthumbnail
 
-[ViewPropertiesDialog]
-1536x960 screen: Window-Maximized=true
-
 [UiSettings]
 ColorScheme=KvGlassDarkRound
+
+[ViewPropertiesDialog]
+1536x960 screen: Window-Maximized=true
