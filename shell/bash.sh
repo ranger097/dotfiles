@@ -9,8 +9,6 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
-
-
 # .bashrc
 
 # Source global definitions
@@ -37,8 +35,6 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 
-
-
 alias cii="cd ~/.config && lsd"
 alias gii="sudo nano ~/.config/ghostty/config"
 alias wii="cd ~/.config/waybar && lsd"
@@ -50,28 +46,16 @@ alias sbii="source ~/.bashrc"
 alias ls="lsd  -a --color=auto"
 alias bye="sudo shutdown -h now"
 
-
 function cgit {
-git add . &> /dev/null
-git commit -m "updated configs" &> /dev/null
-git push origin main &> /dev/null
+git add . > /dev/null 2>&1
+git commit -m "updated configs" --quiet > /dev/null 2>&1
+git push origin main --quiet > /dev/null  2>&1
 }
-
-
-
 
 function update {
 sudo nixos-rebuild switch --upgrade 
 home-manager switch --upgrade
 }
-
-
-
-
-
-
-
-
 
 #DISTROBOX_CONTAINERS
 alias JavaDevBox="distrobox enter JavaDevBox"
@@ -87,7 +71,7 @@ function sendconfigs {
    echo "Backing Up System To Github..."
    (
    cd ~/Github/dotfiles &> /dev/null || exit
-   echo " Entering Github Directory 'dotfiles' on  Main" >&2   
+   echo " Entering Github Directory 'dotfiles' on  Main" >&2
    rm -rf ghostty home-manager hypr rofi starship vscode waybar nixos &> /dev/null
    echo " Replacing Sub Directories" >&2
    cp -r ~/.config/ghostty/ ghostty &> /dev/null && echo " Pulling Ghostty Configuration" >&2
@@ -98,12 +82,17 @@ function sendconfigs {
    mkdir -p vscode && cp ~/.config/Code/User/settings.json vscode/settings.json &> /dev/null && echo " Pulling Vscode Configuration" >&2
    cp -r ~/.config/waybar/ waybar &> /dev/null && echo " Pulling Waybar Configuration" >&2
    cp ~/.bashrc shell/bash.sh &> /dev/null && echo " Pulling Bash Configuration" >&2
-   cp -r /etc/nixos/ nixos &> /dev/null && echo " Pulling Nixos Configuration" >&2   
-   cgit &> /dev/null
+   cp -r /etc/nixos/ nixos &> /dev/null && echo " Pulling Nixos Configuration" >&2
+   cgit
    cd ~/Github/Scripts/ &> /dev/null && cgit
    cd ~/Github/Games/ &> /dev/null && cgit
-   cd ~/Github/link-lamb/ &> /dev/null && cgit &> /dev/null
-   cd ~/ranger097_gets_cracked/ &> /dev/null && cgit &> /dev/null
+   cd ~/Github/link-lamb/ &> /dev/null && cgit 
+   cd ~/ranger097_gets_cracked/ &> /dev/null && cgit 
+   for dir in ~/Github/Scripts/ ~/Github/Games/ ~/Github/link-lamb/ ~/ranger097_gets_cracked/; do
+   	cd "$dir" &> /dev/null && cgit
+   done
+
+
    echo " Pushing Nixos Configs" >&2
    echo " Pushing Dotfiles Directory" >&2
    echo " Pushing Scripts Directory" >&2
@@ -114,7 +103,7 @@ function sendconfigs {
 
    if [ $? -eq 0 ]; then
       local duration=$(( SECONDS - start_time ))
-      echo " Github Backup Completed in ${duration}s" 
+      echo " Github Backup Completed in ${duration}" 
    else
       echo " Error Backing Up System Configs"
    fi
