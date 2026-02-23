@@ -84,7 +84,7 @@ function sendconfigs {
    cp ~/.bashrc shell/bash.sh &> /dev/null && echo " Pulling Bash Configuration" >&2
    cp -r /etc/nixos/ nixos &> /dev/null && echo " Pulling Nixos Configuration" >&2
 
-   for dir in ~/.Github/ranger097s_dotfiles  ~/Github/Scripts/ ~/Github/Games/ ~/Github/link-lamb/ ~/ranger097_gets_cracked/; do
+   for dir in ~/Github/ranger097s_dotfiles  ~/Github/Scripts/ ~/Github/Games/ ~/Github/link-lamb/ ~/ranger097_gets_cracked/; do
    	cd "$dir" &> /dev/null 2>&1
 	git add . > /dev/null 2>&1
 	git commit -m "updated configs" --quiet > /dev/null 2>&1
