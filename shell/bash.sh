@@ -78,12 +78,12 @@ function sendconfigs {
    cp -r ~/.config/home-manager/ home-manager &> /dev/null && echo " Pulling Nixos Home-manager Configuration" >&2
    cp -r ~/.config/hypr/ hypr &> /dev/null && echo " Pulling Hyprland WM Configuration" >&2
    cp -r ~/.config/rofi/ rofi &> /dev/null && echo " Pulling Rofi Application Manager Configuration" >&2
-   mkdir -p  dolphin && cp ~/.config/dolphinrc dolphin/dolphinrc &> /dev/null && echo " Pulling Dolphin File Manager Configuration" >&2
+   mkdir -p  dolphin && cp -r ~/.config/dolphinrc dolphin/dolphinrc &> /dev/null && echo " Pulling Dolphin File Manager Configuration" >&2
    mkdir -p starship && cp -r ~/.config/starship.toml starship/starship.toml &> /dev/null && echo " Pulling Starship Configuration" >&2
-   mkdir -p vscode && cp ~/.config/Code/User/settings.json vscode/settings.json &> /dev/null && echo " Pulling Vscode Configuration" >&2
-   mkdir -p wlogout && cp ~/.config/wlogout wlogout/layout &> /dev/null && cp ~/.config/wlogout/style.css wlogout/style.css &> /dev/null && echo " Pulling Wlogout Configuration" >&2
+   mkdir -p vscode && cp -r ~/.config/Code/User/settings.json vscode/settings.json &> /dev/null && echo " Pulling Vscode Configuration" >&2
+   mkdir -p wlogout && cp -r ~/.config/wlogout/layout wlogout/layout &> /dev/null && cp ~/.config/wlogout/style.css wlogout/style.css &> /dev/null && echo " Pulling Wlogout Configuration" >&2
    cp -r ~/.config/waybar/ waybar &> /dev/null && echo " Pulling Waybar Configuration" >&2
-   cp ~/.bashrc shell/bash.sh &> /dev/null && echo " Pulling Bash Configuration" >&2
+   cp -r ~/.bashrc shell/bash.sh &> /dev/null && echo " Pulling Bash Configuration" >&2
    cp -r /etc/nixos/ nixos &> /dev/null && echo " Pulling Nixos Configuration" >&2
 
    for dir in ~/Github/ranger097s_dotfiles  ~/Github/Scripts/ ~/Github/Games/ ~/Github/link-lamb/ ~/ranger097_gets_cracked/; do
