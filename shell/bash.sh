@@ -89,7 +89,7 @@ function sendconfigs {
    cd ~/Github/link-lamb/ &> /dev/null && cgit 
    cd ~/ranger097_gets_cracked/ &> /dev/null && cgit 
    for dir in ~/Github/Scripts/ ~/Github/Games/ ~/Github/link-lamb/ ~/ranger097_gets_cracked/; do
-   	cd "$dir" &> /dev/null && cgit
+   	cd "$dir" &> /dev/null && cgit > /dev/null 2>&1
    done
 
 
