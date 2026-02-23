@@ -72,16 +72,17 @@ function sendconfigs {
    (
    cd ~/Github/ranger097s_dotfiles &> /dev/null || exit
    echo " Entering Github Directory 'ranger097s_dotfiles' on  Main" >&2
-   rm -rf ghostty home-manager hypr rofi starship vscode waybar nixos dolphin &> /dev/null
+   rm -rf ghostty home-manager hypr rofi starship vscode waybar nixos dolphin wlogout &> /dev/null
    echo " Replacing Sub Directories" >&2
    cp -r ~/.config/ghostty/ ghostty &> /dev/null && echo " Pulling Ghostty Configuration" >&2
    cp -r ~/.config/home-manager/ home-manager &> /dev/null && echo " Pulling Nixos Home-manager Configuration" >&2
    cp -r ~/.config/hypr/ hypr &> /dev/null && echo " Pulling Hyprland WM Configuration" >&2
    cp -r ~/.config/rofi/ rofi &> /dev/null && echo " Pulling Rofi Application Manager Configuration" >&2
-   mkdir dolphin && cp ~/.config/dolphinrc dolphin/dolphinrc &> /dev/null && echo " Pulling Dolphin File Manager Configuration" >&2
+   mkdir -p  dolphin && cp ~/.config/dolphinrc dolphin/dolphinrc &> /dev/null && echo " Pulling Dolphin File Manager Configuration" >&2
    mkdir -p starship && cp -r ~/.config/starship.toml starship/starship.toml &> /dev/null && echo " Pulling Starship Configuration" >&2
    mkdir -p vscode && cp ~/.config/Code/User/settings.json vscode/settings.json &> /dev/null && echo " Pulling Vscode Configuration" >&2
-   cp -r ~/.config/waybar/ waybar &> /dev/null && echo " Pulling Waybar Configuration" >&2
+   mkdir -p wlogout && cp -r ~/.config/wlogout wlogout/ &> /dev/null && echo " Pulling Wlogout Configuration" >&2
+cp -r ~/.config/waybar/ waybar &> /dev/null && echo " Pulling Waybar Configuration" >&2
    cp ~/.bashrc shell/bash.sh &> /dev/null && echo " Pulling Bash Configuration" >&2
    cp -r /etc/nixos/ nixos &> /dev/null && echo " Pulling Nixos Configuration" >&2
 
