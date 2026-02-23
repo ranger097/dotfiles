@@ -48,9 +48,28 @@ alias bii="sudo nano ~/.bashrc"
 alias hmii="sudo nano ~/.config/home-manager/home.nix"
 alias sbii="source ~/.bashrc"
 alias ls="lsd  -a --color=auto"
-alias cgit="git add . && git commit -m 'updated configs' && git push origin main"
-alias update="sudo nixos-rebuild switch --upgrade"
 alias bye="sudo shutdown -h now"
+
+
+function cgit {
+git add .
+git commit -m "updated configs"
+git push origin main
+}
+
+
+
+
+function update {
+sudo nixos-rebuild switch --upgrade 
+home-manager switch --upgrade
+}
+
+
+
+
+
+
 
 
 
@@ -79,16 +98,21 @@ function sendconfigs {
    cp -r ~/.config/waybar/ waybar &> /dev/null && echo " Pulling Waybar Configuration" >&2
    cp ~/.bashrc shell/bash.sh &> /dev/null && echo " Pulling Bash Configuration" >&2
    cp -r /etc/nixos/ nixos &> /dev/null && echo " Pulling Nixos Configuration" >&2   
-   git add . &> /dev/null && git commit -m 'updated configs' &> /dev/null && git push origin main &> /dev/null   
-   cd ~/Github/Scripts/ &> /dev/null && git add . &> /dev/null && git commit -m 'updated configs' &> /dev/null && git push origin main &> /dev/null
+   cgit &> /dev/null
+   cd ~/Github/Scripts/ &> /dev/null && cgit &> /dev/null
+   cd ~/Github/Games/ &> /dev/null && cgit &> /dev/null
+   cd ~/Github/link-lamb/ &> /dev/null && cgit &> /dev/null
+   cd ~/ranger097_gets_cracked/ &> /dev/null && cgit &> /dev/null
    echo " Pushing Nixos Configs" >&2
    echo " Pushing Dotfiles Directory" >&2
    echo " Pushing Scripts Directory" >&2
    echo "󰸵 Pushing Games Directory" >&2
+   echo "󰄡 Pushing Link-Lamb Directory" >&2
+   echo "󰑴 Pushing ranger097_gets_cracked Directory" >&2
    )
 
    if [ $? -eq 0 ]; then
-      echo " Github Backup Completed"
+      echo " Github Backup Completed"  && time sendconfigs
    else
       echo " Error Backing Up System Configs"
    fi

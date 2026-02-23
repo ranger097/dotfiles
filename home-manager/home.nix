@@ -11,25 +11,31 @@
   home.packages = with pkgs; [
   nwg-look
   kdePackages.qt6ct
-    
+  kdePackages.qtsvg     
+  kdePackages.kio-extras
 	
 
 
   ];
 
+home.file.".config/kdeglobals" = {
+text = ''
+  [Icons]
+  Theme=Ars-Light-Icons
+'';
+force = true;
+};
+
+wayland.windowManager.hyprland.systemd.variables = ["--all"];
 home.sessionVariables = {
 XDG_DATA_DIRS = "$HOME/.icons:$XDG_DATA_DIRS";
 QT_QPA_PLATFORMTHEME = "qt6ct";
+QT_QPA_PLATFORM = "wayland;xcb";
+XDG_MENU_PREFIX = "plasma-";
 };
 
 
 
-  home.file = {
-
-
-
-
-  };
 
 
 qt = {

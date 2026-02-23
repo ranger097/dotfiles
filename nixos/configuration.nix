@@ -98,6 +98,7 @@ services.pipewire.wireplumber.extraConfig."10-disable-mic" = {
 
 services.gvfs.enable = true;
 
+
 #BOOT/SECURITY_SETTINGS_END
 
 
