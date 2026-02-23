@@ -70,7 +70,7 @@ function sendconfigs {
    local start_time=$SECONDS
    echo "Backing Up System To Github..."
    (
-   cd ~/Github/dotfiles &> /dev/null || exit
+   cd ~/Github/ranger097s_dotfiles &> /dev/null || exit
    echo " Entering Github Directory 'dotfiles' on  Main" >&2
    rm -rf ghostty home-manager hypr rofi starship vscode waybar nixos &> /dev/null
    echo " Replacing Sub Directories" >&2
@@ -84,7 +84,7 @@ function sendconfigs {
    cp ~/.bashrc shell/bash.sh &> /dev/null && echo " Pulling Bash Configuration" >&2
    cp -r /etc/nixos/ nixos &> /dev/null && echo " Pulling Nixos Configuration" >&2
 
-   for dir in ~/.Github/dotfiles  ~/Github/Scripts/ ~/Github/Games/ ~/Github/link-lamb/ ~/ranger097_gets_cracked/; do
+   for dir in ~/.Github/ranger097s_dotfiles  ~/Github/Scripts/ ~/Github/Games/ ~/Github/link-lamb/ ~/ranger097_gets_cracked/; do
    	cd "$dir" &> /dev/null 2>&1
 	git add . > /dev/null 2>&1
 	git commit -m "updated configs" --quiet > /dev/null 2>&1
@@ -101,9 +101,9 @@ function sendconfigs {
 
    if [ $? -eq 0 ]; then
       local duration=$(( SECONDS - start_time ))
-      echo " Github Backup Completed in ${duration}" 
+      echo " Github Backup Completed in ${duration} seconds." 
    else
-      echo " Error Backing Up System Configs"
+      echo " Error Backing Up System Configs."
    fi
 }
 
@@ -112,6 +112,4 @@ function sendconfigs {
 
 
 export LS_COLORS="di=38;5;250"
-
-
 eval -- "$(/run/current-system/sw/bin/starship init bash --print-full-init)"
