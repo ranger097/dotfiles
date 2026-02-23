@@ -71,7 +71,7 @@
 
 "custom/steam": {
 "format": "[ STEAM 蒸気 ]",
-"on-click": "steam"
+"on-click": "steam -newbigpicture"
 },
 
 "custom/discord": {
@@ -81,19 +81,22 @@
 
 "custom/qmmp": {
 "format": "[ QMMP 音楽 ]",
+"on-click":"qmmp"
 },
 
 "custom/blender": {
-"format": "[ BLENDER ブレンダー ]"
+"format": "[ BLENDER ブレンダー ]",
+"on-click":"blender"
 },
 
 "custom/dolphin": {
-"format": "[ DOLPHIN 海豚 ]"
-
+"format": "[ DOLPHIN 海豚 ]",
+"on-click":"dolphin"
 },
 
 "custom/volume": {
-"format": "[ VOLUME 音量 ]"
+"format": "[ VOLUME 音量 ]",
+"on-click":"pavucontrol"
 },
 
 "custom/power": {
