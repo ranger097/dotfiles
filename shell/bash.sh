@@ -83,15 +83,13 @@ function sendconfigs {
    cp -r ~/.config/waybar/ waybar &> /dev/null && echo " Pulling Waybar Configuration" >&2
    cp ~/.bashrc shell/bash.sh &> /dev/null && echo " Pulling Bash Configuration" >&2
    cp -r /etc/nixos/ nixos &> /dev/null && echo " Pulling Nixos Configuration" >&2
-   cgit > /dev/null 2>&1
-   cd ~/Github/Scripts/ &> /dev/null && cgit > /dev/null 2>&1
-   cd ~/Github/Games/ &> /dev/null && cgit > /dev/null 2>&1
-   cd ~/Github/link-lamb/ &> /dev/null && cgit  > /dev/null 2>&1
-   cd ~/ranger097_gets_cracked/ &> /dev/null && cgit  > /dev/null 2>&1
-   for dir in ~/Github/Scripts/ ~/Github/Games/ ~/Github/link-lamb/ ~/ranger097_gets_cracked/; do
-   	cd "$dir" &> /dev/null && cgit > /dev/null 2>&1
-   done
 
+   for dir in ~/.Github/dotfiles  ~/Github/Scripts/ ~/Github/Games/ ~/Github/link-lamb/ ~/ranger097_gets_cracked/; do
+   	cd "$dir" &> /dev/null 2>&1
+	git add . > /dev/null 2>&1
+	git commit -m "updated configs" --quiet > /dev/null 2>&1
+	git push origin main --quiet > /dev/null  2>&1
+   done
 
    echo " Pushing Nixos Configs" >&2
    echo " Pushing Dotfiles Directory" >&2
