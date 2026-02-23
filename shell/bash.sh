@@ -52,9 +52,9 @@ alias bye="sudo shutdown -h now"
 
 
 function cgit {
-git add .
-git commit -m "updated configs"
-git push origin main
+git add . &> /dev/null
+git commit -m "updated configs" &> /dev/null
+git push origin main &> /dev/null
 }
 
 
@@ -83,6 +83,7 @@ alias ElixirDevBox="distrobox enter ElixirDevBox"
 
 
 function sendconfigs {
+   local start_time=$SECONDS
    echo "Backing Up System To Github..."
    (
    cd ~/Github/dotfiles &> /dev/null || exit
@@ -99,8 +100,8 @@ function sendconfigs {
    cp ~/.bashrc shell/bash.sh &> /dev/null && echo " Pulling Bash Configuration" >&2
    cp -r /etc/nixos/ nixos &> /dev/null && echo " Pulling Nixos Configuration" >&2   
    cgit &> /dev/null
-   cd ~/Github/Scripts/ &> /dev/null && cgit &> /dev/null
-   cd ~/Github/Games/ &> /dev/null && cgit &> /dev/null
+   cd ~/Github/Scripts/ &> /dev/null && cgit
+   cd ~/Github/Games/ &> /dev/null && cgit
    cd ~/Github/link-lamb/ &> /dev/null && cgit &> /dev/null
    cd ~/ranger097_gets_cracked/ &> /dev/null && cgit &> /dev/null
    echo " Pushing Nixos Configs" >&2
@@ -112,7 +113,8 @@ function sendconfigs {
    )
 
    if [ $? -eq 0 ]; then
-      echo " Github Backup Completed"  && time sendconfigs
+      local duration=$(( SECONDS - start_time ))
+      echo " Github Backup Completed in ${duration}s" 
    else
       echo " Error Backing Up System Configs"
    fi
