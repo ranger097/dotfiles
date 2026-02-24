@@ -262,7 +262,7 @@ mpvpaper
 vscode
 distrobox
 mpv
-
+hypridle
 
 (python3.withPackages (ps: with ps; [
 
