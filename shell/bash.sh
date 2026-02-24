@@ -135,6 +135,19 @@ echo "Finished in ${duration} seconds."
 distrobox-list
 }
 
+
+function STOPDEVBOX {
+local start_time=$SECONDS
+distrobox-stop GODEVBOX RUSTDEVBOX ELIXIRDEVBOX JAVADEVBOX PYTHONDEVBOX GCCDEVBOX --yes &> /dev/null
+wait
+local duration=$((SECONDS - start_time))
+echo "ALL DISTROBOXES HAVE BEEN STOPPED"
+echo "Finished in ${duration} seconds."
+distrobox-list
+}
+
+
+
 #DISTROBOX_CONTAINERS
 alias GODEVBOX="distrobox enter GODEVBOX"
 alias RUSTDEVBOX="distrobox enter RUSTDEVBOX"
