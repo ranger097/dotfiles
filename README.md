@@ -8,16 +8,18 @@ Screenshots of system:<br/>
 <img width="3840" height="2400" alt="2026-02-24-093614_hyprshot" src="https://github.com/user-attachments/assets/91fc7715-50cf-4474-8248-62d0d7205e9a" />
 
 Features/Applications and Completion/Configuration level:<br/>
-completed == "usable/automated"<br/>
-incomplete == "unusable/stock"<br/>
 
+ completed == "usable/automated"<br/>
 [Nixos](https://github.com/NixOS/nixpkgs) · completed<br/>
 [Rofi](https://github.com/davatorium/rofi) · completed<br/>
 [Hyprlock](https://github.com/hyprwm/hyprlock) · completed<br/>
 [Distrobox](https://github.com/89luca89/distrobox/blob/main/docs/compatibility.md) Automation Script · completed<br/>
 [Waybar](https://github.com/Alexays/Waybar) · completed<br/>
 [Hyprland](https://github.com/hyprwm/Hyprland) · completed<br/>
-[wlogout](https://github.com/ArtsyMacaw/wlogout) · incomplete<br/>
 [kvantum](https://github.com/tsujan/Kvantum) · completed<br/>
 [Github](https://github.com/git/git) Automation Script · completed<br/>
 
+ incomplete == "unusable/stock"<br/>
+[wlogout](https://github.com/ArtsyMacaw/wlogout) · incomplete<br/>
+[Starship](https://github.com/starship/starship) · incomplete<br/>
+[Nixos Home-Manager](https://github.com/nix-community/home-manager) · incomplete<br/>
