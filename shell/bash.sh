@@ -103,20 +103,36 @@ function sendconfigs {
 }
 
 function CREATEDEVBOX {
-distrobox-create -n GODEVBOX -i golang --yes
-distrobox-create -n RUSTDEVBOX -i rust --yes
-distrobox-create -n ELIXIRDEVBOX -i elixir --yes
+export DBX_CONTAINER_MANAGER=podman
+local start_time=$SECONDS
+echo "BUILDING · [  GODEVBOX ] · ENVIRONMENT"
+distrobox-create -n GODEVBOX -i golang --yes &> /dev/null
+echo "BUILDING · [  RUSTDEVBOX ] · ENVIRONMENT"
+distrobox-create -n RUSTDEVBOX -i rust --yes &> /dev/null
+echo "BUILDING · [  ELIXIRDEVBOX ] · ENVIRONMENT"
+distrobox-create -n ELIXIRDEVBOX -i elixir --yes &> /dev/null
+echo "BUILDING · [  JAVADEVBOX ] · ENVIRONMENT"
 distrobox-create -n JAVADEVBOX --image fedora:latest \
  --additional-packages "java-latest-openjdk-devel maven gradle git" \
- --yes
-distrobox-create -n PYTHONDEVBOX -i python --yes
-distrobox-create -n GCCDEVBOX -i gcc --yes
+ --yes &> /dev/null
+echo "BUILDING · [  PYTHONDEVBOX ] · ENVIRONMENT"
+distrobox-create -n PYTHONDEVBOX -i python --yes &> /dev/null
+echo "BUILDING · [  GCCDEVBOX ] · ENVIRONMENT"
+distrobox-create -n GCCDEVBOX -i gcc --yes &> /dev/null
+wait
+local duration=$((SECONDS - start_time))
+echo "FINSIHED · [  DISTROBOX ] · DEVELOPMENT ENVIRONMENT IN ${duration} SECONDS"
 distrobox-list
 }
 
 function REMOVEDEVBOX {
-distrobox-rm  GODEVBOX RUSTDEVBOX ELIXIRDEVBOX JAVADEVBOX PYTHONDEVBOX GCCDEVBOX --yes
-echo "removed all dev environments"
+local start_time=$SECONDS
+distrobox-rm -f GODEVBOX RUSTDEVBOX ELIXIRDEVBOX JAVADEVBOX PYTHONDEVBOX GCCDEVBOX &> /dev/null
+wait
+local duration=$((SECONDS - start_time))
+echo "ALL DISTROBOXES HAVE BEEN DELETED"
+echo "Finished in ${duration} seconds."
+distrobox-list
 }
 
 #DISTROBOX_CONTAINERS
@@ -126,9 +142,6 @@ alias ELIXIRDEVBOX="distrobox enter ELIXIRDEVBOX"
 alias JAVADEVBOX="distrobox enter JAVADEVBOX"
 alias PYTHONDEVBOX="distrobox enter PYTHONDEVBOX"
 alias GCCDEVBOX="distrobox enter GCCDEVBOX"
-
-
-
 
 export LS_COLORS="di=38;5;250"
 eval -- "$(/run/current-system/sw/bin/starship init bash --print-full-init)"
