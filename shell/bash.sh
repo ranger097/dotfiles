@@ -105,23 +105,23 @@ function sendconfigs {
 function CREATEDEVBOX {
 export DBX_CONTAINER_MANAGER=podman
 local start_time=$SECONDS
-echo "BUILDING · [  GODEVBOX ] · ENVIRONMENT"
+echo "BUILDING · [  GODEVBOX     ] · ENVIRONMENT"
 distrobox-create -n GODEVBOX -i golang --yes &> /dev/null
-echo "BUILDING · [  RUSTDEVBOX ] · ENVIRONMENT"
+echo "BUILDING · [  RUSTDEVBOX   ] · ENVIRONMENT"
 distrobox-create -n RUSTDEVBOX -i rust --yes &> /dev/null
 echo "BUILDING · [  ELIXIRDEVBOX ] · ENVIRONMENT"
 distrobox-create -n ELIXIRDEVBOX -i elixir --yes &> /dev/null
-echo "BUILDING · [  JAVADEVBOX ] · ENVIRONMENT"
+echo "BUILDING · [  JAVADEVBOX   ] · ENVIRONMENT"
 distrobox-create -n JAVADEVBOX --image fedora:latest \
  --additional-packages "java-latest-openjdk-devel maven gradle git" \
  --yes &> /dev/null
 echo "BUILDING · [  PYTHONDEVBOX ] · ENVIRONMENT"
 distrobox-create -n PYTHONDEVBOX -i python --yes &> /dev/null
-echo "BUILDING · [  GCCDEVBOX ] · ENVIRONMENT"
+echo "BUILDING · [  GCCDEVBOX    ] · ENVIRONMENT"
 distrobox-create -n GCCDEVBOX -i gcc --yes &> /dev/null
 wait
 local duration=$((SECONDS - start_time))
-echo "FINSIHED · [  DISTROBOX ] · DEVELOPMENT ENVIRONMENT IN ${duration} SECONDS"
+echo "FINSIHED · [  DISTROBOX    ] · ENVIRONMENT IN ${duration} SECONDS"
 distrobox-list
 }
 
