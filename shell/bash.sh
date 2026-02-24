@@ -146,8 +146,6 @@ echo "Finished in ${duration} seconds."
 distrobox-list
 }
 
-
-
 #DISTROBOX_CONTAINERS
 alias GODEVBOX="distrobox enter GODEVBOX"
 alias RUSTDEVBOX="distrobox enter RUSTDEVBOX"

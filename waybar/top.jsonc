@@ -44,7 +44,13 @@
             "(.*)libreoffice-writer(.*)": "[ LIBREOFFICE 書 ]",
 	    "(.*)kdenlive(.*)": "[ KDENLIVE 動画 ]",
             "(.*)firefox(.*)": "[ FIREFOX 火狐 ]",
+            "(.*)discord(.*)": "[ DOLPHIN 海豚 ]"
             " ": "[ RANGER097 レンジャー ]",
+
+
+
+
+
         }
     },
 
