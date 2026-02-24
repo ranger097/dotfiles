@@ -23,3 +23,8 @@ Features/Applications and Completion/Configuration level:<br/>
 [wlogout](https://github.com/ArtsyMacaw/wlogout) · incomplete<br/>
 [Starship](https://github.com/starship/starship) · incomplete<br/>
 [Nixos Home-Manager](https://github.com/nix-community/home-manager) · incomplete<br/>
+
+ENJOY HOWEVER YOU WANT:<br/>
+FORK  <br/>
+SHARE  <br/>
+LEAVE A STAR  <br/>
