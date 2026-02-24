@@ -57,14 +57,6 @@ sudo nixos-rebuild switch --upgrade
 home-manager switch 
 }
 
-#DISTROBOX_CONTAINERS
-alias JavaDevBox="distrobox enter JavaDevBox"
-alias CppDevBox="distrobox enter CppDevBox"
-alias PythonDevBox="distrobox enter PythonDevBox"
-alias RustDevBox="distrobox enter RustDevBox"
-alias ElixirDevBox="distrobox enter ElixirDevBox"
-alias GoDevBox="distrobox enter GoDevBox"
-
 
 function sendconfigs {
    local start_time=$SECONDS
@@ -82,6 +74,7 @@ function sendconfigs {
    mkdir -p starship && cp -r ~/.config/starship.toml starship/starship.toml &> /dev/null && echo " Pulling Starship Configuration" >&2
    mkdir -p vscode && cp -r ~/.config/Code/User/settings.json vscode/settings.json &> /dev/null && echo " Pulling Vscode Configuration" >&2
    mkdir -p wlogout && cp -r ~/.config/wlogout/layout wlogout/layout &> /dev/null && cp ~/.config/wlogout/style.css wlogout/style.css &> /dev/null && echo " Pulling Wlogout Configuration" >&2
+   mkdir -p distrobox && cp ~/.distroboxrc distrobox/.distroboxrc &> /dev/null && echo " Pulling DistroBox Configuration" >&2
    cp -r ~/.config/waybar/ waybar &> /dev/null && echo " Pulling Waybar Configuration" >&2
    cp -r ~/.bashrc shell/bash.sh &> /dev/null && echo " Pulling Bash Configuration" >&2
    cp -r /etc/nixos/ nixos &> /dev/null && echo " Pulling Nixos Configuration" >&2
@@ -109,6 +102,30 @@ function sendconfigs {
    fi
 }
 
+function CREATEDEVBOX {
+distrobox-create -n GODEVBOX -i golang --yes
+distrobox-create -n RUSTDEVBOX -i rust --yes
+distrobox-create -n ELIXIRDEVBOX -i elixir --yes
+distrobox-create -n JAVADEVBOX --image fedora:latest \
+ --additional-packages "java-latest-openjdk-devel maven gradle git" \
+ --yes
+distrobox-create -n PYTHONDEVBOX -i python --yes
+distrobox-create -n GCCDEVBOX -i gcc --yes
+distrobox-list
+}
+
+function REMOVEDEVBOX {
+distrobox-rm  GODEVBOX RUSTDEVBOX ELIXIRDEVBOX JAVADEVBOX PYTHONDEVBOX GCCDEVBOX --yes
+echo "removed all dev environments"
+}
+
+#DISTROBOX_CONTAINERS
+alias GODEVBOX="distrobox enter GODEVBOX"
+alias RUSTDEVBOX="distrobox enter RUSTDEVBOX"
+alias ELIXIRDEVBOX="distrobox enter ELIXIRDEVBOX"
+alias JAVADEVBOX="distrobox enter JAVADEVBOX"
+alias PYTHONDEVBOX="distrobox enter PYTHONDEVBOX"
+alias GCCDEVBOX="distrobox enter GCCDEVBOX"
 
 
 
