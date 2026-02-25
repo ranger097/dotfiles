@@ -105,6 +105,7 @@ function sendconfigs {
 function CREATEDEVBOX {
 export DBX_CONTAINER_MANAGER=podman
 local start_time=$SECONDS
+echo""
 echo "BUILDING · [  GODEVBOX     ] · ENVIRONMENT"
 distrobox-create -n GODEVBOX -i golang --yes &> /dev/null
 echo "BUILDING · [  RUSTDEVBOX   ] · ENVIRONMENT"
@@ -121,7 +122,8 @@ echo "BUILDING · [  GCCDEVBOX    ] · ENVIRONMENT"
 distrobox-create -n GCCDEVBOX -i gcc --yes &> /dev/null
 wait
 local duration=$((SECONDS - start_time))
-echo "FINSIHED · [  DISTROBOX    ] · ENVIRONMENT IN ${duration} SECONDS"
+echo "FINISHED · [  DISTROBOX    ] · ENVIRONMENT IN ${duration} SECONDS"
+echo""
 distrobox-list
 }
 
