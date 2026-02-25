@@ -5,31 +5,29 @@
 "layer": "top",
 "position": "right", // (top|bottom|left|right)
 //"height": 940,  
-"width": 1, 
+"width": 10, 
 "spacing": 0,
-"margin-top" : 0,
-"margin-bottom": 0,
-"margin-left" : 0,
-"margin-right" : 0,
+"margin-top" : 20,
+"margin-bottom": 20,
+"margin-left" : -14,
+"margin-right" : 20,
 
 "modules-left": [
 "hyprland/workspaces"
 ],
 
 "modules-center": [
-"custom/dna",
-"custom/dna",
-"custom/dna",
+//"custom/dna",
+//"custom/dna",
 "custom/code",
 "custom/ghostty",
 "custom/firefox",
 "custom/nix",
 "custom/steam",
 "custom/discord",
-"custom/hyprlock",
-"custom/dna",
-"custom/dna",
-"custom/dna"
+"custom/hyprlock"
+//"custom/dna",
+//"custom/dna"
 ],
 
 "modules-right": [ 
