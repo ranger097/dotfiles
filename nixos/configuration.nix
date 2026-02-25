@@ -235,7 +235,6 @@ libsForQt5.qt5ct
 libsForQt5.qtstyleplugin-kvantum
 kdePackages.kio-extras
 kdePackages.qt6ct
-hyprcursor
 hyprlock
 protonvpn-gui
 brightnessctl
@@ -264,7 +263,9 @@ vscode
 distrobox
 mpv
 hypridle
-
+hyprkeys
+hyprsunset
+hyprnotify
 (python3.withPackages (ps: with ps; [
 
 npyscreen

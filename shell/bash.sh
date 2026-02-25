@@ -113,9 +113,7 @@ distrobox-create -n RUSTDEVBOX -i rust --yes &> /dev/null
 echo "BUILDING · [  ELIXIRDEVBOX ] · ENVIRONMENT"
 distrobox-create -n ELIXIRDEVBOX -i elixir --yes &> /dev/null
 echo "BUILDING · [  JAVADEVBOX   ] · ENVIRONMENT"
-distrobox-create -n JAVADEVBOX --image fedora:latest \
- --additional-packages "java-latest-openjdk-devel maven gradle git" \
- --yes &> /dev/null
+distrobox-create -n JAVADEVBOX --image eclipse-temurin:21-jdk-jammy --yes &> /dev/null
 echo "BUILDING · [  PYTHONDEVBOX ] · ENVIRONMENT"
 distrobox-create -n PYTHONDEVBOX -i python --yes &> /dev/null
 echo "BUILDING · [  GCCDEVBOX    ] · ENVIRONMENT"
@@ -155,6 +153,20 @@ alias ELIXIRDEVBOX="distrobox enter ELIXIRDEVBOX"
 alias JAVADEVBOX="distrobox enter JAVADEVBOX"
 alias PYTHONDEVBOX="distrobox enter PYTHONDEVBOX"
 alias GCCDEVBOX="distrobox enter GCCDEVBOX"
+
+
+function STARTDEVBOX {
+GODEVBOX
+RUSTDEVBOX
+ELIXIRDEVBOX
+JAVADEVBOX
+PYTHONDEVBOX
+GCCDEVBOX
+}
+
+
+
+
 
 export LS_COLORS="di=38;5;250"
 eval -- "$(/run/current-system/sw/bin/starship init bash --print-full-init)"
