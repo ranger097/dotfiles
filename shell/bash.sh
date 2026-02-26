@@ -39,12 +39,12 @@ alias cii="cd ~/.config && lsd"
 alias gii="sudo nano ~/.config/ghostty/config"
 alias wii="cd ~/.config/waybar && lsd"
 alias hii="sudo nano ~/.config/hypr/hyprland.conf"
-alias nii="sudo nano /etc/nixos/configuration.nix"
 alias bii="sudo nano ~/.bashrc"
 alias hmii="sudo nano ~/.config/home-manager/home.nix"
 alias sbii="source ~/.bashrc"
 alias ls="lsd  -a --color=auto"
 alias bye="sudo shutdown -h now"
+alias nii="cd /etc/nixos/modules && lsd"
 
 function cgit {
 git add . > /dev/null 2>&1

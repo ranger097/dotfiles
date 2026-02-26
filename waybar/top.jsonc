@@ -10,7 +10,9 @@
 
     "modules-left": [
         "hyprland/window",
+	"custom/left-bracket",
         "hyprland/workspaces",
+	"custom/right-bracket",
         "custom/spacerLeft"
     ],
     "modules-center": [
@@ -107,7 +109,7 @@
        "on-click": "nm-connection-editor"
     },
 
-    "custom/spacerRight": { "format": " " },
-    "custom/spacerLeft": { "format": " " },
+    "custom/right-bracket": { "format": "]" },
+    "custom/left-bracket": { "format": "[" },
     "custom/spacer": { "format": " " }
 }
