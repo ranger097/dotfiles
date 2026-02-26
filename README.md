@@ -1,7 +1,9 @@
 _Complete(ish)_ Copy of My Nixos System.<br/>
 Made for developers who like automated systems (_and Containerized development through Distrobox_).<br/>
-As I learn more about Linux, Nixos, Hyprland, Containerized Development and Programming,<br/>
+As I learn more about Linux, Nixos, Hyprland, Automation,<br/>
+Containerized Development and Programming,<br/>
 I will update this repo periodically.<br/>
+
 ###Screenshots:<br/>
 <img width="3840" height="2400" alt="2026-02-23-212314_hyprshot" src="https://github.com/user-attachments/assets/a8323d4b-0724-4414-966e-28d18b7e3fcc" />
 <img width="3840" height="2400" alt="2026-02-24-223057_hyprshot" src="https://github.com/user-attachments/assets/0be5880f-a3d6-4814-be74-e5f6007b090d" />
