@@ -1,5 +1,5 @@
 #ranger097
-{ config, pkgs, ... }:
+{ config, pkgs, ... }: {
 users.users.ranger = {
 isNormalUser = true;
 description = "ranger";
@@ -8,3 +8,4 @@ packages = with pkgs; [
 kdePackages.kate
 ];
 };
+}

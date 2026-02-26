@@ -2,7 +2,7 @@
 { config, pkgs, ... }: {
 boot.loader.systemd-boot.enable = true;
 boot.loader.efi.canTouchEfiVariables = true;
-boot.kernelPackages = pkgs.linuxPackages;
+boot.kernelPackages = pkgs.lib.mkForce pkgs.linuxPackages;
 boot.initrd.luks.devices."luks-1997167d-6340-4911-b856-b88bdd43c13d".device = "/dev/disk/by-uuid/1997167d-6340-4911-b856-b88bdd43c13d";
 security.polkit.enable = true;
 boot.loader.timeout = 0;
