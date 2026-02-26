@@ -1,6 +1,7 @@
 #ranger097
 { config, pkgs, ... }: {
 imports = [ 
+./hardware-configuration.nix
 ./modules/audio.nix
 ./modules/boots.nix
 ./modules/dev.nix
