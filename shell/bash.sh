@@ -106,28 +106,32 @@ function CREATEDEVBOX {
 export DBX_CONTAINER_MANAGER=podman
 local start_time=$SECONDS
 echo""
-echo "BUILDING · [  GODEVBOX     ] · ENVIRONMENT"
+echo "BUILDING · [  GODEVBOX     ] · ENVIRONMENT"
 distrobox-create -n GODEVBOX -i golang --yes &> /dev/null
 echo "BUILDING · [  RUSTDEVBOX   ] · ENVIRONMENT"
 distrobox-create -n RUSTDEVBOX -i rust --yes &> /dev/null
 echo "BUILDING · [  ELIXIRDEVBOX ] · ENVIRONMENT"
 distrobox-create -n ELIXIRDEVBOX -i elixir --yes &> /dev/null
-echo "BUILDING · [  JAVADEVBOX   ] · ENVIRONMENT"
+echo "BUILDING · [  JAVADEVBOX   ] · ENVIRONMENT"
 distrobox-create -n JAVADEVBOX --image eclipse-temurin:21-jdk-jammy --yes &> /dev/null
 echo "BUILDING · [  PYTHONDEVBOX ] · ENVIRONMENT"
 distrobox-create -n PYTHONDEVBOX -i python --yes &> /dev/null
-echo "BUILDING · [  GCCDEVBOX    ] · ENVIRONMENT"
+echo "BUILDING · [  GCCDEVBOX    ] · ENVIRONMENT"
 distrobox-create -n GCCDEVBOX -i gcc --yes &> /dev/null
+echo "BUILDING · [  NODEDEVBOX   ] · ENVIRONMENT"
+distrobox-create -n NODEDEVBOX -i  node --yes &> /dev/null
+echo "BUILDING · [ 󰴭 RUBYDEVBOX   ] · ENVIRONMENT"
+distrobox-create -n RUBYDEVBOX -i  ruby --yes &> /dev/null
 wait
 local duration=$((SECONDS - start_time))
-echo "FINISHED · [  DISTROBOX    ] · ENVIRONMENT IN ${duration} SECONDS"
+echo "FINISHED · [   DISTROBOX   ] · ENVIRONMENT IN ${duration} SECONDS"
 echo""
 distrobox-list
 }
 
 function REMOVEDEVBOX {
 local start_time=$SECONDS
-distrobox-rm -f GODEVBOX RUSTDEVBOX ELIXIRDEVBOX JAVADEVBOX PYTHONDEVBOX GCCDEVBOX &> /dev/null
+distrobox-rm -f GODEVBOX RUSTDEVBOX ELIXIRDEVBOX JAVADEVBOX PYTHONDEVBOX GCCDEVBOX RUBYDEVBOX NODEDEVBOX&> /dev/null
 wait
 local duration=$((SECONDS - start_time))
 echo "ALL DISTROBOXES HAVE BEEN DELETED"
@@ -138,7 +142,7 @@ distrobox-list
 
 function STOPDEVBOX {
 local start_time=$SECONDS
-distrobox-stop GODEVBOX RUSTDEVBOX ELIXIRDEVBOX JAVADEVBOX PYTHONDEVBOX GCCDEVBOX --yes &> /dev/null
+distrobox-stop GODEVBOX RUSTDEVBOX ELIXIRDEVBOX JAVADEVBOX PYTHONDEVBOX GCCDEVBOX RUBYDEVBOX NODEDEVBOX --yes &> /dev/null
 wait
 local duration=$((SECONDS - start_time))
 echo "ALL DISTROBOXES HAVE BEEN STOPPED"
@@ -153,7 +157,8 @@ alias ELIXIRDEVBOX="distrobox enter ELIXIRDEVBOX"
 alias JAVADEVBOX="distrobox enter JAVADEVBOX"
 alias PYTHONDEVBOX="distrobox enter PYTHONDEVBOX"
 alias GCCDEVBOX="distrobox enter GCCDEVBOX"
-
+alias NODEDEVBOX="distrobox enter NODEDEVBOX"
+alias RUBYDEVBOX="distrobox enter RUBYDEVBOX"
 
 function STARTDEVBOX {
 GODEVBOX
@@ -162,6 +167,8 @@ ELIXIRDEVBOX
 JAVADEVBOX
 PYTHONDEVBOX
 GCCDEVBOX
+NODEDEVBOX
+RUBYDEVBOX
 }
 
 
