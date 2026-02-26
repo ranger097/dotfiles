@@ -36,5 +36,7 @@ foliate
 qmmp
 mpvpaper
 mpv
+gnome-boxes
+
 ];
 }
