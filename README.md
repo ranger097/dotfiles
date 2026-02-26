@@ -1,3 +1,15 @@
+
+\`\`\`
+git clone https://github.com/ranger097/ranger097s_dotfiles.git
+
+cd ranger097s_dotfiles/nixos
+
+nixos-generate-config --show-config --no-networks > hardware-configuration.nix
+
+sudo nixos-rebuild switch --flake .#pokemon
+\`\`\`
+
+
 Complete(ish) Copy of My Nixos System.<br/>
 Made for developers who like automated systems.<br/>
 As i learn more about Nixos and Linux as a whole, i will update this repo and these configs periodically.<br/>
