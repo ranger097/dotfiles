@@ -21,7 +21,7 @@ nixos-generate-config --show-config --no-networks > hardware-configuration.nix
 sudo nixos-rebuild switch --flake .#pokemon
 ```
 
-Features/Applications and Completion/Configuration level:<br/>
+Features/Applications and Completion/Configuration level within the flake:<br/>
 
  completed == "usable/automated"<br/>
 [Nixos](https://github.com/NixOS/nixpkgs) · completed<br/>
