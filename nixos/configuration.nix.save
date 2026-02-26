@@ -1,0 +1,24 @@
+#ranger097
+{ config, pkgs, ... }:
+{ imports = [ 
+./hardware-configuration.nix
+./modules/dev.nix
+./modules/hyprland.nix
+./modules/boot.nix
+./modules/network.nix
+./modules/nvidia.nix      
+./modules/packages.nix
+./modules/audio.nix
+./modules/time.nix
+./modules/environment.nix
+./modules/logind.nix
+./modules/fonts.nix
+./modules/steam.nix
+./modules/users.nix
+./modules/system.nix
+./modules/printing.nix
+./modules/touchpad.nix
+./modules/keyboard.nix
+];}
+
+
