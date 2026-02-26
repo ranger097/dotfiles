@@ -1,4 +1,7 @@
+#ranger097_dotfiles
+##Nixos + Hyprland + Distrobox
 
+###Nixos Flake
 ```
 git clone https://github.com/ranger097/ranger097s_dotfiles.git
 
