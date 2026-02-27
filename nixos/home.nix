@@ -48,7 +48,6 @@ jdk21
 maven
 gradle
 nodejs_22
-corepack
 elixir
 elixir-ls
 rustc
