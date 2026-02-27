@@ -21,6 +21,24 @@ imports = [
 ./modules/users.nix
 ];
 
+
+programs.nix-ld.enable = true;
+programs.nix-ld.libraries = with pkgs; [
+stdenv.cc.cc
+openssl
+zlib
+libxml2
+icu
+nss
+expat
+curl
+libuuid
+libsecret
+];
+
+nixpkgs.config.allowUnfree = true;
+nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
 }
 
 

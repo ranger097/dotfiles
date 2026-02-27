@@ -78,6 +78,7 @@
   "json.schemas": [
 
 
+
     
   ],
   "workbench.sideBar.location": "right",
@@ -173,8 +174,15 @@
         "security.workspace.trust.untrustedFiles": "open",
         "C_Cpp.intelliSenseEngine": "disabled",
         "dev.containers.dockerPath": "podman",
-        "git.confirmSync": false
+        "git.confirmSync": false,
         
+  "nix.enableLanguageServer": true,
+  "nix.serverPath": "nixd",
+  "direnv.restart.automatic": true,
+  "terminal.integrated.env.linux": {
+    "LD_LIBRARY_PATH": "/run/current-system/sw/share/nix-ld/lib"
+  }
+
 
   
 

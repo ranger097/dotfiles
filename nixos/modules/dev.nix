@@ -10,14 +10,6 @@ lsd
 dtrx
 blender
 vscode
-
-(python3.withPackages (ps: with ps; [
-
-npyscreen
-pandas
-requests
-
-]))
 ];
 
 
