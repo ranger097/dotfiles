@@ -3,7 +3,7 @@
 fonts.packages = with pkgs;[
 maple-mono.CN
 maple-mono.NF
-noto-fonts-cjks-sans
+noto-fonts-cjk-sans
 ];
 
 fonts.fontconfig = {
