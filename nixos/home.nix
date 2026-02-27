@@ -34,7 +34,7 @@ source ${repoPath}/shell/bash.sh
 programs.rofi = {
 enable = true;
 };
-xdg.configFile."rofi/config.rasi".source = ../rofi/config.
+xdg.configFile."rofi/config.rasi".source = ../rofi/config.rasi;
 
 
 
