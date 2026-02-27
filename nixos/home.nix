@@ -30,6 +30,15 @@ source ${repoPath}/shell/bash.sh
 '';
 };
 
+
+programs.rofi = {
+enable = true;
+theme = ../rofi/config.rasi;
+};
+
+
+
+
 home.shellAliases = {
 nixpush = "cd ${repoPath} && git add . && git commit -m 'update configs' && git push origin main";
 nixswitch = "sudo nixos-rebuild switch --flake ${repoPath}/nixos#pokemon"; 
