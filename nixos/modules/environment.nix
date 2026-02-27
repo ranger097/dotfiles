@@ -1,5 +1,5 @@
 #ranger097
-{ config, pkgs, ... }: {
+{ config, pkgs, lib, ... }: {
 environment.variables.QT_QPA_PLATFORMTHEME = "qt6ct";
 
 environment.sessionVariables = {
