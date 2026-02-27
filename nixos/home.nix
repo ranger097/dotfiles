@@ -84,6 +84,7 @@ gtk.enable = true;
 x11.enable = true;
 name = "Pokemon";
 size = 48;
+package = null;
 };
 
 programs.direnv = {
