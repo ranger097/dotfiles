@@ -1,7 +1,6 @@
 #ranger097
 { config, pkgs, ... }: {
 environment.systemPackages = with pkgs; [
-distrobox
 wget
 ranger
 ghostty
