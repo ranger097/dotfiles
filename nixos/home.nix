@@ -31,9 +31,9 @@ source ${repoPath}/shell/bash.sh
 };
 
 
-home.packages = {
-pkgs.rofi
-};
+home.packages = with pkgs; [
+rofi
+];
 xdg.configFile."rofi/config.rasi".source = ../rofi/config.rasi;
 
 
