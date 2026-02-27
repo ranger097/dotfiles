@@ -33,6 +33,35 @@ source ${repoPath}/shell/bash.sh
 
 home.packages = with pkgs; [
 rofi
+go
+gopls
+delve
+python3
+python3Packages.pip
+python3Packages.python-lsp-server
+black
+gcc
+gnumake
+cmake
+gdb
+jdk21
+maven
+gradle
+nodejs_22
+corepack
+elixir
+elixir-ls
+rustc
+cargo
+rust-analyzer
+rustfmt
+docker
+docker-compose
+podman
+ripgrep
+fd
+fzf
+jq
 ];
 xdg.configFile."rofi/config.rasi".source = ../rofi/config.rasi;
 
@@ -49,6 +78,21 @@ hii = "sudo nano ${repoPath}/hypr/hyprland.conf";
 gii = "sudo nano ${repoPath}/ghostty/config";
 
 };
+
+home.pointerCursor = {
+gtk.enable = true;
+x11.enable = true;
+name = "Pokemon";
+size = 48;
+};
+
+programs.direnv = {
+enable = true;
+nix-direnv.enable = true;
+};
+
+
+
 }
 
 
