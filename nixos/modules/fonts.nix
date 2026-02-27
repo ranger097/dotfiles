@@ -1,8 +1,8 @@
 #ranger097
 { config, pkgs, ... }: {
 fonts.packages = with pkgs;[
-maple-mono-CN
-maple-mono-NF
+maple-mono.CN
+maple-mono.NF
 noto-fonts-cjks-sans
 ];
 
