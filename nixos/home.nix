@@ -84,7 +84,10 @@ gtk.enable = true;
 x11.enable = true;
 name = "Pokemon";
 size = 48;
-package = null;
+package = pkgs.runCommand "local-cursor" {} ''
+    mkdir -p $out/share/icons
+    ln -s ${repoPath}/Icons/Pokemon $out/share/icons/Pokemon
+  '';
 };
 
 programs.direnv = {
