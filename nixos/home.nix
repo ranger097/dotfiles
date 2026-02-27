@@ -33,6 +33,13 @@ source ${repoPath}/shell/bash.sh
 home.shellAliases = {
 nixpush = "cd ${repoPath} && git add . && git commit -m 'update configs' && git push origin main";
 nixswitch = "sudo nixos-rebuild switch --flake ${repoPath}/nixos#pokemon"; 
+nii = "cd ${repoPath}/nixos/modules && lsd";
+ls = "lsd";
+ani-cli = "ani-cli --dub";
+bii = "sudo nano ${repoPath}/nixos/home.nix";
+hii = "sudo nano ${repoPath}/hypr/hyprland.conf";
+gii = "sudo nano ${repoPath}/ghostty/config";
+
 };
 }
 
