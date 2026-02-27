@@ -1,12 +1,17 @@
 #ranger097
 { config, pkgs, ... }: {
 fonts.packages = with pkgs;[
-maple-mono.Normal-NF-CN-unhinted
+maple-mono-CN
+maple-mono-NF
+noto-fonts-cjks-sans
 ];
+
 fonts.fontconfig = {
+enable = true;
 antialias = true;
 hinting.enable = true;
 subpixel.rgba = "rgb";
+defaultFonts.monospace = [ "Maple Mono CN" "Maple Mono NF" "Noto Sans Mono CJK SC" ];
+
 };
-fonts.fontconfig.defaultFonts.monospace = [ "Maple Mono NF CN" ];
 }

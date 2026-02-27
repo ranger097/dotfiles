@@ -8,7 +8,8 @@ powerManagement.enable = true;
 open = false;
 modesetting.enable = true;
 nvidiaSettings = true;
-package = pkgs.linuxPackages.nvidiaPackages.stable;
+package = config.boot.kernelPackages.nvidiaPackages.production;
+
 };
 
 }
